@@ -3,7 +3,10 @@ useHead({ title: 'Saada andmed' })
 </script>
 
 <template>
-  <form class="my-10 flex flex-col gap-6">
+  <form class="my-8 mx-auto max-w-md flex flex-col gap-6">
+    <h2 class="mb-8 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      Saada andmed
+    </h2>
     <form-input
       id="name"
       autofocus

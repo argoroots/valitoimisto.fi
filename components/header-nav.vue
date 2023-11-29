@@ -6,23 +6,23 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-white sticky top-0 border-b border-indigo-100 z-10">
+  <header class="bg-white sticky top-0 border-b border-purple-100 z-10">
     <nav class="container mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="/" class="font-extrabold text-indigo-600">
+        <a href="/" class="text-lg text-purple-900 font-extrabold">
           Välitoimisto Oy
         </a>
       </div>
 
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">
-          Kontakt
-        </a>
         <a href="/calculator" class="text-sm font-semibold leading-6 text-gray-900">
           Kalkulaator
         </a>
         <a href="/send" class="text-sm font-semibold leading-6 text-gray-900">
           Saada andmed
+        </a>
+        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">
+          Kontakt
         </a>
       </div>
 
@@ -50,14 +50,14 @@ const mobileMenuOpen = ref(false)
               <a href="/" class="sm:hidden -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Avaleht
               </a>
-              <a href="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                Kontakt
-              </a>
               <a href="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Kalkulaator
               </a>
               <a href="/send" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Saada andmed
+              </a>
+              <a href="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                Kontakt
               </a>
             </div>
           </div>

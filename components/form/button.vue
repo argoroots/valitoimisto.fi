@@ -16,10 +16,10 @@ button {
   @apply mt-4;
   @apply px-2;
   @apply border;
-  @apply text-indigo-600;
-  @apply border-indigo-300;
-  @apply hover:bg-indigo-100;
-  @apply hover:text-indigo-600;
-  @apply active:bg-indigo-200;
+  @apply text-purple-600;
+  @apply border-purple-300;
+  @apply hover:bg-purple-100;
+  @apply hover:text-purple-600;
+  @apply active:bg-purple-200;
 }
 </style>
