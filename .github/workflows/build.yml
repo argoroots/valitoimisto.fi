@@ -36,11 +36,11 @@ jobs:
         npm install
         npm run generate
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+    - name: Upload built files
+      uses: actions/upload-artifact@v3.1.3
       with:
         name: production-files
-        path: .output/public
+        path: ./dist
 
   # Deployment job
   deploy:
