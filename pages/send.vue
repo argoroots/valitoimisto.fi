@@ -8,82 +8,82 @@ useHead({ title: 'Saada andmed' })
       Saada andmed
     </h2>
     <form-input
-      id="name"
+      id="company-name"
       autofocus
       label="Arve esitada äriühingule nimega"
     />
     <form-input
-      id="name"
+      id="company-y"
       label="Arve saaja äriühingu y-tunnus"
     />
     <form-input
-      id="name"
+      id="ocject-number"
       label="Objekti number/aadress"
     />
     <form-input
-      id="name"
+      id="description"
       label="Töö kirjeldus ja selgitus"
     />
     <form-input
-      id="name"
+      id="price"
       label="Töö hind kokku mis summas arve esitada"
     />
     <form-input
-      id="name"
+      id="first-name"
       label="Eesnimi"
     />
     <form-input
-      id="name"
+      id="last-name"
       label="Perekonnanimi"
     />
     <form-input
-      id="name"
+      id="e-mail"
       label="E-mail"
     />
     <form-input
-      id="name"
+      id="phone"
       label="Telefoninumber"
     />
     <form-input
-      id="name"
+      id="address"
       label="Aadress"
     />
     <form-input
-      id="name"
+      id="vero-number"
       label="Veronumber"
     />
     <form-input
-      id="name"
+      id="id-number"
       label="Henkilötunnus"
     />
     <form-input
-      id="name"
+      id="iban"
       label="Panga kontonumber"
     />
     <form-input
-      id="name"
+      id="bic"
       label="Panga BIC"
     />
     <form-input
-      id="name"
+      id="info"
       label="Muu selgitus"
       rows="5"
       type="textarea"
     />
     <form-input
-      id="name"
+      id="km"
       label="Kilometrit (0,53 eur / km)"
     />
     <form-input
-      id="name"
+      id="Full-day-allowance"
       label="Kokopäiväraha (48,00 eur)"
     />
     <form-input
-      id="name"
+      id="partial-day-allowance"
       label="Osapäiväraha (22,00 eur)"
     />
     <form-input
-      id="name"
+      id="meal-compensation"
       label="Aterikorvaus (12,oo eur)"
     />
 

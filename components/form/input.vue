@@ -66,32 +66,38 @@ input {
 input, textarea {
     @apply w-full;
     @apply px-2;
-    @apply rounded-none;
     @apply placeholder-transparent;
     @apply border;
+    @apply rounded-sm;
     @apply border-slate-300;
     @apply font-light;
     @apply text-slate-900;
     @apply focus:outline-none;
-    @apply focus:border-slate-500;
+    @apply focus:border-purple-900;
 }
 
 label {
     @apply absolute;
     @apply -top-2.5;
-    @apply left-1;
-    @apply px-1;
+    @apply left-2;
+    @apply px-2;
     @apply text-sm;
     @apply text-slate-500;
-    @apply bg-gradient-to-b from-slate-50 to-white;
+    @apply tracking-wide;
     @apply transition-all;
+    @apply bg-gradient-to-b from-slate-50 to-white;
+
     @apply peer-placeholder-shown:top-2;
     @apply peer-placeholder-shown:text-base;
     @apply peer-placeholder-shown:text-slate-500;
     @apply peer-placeholder-shown:cursor-text;
     @apply peer-placeholder-shown:bg-white;
+    @apply peer-placeholder-shown:bg-none;
+
     @apply peer-focus:-top-2.5;
     @apply peer-focus:text-sm;
-    @apply peer-focus:text-slate-500;
+    @apply peer-focus:text-purple-900;
+    @apply peer-focus:bg-gradient-to-b from-slate-50 via-white to-white;
+    @apply peer-focus:font-semibold;
 }
 </style>
