@@ -20,15 +20,15 @@ const mobileMenuOpen = ref(false)
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <nuxt-link to="/contact" class="text-sm font-semibold leading-6 text-gray-900">
+        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">
           Kontakt
-        </nuxt-link>
-        <nuxt-link to="/calculator" class="text-sm font-semibold leading-6 text-gray-900">
+        </a>
+        <a href="/calculator" class="text-sm font-semibold leading-6 text-gray-900">
           Kalkulaator
-        </nuxt-link>
-        <nuxt-link to="/send" class="text-sm font-semibold leading-6 text-gray-900">
+        </a>
+        <a href="/send" class="text-sm font-semibold leading-6 text-gray-900">
           Saada andmed
-        </nuxt-link>
+        </a>
       </PopoverGroup>
     </nav>
 
@@ -44,18 +44,18 @@ const mobileMenuOpen = ref(false)
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <nuxt-link to="/" class="sm:hidden -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              <a href="/" class="sm:hidden -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Avaleht
-              </nuxt-link>
-              <nuxt-link to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              </a>
+              <a href="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Kontakt
-              </nuxt-link>
-              <nuxt-link to="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              </a>
+              <a href="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Kalkulaator
-              </nuxt-link>
-              <nuxt-link to="/send" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+              </a>
+              <a href="/send" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                 Saada andmed
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
