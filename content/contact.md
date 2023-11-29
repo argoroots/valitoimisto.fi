@@ -11,7 +11,6 @@ description: 'meta description of the page'
 | Y-tunnus | 3227308-9 |
 | VAT nr | FI32273089 |
 
-Samuti pakume raamatupidamisteenust Soomes ja oleme seda tänaseks teinud juba üle 10 aasta.
 
 | E-arvete vastuvõtmine | |
 | --- | --- |
@@ -20,4 +19,5 @@ Samuti pakume raamatupidamisteenust Soomes ja oleme seda tänaseks teinud juba �
 | Sähköpostitse  (pdf -laskut) | valitoimisto@app.fennoa.com |
 
 
-**Koostööpartnerid:**
+| Koostööpartnerid | |
+| --- | --- |

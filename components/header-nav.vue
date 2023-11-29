@@ -7,22 +7,25 @@ const mobileMenuOpen = ref(false)
 
 <template>
   <header class="bg-white sticky top-0 border-b border-purple-100 z-10">
-    <nav class="container mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="container mx-auto flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="/" class="text-lg text-purple-900 font-extrabold">
           Välitoimisto Oy
         </a>
       </div>
 
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/calculator" class="text-sm font-semibold leading-6 text-slate-900 hover:text-purple-900">
+      <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
+        <a href="/calculator" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
           Kalkulaator
         </a>
-        <a href="/send" class="text-sm font-semibold leading-6 text-slate-900 hover:text-purple-900">
-          Saada andmed
+        <a href="/accounting" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
+          Raamatupidamisteenus
         </a>
-        <a href="/contact" class="text-sm font-semibold leading-6 text-slate-900 hover:text-purple-900">
+        <a href="/contact" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
           Kontakt
+        </a>
+        <a href="/send" class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900">
+          Saada andmed
         </a>
       </div>
 
@@ -53,11 +56,14 @@ const mobileMenuOpen = ref(false)
               <a href="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50">
                 Kalkulaator
               </a>
-              <a href="/send" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50">
-                Saada andmed
+              <a href="/accounting" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50">
+                Raamatupidamisteenus
               </a>
               <a href="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50">
                 Kontakt
+              </a>
+              <a href="/send" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-white bg-purple-900">
+                Saada andmed
               </a>
             </div>
           </div>
