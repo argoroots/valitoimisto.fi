@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html, body{
+    @apply h-screen;
+}
+
+#__nuxt {
     @apply h-full;
 }

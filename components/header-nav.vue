@@ -1,25 +1,20 @@
 <script setup>
-import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/vue'
+import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <header class="bg-white sticky top-0 border-b border-indigo-100">
+    <nav class="container mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="/" class="font-extrabold text-indigo-600">
           Välitoimisto Oy
         </a>
       </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
-          <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
-        </button>
-      </div>
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12">
+
+      <div class="hidden lg:flex lg:gap-x-12">
         <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">
           Kontakt
         </a>
@@ -29,11 +24,19 @@ const mobileMenuOpen = ref(false)
         <a href="/send" class="text-sm font-semibold leading-6 text-gray-900">
           Saada andmed
         </a>
-      </PopoverGroup>
+      </div>
+
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
+          <span class="sr-only">Open main menu</span>
+          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+        </button>
+      </div>
     </nav>
 
     <Dialog as="div" class="lg:hidden" :open="mobileMenuOpen" @close="mobileMenuOpen = false">
       <div class="fixed inset-0 z-10" />
+
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-end">
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
