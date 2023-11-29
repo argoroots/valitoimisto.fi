@@ -45,10 +45,26 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: www.valitoimisto.fi
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - name: Checkout to main
+        uses: actions/checkout@main
+
+      - name: Download built files
+        uses: actions/download-artifact@v2.1.1
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Connect to server over SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts
+
+      - name: Deploy built site
+        run: |
+          rsync -vrm  ./dist/ ${{ secrets.SSH_LOGIN }}:/data01/virt124708/domeenid/www.valitoimisto.fi/htdocs
