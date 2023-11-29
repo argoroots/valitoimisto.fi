@@ -1,5 +1,4 @@
 ---
-title: Välitoimisto Oy
 description: 'meta description of the page'
 ---
 

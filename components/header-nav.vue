@@ -6,7 +6,7 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-white sticky top-0 border-b border-indigo-100">
+  <header class="bg-white sticky top-0 border-b border-indigo-100 z-10">
     <nav class="container mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="/" class="font-extrabold text-indigo-600">

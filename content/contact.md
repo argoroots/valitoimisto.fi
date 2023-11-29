@@ -1,5 +1,5 @@
 ---
-title: Välitoimisto Oy - Kontakt
+title: Kontakt
 description: 'meta description of the page'
 ---
 
