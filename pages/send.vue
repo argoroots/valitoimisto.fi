@@ -1,15 +1,89 @@
+<script setup>
+useHead({ title: 'Saada andmed' })
+</script>
+
 <template>
-  <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-    <div class="text-center">
-      <p class="text-base font-semibold text-indigo-600">
-        404
-      </p>
-      <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Page not found
-      </h1>
-      <p class="mt-6 text-base leading-7 text-gray-600">
-        Sorry, we couldn’t find the page you’re looking for.
-      </p>
-    </div>
-  </main>
+  <form class="my-10 flex flex-col gap-6">
+    <form-input
+      id="name"
+      autofocus
+      label="Arve esitada äriühingule nimega"
+    />
+    <form-input
+      id="name"
+      label="Arve saaja äriühingu y-tunnus"
+    />
+    <form-input
+      id="name"
+      label="Objekti number/aadress"
+    />
+    <form-input
+      id="name"
+      label="Töö kirjeldus ja selgitus"
+    />
+    <form-input
+      id="name"
+      label="Töö hind kokku mis summas arve esitada"
+    />
+    <form-input
+      id="name"
+      label="Eesnimi"
+    />
+    <form-input
+      id="name"
+      label="Perekonnanimi"
+    />
+    <form-input
+      id="name"
+      label="E-mail"
+    />
+    <form-input
+      id="name"
+      label="Telefoninumber"
+    />
+    <form-input
+      id="name"
+      label="Aadress"
+    />
+    <form-input
+      id="name"
+      label="Veronumber"
+    />
+    <form-input
+      id="name"
+      label="Henkilötunnus"
+    />
+    <form-input
+      id="name"
+      label="Panga kontonumber"
+    />
+    <form-input
+      id="name"
+      label="Panga BIC"
+    />
+    <form-input
+      id="name"
+      label="Muu selgitus"
+      rows="5"
+      type="textarea"
+    />
+    <form-input
+      id="name"
+      label="Kilometrit (0,53 eur / km)"
+    />
+    <form-input
+      id="name"
+      label="Kokopäiväraha (48,00 eur)"
+    />
+    <form-input
+      id="name"
+      label="Osapäiväraha (22,00 eur)"
+    />
+    <form-input
+      id="name"
+      label="Aterikorvaus (12,oo eur)"
+    />
+
+    <form-button>Saada</form-button>
+  </form>
 </template>
