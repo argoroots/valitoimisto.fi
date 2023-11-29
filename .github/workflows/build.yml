@@ -68,4 +68,4 @@ jobs:
 
       - name: Deploy built site
         run: |
-          rsync -vrm  ./dist/ ${{ secrets.SSH_LOGIN }}:/data01/virt124708/domeenid/www.valitoimisto.fi/htdocs
+          rsync -vrm  ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}:${{ secrets.SSH_PATH }}
