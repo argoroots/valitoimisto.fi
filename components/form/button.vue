@@ -16,12 +16,11 @@ button {
   @apply mt-4;
   @apply px-2;
   @apply border;
-  @apply rounded-full;
+  @apply rounded-md;
   @apply text-purple-600;
   @apply border-purple-300;
-  @apply hover:text-purple-900;
-  @apply hover:border-purple-900;
-  @apply hover:bg-purple-100;
+  @apply hover:text-white;
+  @apply hover:bg-purple-300;
   @apply active:bg-purple-200;
 }
 </style>
