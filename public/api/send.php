@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
         $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
-        $fileContent = file_get_contents($file['tmp_name']);
+        $fileContent = base64_encode(file_get_contents($file['tmp_name']));
         $body .= "--boundary\r\n";
         $body .= "Content-Type: application/octet-stream\r\n";
         $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n\r\n";
