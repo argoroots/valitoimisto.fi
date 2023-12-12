@@ -3,13 +3,13 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $subject = "Form submission";
     $toEmail = "argo@roots.ee";
     $fromEmail = "valitoimisto.fi <web@valitoimisto.fi>";
+    $boundary = md5(uniqid(rand(), true));
 
     // Set CSP headers
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self';");
 
     $headers = "From: $fromEmail\r\n";
     $headers .= "Reply-To: $fromEmail\r\n";
-    $boundary = md5(uniqid(rand(), true));
     $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
 
     // Build email body
@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     foreach ($_POST as $key => $value) {
       $key = filter_var($key, FILTER_SANITIZE_STRING);
       $value = filter_var($value, FILTER_SANITIZE_STRING);
+
       $body .= "<p><strong>" . str_replace("-", " ", $key) . ":<br></strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
     }
 
@@ -29,8 +30,13 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
+      if (!is_uploaded_file($file['tmp_name'])) {
+        continue;
+      }
+
       $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
       $fileContent = chunk_split(base64_encode(file_get_contents($file['tmp_name'])));
+
       $body .= "--$boundary\r\n";
       $body .= "Content-Type: application/octet-stream\r\n";
       $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n";
