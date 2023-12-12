@@ -112,6 +112,15 @@ function submitForm (params) {
         id="meal-compensation"
         label="Aterikorvaus (12,00€)"
       />
+
+      <div>
+        <label
+          for="file"
+          class="block mb-2"
+        >
+          Files</label>
+        <input id="file" type="file" name="file">
+      </div>
     </div>
 
     <div class="col-span-full text-center">
