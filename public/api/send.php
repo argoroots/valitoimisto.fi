@@ -7,13 +7,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Set CSP headers
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self';");
 
-    // Build email headers
     $headers = "From: $fromEmail\r\n";
     $headers .= "Reply-To: $fromEmail\r\n";
-    $headers .= "Content-Type: multipart/mixed; boundary=boundary\r\n";
+    $boundary = md5(uniqid(rand(), true));
+    $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
 
     // Build email body
-    $body = "--boundary\r\n";
+    $body = "--$boundary\r\n";
     $body .= "Content-Type: text/plain; charset=UTF-8\r\n\r\n";
 
     // Add sanitized text content from POST parameters
@@ -21,6 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $key = filter_var($key, FILTER_SANITIZE_STRING);
         $value = filter_var($value, FILTER_SANITIZE_STRING);
         $body .= "$key:\r\n$value\r\n\r\n";
+    }
+
+    foreach ($_FILES as $fileKey => $file) {
+      $body .= $file['tmp_name'] . "\r\n";
     }
 
     // Process file uploads
