@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $subject = "Form submission';
-    $toEmail = 'argo@roots.ee';
-    $fromEmail = 'valitoimisto.fi <web@valitoimisto.fi>';
+    $subject = "Form submission";
+    $toEmail = "argo@roots.ee";
+    $fromEmail = "valitoimisto.fi <web@valitoimisto.fi>";
 
     // Set CSP headers
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self';");
