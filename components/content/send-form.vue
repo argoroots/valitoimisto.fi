@@ -11,6 +11,7 @@ function submitForm (params) {
     ref="formRef"
     action="/api/send.php"
     class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    enctype="multipart/form-data"
     method="POST"
     @submit.prevent="submitForm"
   >
@@ -101,7 +102,7 @@ function submitForm (params) {
         label="Kilometrit (0,53€ / km)"
       />
       <form-input
-        id="Full-day-allowance"
+        id="full-day-allowance"
         label="Kokopäiväraha (48,00€)"
       />
       <form-input
