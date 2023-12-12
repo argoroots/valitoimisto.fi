@@ -23,12 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $body .= "$key:\r\n$value\r\n\r\n";
     }
 
-    $body .= "File list:\r\n";
-
-    foreach ($_FILES as $fileKey => $file) {
-      $body .= "$fileKey: " . strval($file) . "\r\n";
-    }
-
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
       $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
@@ -45,9 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Send email
     if (mail($toEmail, $subject, $body, $headers)) {
-        echo 'Email sent successfully.';
+      header("Location: /send?result=ok");
+      exit();
     } else {
-        echo 'Error sending email.';
+      header("Location: /send?result=error");
+      exit();
     }
 } else {
     echo 'Invalid request method.';
