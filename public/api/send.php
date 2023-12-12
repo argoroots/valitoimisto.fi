@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $subject = 'valitoimisto.fi form';
+    $subject = 'Form from valitoimisto.fi';
     $toEmail = 'argo@roots.ee';
-    $fromEmail = 'web@valitoimisto.fi';
+    $fromEmail = 'valitoimisto.fi <web@valitoimisto.fi>';
 
     // Set CSP headers
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self';");
@@ -23,19 +23,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $body .= "$key:\r\n$value\r\n\r\n";
     }
 
+    $body .= "File list:\r\n";
+
     foreach ($_FILES as $fileKey => $file) {
-      $body .= $file['tmp_name'] . "\r\n";
+      $body .= "$fileKey: " . strval($file) . "\r\n";
     }
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
-        $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
-        $fileContent = base64_encode(file_get_contents($file['tmp_name']));
-        $body .= "--boundary\r\n";
-        $body .= "Content-Type: application/octet-stream\r\n";
-        $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n";
-        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
-        $body .= chunk_split($fileContent) . "\r\n";
+      $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
+      $fileContent = chunk_split(base64_encode(file_get_contents($file['tmp_name'])));
+      $body .= "--$boundary\r\n";
+      $body .= "Content-Type: application/octet-stream\r\n";
+      $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n";
+      $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+      $body .= $fileContent . "\r\n";
     }
 
     // Close email body
