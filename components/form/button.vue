@@ -4,7 +4,7 @@ const emit = defineEmits(['click'])
 </script>
 
 <template>
-  <button @click.prevent="emit('click')">
+  <button @click="emit('click')">
     <slot />
   </button>
 </template>

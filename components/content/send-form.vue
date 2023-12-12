@@ -1,12 +1,18 @@
 <script setup>
+const formRef = ref()
 
+function submitForm (params) {
+  formRef.value.submit()
+}
 </script>
 
 <template>
   <form
+    ref="formRef"
     action="/api/send.php"
     class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
     method="POST"
+    @submit.prevent="submitForm"
   >
     <div class="flex flex-col gap-6">
       <h3 class="text-xl font-bold text-purple-800">
