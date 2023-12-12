@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $subject = "Form submission";
     $toEmail = "argo@roots.ee";
     $fromEmail = "valitoimisto.fi <web@valitoimisto.fi>";
@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
-      $filename = filter_var($file["name"], FILTER_SANITIZE_STRING);
-      $fileContent = chunk_split(base64_encode(file_get_contents($file["tmp_name"])));
+      $filename = filter_var($file['name'], FILTER_SANITIZE_STRING);
+      $fileContent = chunk_split(base64_encode(file_get_contents($file['tmp_name'])));
       $body .= "--$boundary\r\n";
       $body .= "Content-Type: application/octet-stream\r\n";
       $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n";
