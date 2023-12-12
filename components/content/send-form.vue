@@ -3,7 +3,11 @@
 </script>
 
 <template>
-  <form class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <form
+    action="/api/send"
+    class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    method="POST"
+  >
     <div class="flex flex-col gap-6">
       <h3 class="text-xl font-bold text-purple-800">
         Arve saaja
