@@ -124,6 +124,7 @@ function submitForm (params) {
           id="file"
           type="file"
           name="file"
+          multiple
         >
       </div>
     </div>

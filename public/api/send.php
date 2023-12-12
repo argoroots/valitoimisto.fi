@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
       $body .= "<p><strong>" . str_replace("-", " ", $key) . ":<br></strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
     }
 
-    $body .= "</body></html>\r\n";
+    $body .= "</body></html>\r\n\r\n";
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
