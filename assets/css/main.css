@@ -10,7 +10,57 @@ html, body{
   @apply h-full;
 }
 
+h1 {
+  @apply mb-8;
+  @apply text-3xl;
+  @apply sm:text-4xl;
+  @apply font-bold;
+  @apply text-slate-900;
+}
+
+h2 {
+  @apply mb-8;
+  @apply text-2xl;
+  @apply sm:text-3xl;
+  @apply font-bold;
+  @apply text-slate-900;
+}
+
 p {
-  @apply leading-6;
   @apply text-slate-700;
+  @apply mb-4;
+  @apply last-of-type:mb-0;
+}
+
+table {
+  @apply w-full;
+  @apply mt-6;
+  @apply table-fixed;
+}
+
+tr {
+  @apply border-b;
+  @apply border-slate-200;
+  @apply last-of-type:border-b-0
+}
+
+th {
+  @apply hidden;
+}
+
+td {
+  @apply py-2;
+  @apply px-4;
+  @apply align-top;
+  @apply w-auto;
+}
+
+ol {
+  @apply list-decimal;
+  @apply list-outside;
+}
+
+li {
+  @apply mb-4;
+  @apply last-of-type:mb-0;
 }

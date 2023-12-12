@@ -5,7 +5,7 @@
         Välitoimisto Oy
       </a>
 
-      <a class="underline hover:text-purple-900" href="mailto:asiakaspalvelu@valitoimisto.fi">asiakaspalvelu@valitoimisto.fi</a>
+      <a class="hover:underline hover:text-purple-900" href="/tos">Tingimused</a>
     </div>
   </footer>
 </template>

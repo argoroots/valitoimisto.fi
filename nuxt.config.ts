@@ -8,13 +8,20 @@ export default defineNuxtConfig({
       ]
     }
   },
-  devtools: { enabled: true },
+  content: {
+    documentDriven: true
+  },
   css: ['~/assets/css/main.css'],
+  devtools: { enabled: true },
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
   modules: ['@nuxt/content'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     }
-  }
+  },
+  ssr: false
 })

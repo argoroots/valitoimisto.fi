@@ -1,5 +1,13 @@
+<script setup>
+
+onMounted(() => {
+  const { page, toc } = useContent()
+  console.log(page.value)
+})
+</script>
+
 <template>
-  <main class="mx-auto prose prose-slate">
+  <main class="mx-auto">
     <ContentDoc>
       <template #not-found>
         <div class="w-full text-center">

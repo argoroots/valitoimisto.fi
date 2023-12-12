@@ -1,13 +1,9 @@
 <script setup>
-useHead({ title: 'Saada andmed' })
+
 </script>
 
 <template>
   <form class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <h2 class="col-span-full mb-8 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-      Saada andmed
-    </h2>
-
     <div class="flex flex-col gap-6">
       <h3 class="text-xl font-bold text-purple-800">
         Arve saaja
@@ -80,8 +76,8 @@ useHead({ title: 'Saada andmed' })
       <form-input
         id="info"
         label="Muu selgitus"
-        rows="5"
         type="textarea"
+        :rows="5"
       />
     </div>
 
@@ -92,19 +88,19 @@ useHead({ title: 'Saada andmed' })
 
       <form-input
         id="km"
-        label="Kilometrit (0,53 eur / km)"
+        label="Kilometrit (0,53€ / km)"
       />
       <form-input
         id="Full-day-allowance"
-        label="Kokopäiväraha (48,00 eur)"
+        label="Kokopäiväraha (48,00€)"
       />
       <form-input
         id="partial-day-allowance"
-        label="Osapäiväraha (22,00 eur)"
+        label="Osapäiväraha (22,00€)"
       />
       <form-input
         id="meal-compensation"
-        label="Aterikorvaus (12,oo eur)"
+        label="Aterikorvaus (12,00€)"
       />
     </div>
 
