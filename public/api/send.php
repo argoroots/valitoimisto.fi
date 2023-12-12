@@ -15,18 +15,26 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     // Build email body
     $body = "--$boundary\r\n";
     $body .= "Content-Type: multipart/alternative; boundary=\"$boundary\"\r\n\r\n";
-    $body .= "--$boundary\r\n";
-    $body .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
+
+    $htmlContent = '<html>
+        <body>';
 
     // Add sanitized text content from POST parameters
     foreach ($_POST as $key => $value) {
       $key = filter_var($key, FILTER_SANITIZE_STRING);
       $value = filter_var($value, FILTER_SANITIZE_STRING);
 
-      $body .= "<p><strong>" . str_replace("-", " ", $key) . ":<br></strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
+      $htmlContent .= "<p><strong>" . str_replace("-", " ", $key) . ":<br></strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
     }
 
-    $body .= "</body></html>\r\n\r\n";
+    // Close HTML content
+    $htmlContent .= '</body>
+        </html>';
+
+
+    $body .= "--$boundary\r\n";
+    $body .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
+    $body .= $htmlContent . "\r\n";
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
