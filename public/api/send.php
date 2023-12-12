@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $subject = 'Form from valitoimisto.fi';
+    $subject = 'Form submission';
     $toEmail = 'argo@roots.ee';
     $fromEmail = 'valitoimisto.fi <web@valitoimisto.fi>';
 
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Build email body
     $body = "--$boundary\r\n";
-    $body .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
+    $body .= "Content-Type: multipart/alternative; boundary=\"$boundary\"\r\n\r\n";
 
     $body .= '<html><body>';
 
