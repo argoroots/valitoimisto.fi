@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($_POST as $key => $value) {
         $key = filter_var($key, FILTER_SANITIZE_STRING);
         $value = filter_var($value, FILTER_SANITIZE_STRING);
-        $body .= "$key: $value\r\n";
+        $body .= "$key:\r\n$value\r\n\r\n";
     }
 
     // Process file uploads
