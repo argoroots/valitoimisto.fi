@@ -1,6 +1,11 @@
 <script setup>
 const formRef = ref()
 
+const route = useRoute()
+
+const isSubmitted = computed(() => route.query.result === 'ok')
+const isError = computed(() => route.query.result === 'error')
+
 function submitForm (params) {
   formRef.value.submit()
 }
@@ -8,6 +13,7 @@ function submitForm (params) {
 
 <template>
   <form
+    v-if="!isSubmitted && !isError"
     ref="formRef"
     action="/api/send.php"
     class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -24,6 +30,7 @@ function submitForm (params) {
         id="company-name"
         autofocus
         label="Äriühingu nimi"
+        required
       />
       <form-input
         id="company-y"
@@ -135,4 +142,28 @@ function submitForm (params) {
       </form-button>
     </div>
   </form>
+
+  <div
+    v-if="isSubmitted"
+    class="mt-28 flex flex-col items-center justify-center gap-2"
+  >
+    <h2 class="text-2xl font-bold text-purple-800">
+      Täname!
+    </h2>
+    <p class="text-lg text-center">
+      Teie andmed on edastatud ja me võtame teiega ühendust.
+    </p>
+  </div>
+
+  <div
+    v-if="isError"
+    class="mt-28 flex flex-col items-center justify-center gap-2"
+  >
+    <h2 class="text-2xl font-bold text-red-800">
+      Viga!
+    </h2>
+    <p class="text-lg text-center">
+      Teie andmete edastamisel tekkis viga. Palun proovige uuesti.
+    </p>
+  </div>
 </template>
