@@ -1,10 +1,8 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Sanitize and validate form data
-    $subject = filter_var($_POST['subject'] ?? 'Form Submission', FILTER_SANITIZE_STRING);
-    $toEmail = 'recipient@example.com'; // Change this to the recipient's email address
-    $fromEmail = filter_var($_POST['email'] ?? 'sender@example.com', FILTER_SANITIZE_EMAIL);
-    $fromEmail = filter_var($fromEmail, FILTER_VALIDATE_EMAIL) ? $fromEmail : 'sender@example.com';
+    $subject = 'valitoimisto.fi form';
+    $toEmail = 'argo@roots.ee';
+    $fromEmail = 'web@valitoimisto.fi';
 
     // Set CSP headers
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self';");
