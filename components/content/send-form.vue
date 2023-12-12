@@ -120,7 +120,12 @@ function submitForm (params) {
           class="block mb-2"
         >
           Files</label>
-        <input id="file" type="file" name="file">
+        <input
+          id="file"
+          type="file"
+          name="file"
+          multiple
+        >
       </div>
     </div>
 

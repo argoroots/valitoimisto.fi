@@ -15,14 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Build email body
     $body = "--$boundary\r\n";
     $body .= "Content-Type: multipart/alternative; boundary=\"$boundary\"\r\n\r\n";
-
-    $body .= '<html><body>';
+    $body .= "--$boundary\r\n";
+    $body .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
 
     // Add sanitized text content from POST parameters
     foreach ($_POST as $key => $value) {
       $key = filter_var($key, FILTER_SANITIZE_STRING);
       $value = filter_var($value, FILTER_SANITIZE_STRING);
-      $body .= "<p><strong>" . str_replace("-", " ", $key) . ":</strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
+      $body .= "<p><strong>" . str_replace("-", " ", $key) . ":<br></strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
     }
 
     $body .= '</body></html>';
