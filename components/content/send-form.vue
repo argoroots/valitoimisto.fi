@@ -109,7 +109,7 @@
     </div>
 
     <div class="col-span-full text-center">
-      <form-button class="max-w-lg">
+      <form-button class="max-w-lg" type="submit">
         Saada
       </form-button>
     </div>
