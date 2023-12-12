@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Close email body
-    $body .= "--boundary--\r\n";
+    $body .= "--$boundary--\r\n";
 
     // Send email
     if (mail($toEmail, $subject, $body, $headers)) {
