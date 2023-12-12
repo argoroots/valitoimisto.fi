@@ -29,8 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $fileContent = base64_encode(file_get_contents($file['tmp_name']));
         $body .= "--boundary\r\n";
         $body .= "Content-Type: application/octet-stream\r\n";
-        $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n\r\n";
-        $body .= $fileContent . "\r\n";
+        $body .= "Content-Disposition: attachment; filename=\"$filename\"\r\n";
+        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+        $body .= chunk_split($fileContent) . "\r\n";
     }
 
     // Close email body
