@@ -14,14 +14,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Build email body
     $body = "--$boundary\r\n";
-    $body .= "Content-Type: text/plain; charset=UTF-8\r\n\r\n";
+    $body .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
+
+    $body .= '<html><body>';
 
     // Add sanitized text content from POST parameters
     foreach ($_POST as $key => $value) {
-        $key = filter_var($key, FILTER_SANITIZE_STRING);
-        $value = filter_var($value, FILTER_SANITIZE_STRING);
-        $body .= "$key:\r\n$value\r\n\r\n";
+      $key = filter_var($key, FILTER_SANITIZE_STRING);
+      $value = filter_var($value, FILTER_SANITIZE_STRING);
+      $body .= "<p><strong>" . str_replace("-", " ", $key) . ":</strong>" . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
     }
+
+    $body .= '</body></html>';
 
     // Process file uploads
     foreach ($_FILES as $fileKey => $file) {
