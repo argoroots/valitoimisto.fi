@@ -23,9 +23,9 @@ Lisateenusena saame juurde pakkuda rohkem kui ühte palgaarvestust, enam ostuarv
 
 | Teenus | Hind |
 | --- | --: |
-| Palgaarvestus brutopalk | **30**€ / tk |
+| Palgaarvestus brutopalk | **40**€ / tk |
 | Palgaarvestus netopalk | **50**€ / tk |
-| Ostuarve lisamine koos panga ülekandega | **40**€ / tk |
+| Ostuarve lisamine koos panga ülekandega | **50**€ / tk |
 ::
 
 ::how
@@ -39,3 +39,4 @@ Me ei vastuta teie poolt teostatud tööde kvaliteedi üle ja ei korva teie pool
 Me ei osale ja ei ole osalised ei suusõnalises ega kirjalikes teile tööd pakkuvate füüsiliste- ja juriidiliste isikute lepingutes osapoolena.
 
 Meie teenusega ei teki meil omavahel püsivat ega mittepüsivat kokkuleppelist töö- ja koostöölepingulist suhet, iga meie kaudu ja meie vahendusel  saadetud arve ning arvestatud palgaarvestus on meie teenuse sisu. Antud teenust pakume ainult teile ja mitte teie tööde tellijale.
+::

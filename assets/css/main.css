@@ -58,6 +58,13 @@ td {
 ol {
   @apply list-decimal;
   @apply list-outside;
+  @apply mb-4;
+}
+
+ul {
+  @apply list-disc;
+  @apply list-inside;
+  @apply mb-4;
 }
 
 li {
