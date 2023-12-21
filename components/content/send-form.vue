@@ -20,7 +20,7 @@ function submitForm (params) {
     v-if="!isSubmitted && !isError"
     ref="formRef"
     action="/api/send.php"
-    class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    class="my-8 grid grid-cols-1 md:grid-cols-2 gap-8"
     enctype="multipart/form-data"
     method="POST"
     @submit.prevent="submitForm"
@@ -51,6 +51,31 @@ function submitForm (params) {
       <form-input
         id="price"
         label="Töö hind kokku mis summas arve esitada"
+        type="number"
+      />
+
+      <h3 class="text-xl font-bold text-purple-800">
+        ?????
+      </h3>
+      <form-input
+        id="full-day-allowance"
+        label="Kokopäiväraha (48,00€)"
+        type="number"
+      />
+      <form-input
+        id="partial-day-allowance"
+        label="Osapäiväraha (22,00€)"
+        type="number"
+      />
+      <form-input
+        id="meal-compensation"
+        label="Aterikorvaus (12,00€)"
+        type="number"
+      />
+      <form-input
+        id="km"
+        label="Kilometrikorvaus (0,53€ / km)"
+        type="number"
       />
     </div>
 
@@ -79,10 +104,12 @@ function submitForm (params) {
       <form-input
         id="e-mail"
         label="E-mail"
+        type="email"
       />
       <form-input
         id="phone"
         label="Telefoninumber"
+        type="tel"
       />
       <form-input
         id="address"
@@ -105,6 +132,11 @@ function submitForm (params) {
         label="Panga BIC"
       />
       <form-input
+        id="file"
+        label="Verokaart"
+        type="file"
+      />
+      <form-input
         id="info"
         label="Muu selgitus"
         type="textarea"
@@ -112,36 +144,8 @@ function submitForm (params) {
       />
     </div>
 
-    <div class="flex flex-col gap-6">
-      <h3 class="text-xl font-bold text-purple-800">
-        ?????
-      </h3>
-
-      <form-input
-        id="km"
-        label="Kilometrit (0,53€ / km)"
-      />
-      <form-input
-        id="full-day-allowance"
-        label="Kokopäiväraha (48,00€)"
-      />
-      <form-input
-        id="partial-day-allowance"
-        label="Osapäiväraha (22,00€)"
-      />
-      <form-input
-        id="meal-compensation"
-        label="Aterikorvaus (12,00€)"
-      />
-      <form-input
-        id="file"
-        label="Verokaart"
-        type="file"
-      />
-    </div>
-
     <div class="col-span-full text-center">
-      <form-button class="max-w-lg" type="submit">
+      <form-button class="md:max-w-lg" type="submit">
         Saada
       </form-button>
     </div>
