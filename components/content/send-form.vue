@@ -126,7 +126,7 @@ function submitForm (params) {
           for="file"
           class="block mb-2"
         >
-          Files</label>
+          Verokaart</label>
         <input
           id="file"
           type="file"

@@ -21,5 +21,13 @@ description: 'meta description of the page'
 | **Sähköpostitse  (pdf -laskut)** | valitoimisto@app.fennoa.com |
 
 
-| Koostööpartnerid | |
-| --- | --- |
+::logos
+## Koostööpartnerid
+
+![](/img/elo.png)
+![](/img/fennoa.png)
+![](/img/if.png)
+![](/img/vahvimmat.png)
+![](/img/vastuu.png)
+![](/img/vero.png)
+::
