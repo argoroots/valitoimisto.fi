@@ -1,5 +1,9 @@
 <script setup>
 const formRef = ref()
+const typeOptions = ref([
+  'Kergettevõtja',
+  'Töötaja'
+])
 
 const route = useRoute()
 
@@ -55,6 +59,15 @@ function submitForm (params) {
         Palga saaja
       </h3>
 
+      <form-input
+        id="type"
+        autofocus
+        label="Tüüp"
+        required
+        type="select"
+        :options="typeOptions"
+        :model-value="typeOptions.at(0)"
+      />
       <form-input
         id="first-name"
         label="Eesnimi"
@@ -120,20 +133,11 @@ function submitForm (params) {
         id="meal-compensation"
         label="Aterikorvaus (12,00€)"
       />
-
-      <div>
-        <label
-          for="file"
-          class="block mb-2"
-        >
-          Verokaart</label>
-        <input
-          id="file"
-          type="file"
-          name="file"
-          multiple
-        >
-      </div>
+      <form-input
+        id="file"
+        label="Verokaart"
+        type="file"
+      />
     </div>
 
     <div class="col-span-full text-center">
