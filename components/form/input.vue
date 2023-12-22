@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 const props = defineProps({
-  modelValue: { type: String, default: '' },
+  modelValue: { type: [String, Number], default: '' },
   id: { type: String, required: true },
   label: { type: String, required: true },
   type: { type: String, default: 'text' },
@@ -54,10 +54,11 @@ const text = computed({
     >
       <option
         v-for="o in options"
-        :key="o"
-        :selected="o === modelValue"
+        :key="o.value"
+        :selected="o.value === modelValue"
+        :value="o.value"
       >
-        {{ o }}
+        {{ o.label }}
       </option>
     </select>
 

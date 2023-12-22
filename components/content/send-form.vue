@@ -1,8 +1,8 @@
 <script setup>
 const formRef = ref()
 const typeOptions = ref([
-  'Kergettevõtja',
-  'Töötaja'
+  { value: 'Kergettevõtja', label: 'Kergettevõtja' },
+  { value: 'Töötaja', label: 'Töötaja' }
 ])
 
 const route = useRoute()
@@ -53,10 +53,6 @@ function submitForm (params) {
         label="Töö hind kokku mis summas arve esitada"
         type="number"
       />
-
-      <h3 class="text-xl font-bold text-purple-800">
-        ?????
-      </h3>
       <form-input
         id="full-day-allowance"
         label="Kokopäiväraha (48,00€)"
@@ -91,7 +87,7 @@ function submitForm (params) {
         required
         type="select"
         :options="typeOptions"
-        :model-value="typeOptions.at(0)"
+        :model-value="typeOptions.at(0).value"
       />
       <form-input
         id="first-name"

@@ -8,8 +8,8 @@ const meal = ref(0)
 const km = ref(0)
 
 const typeOptions = ref([
-  'Kergettevõtja',
-  'Töötaja'
+  { value: 'K', label: 'Kergettevõtja' },
+  { value: 'T', label: 'Töötaja' }
 ])
 
 const fullDaySum = computed(() => fullDay.value * 48)
