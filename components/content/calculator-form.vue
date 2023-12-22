@@ -22,7 +22,7 @@ const fee = computed(() => price.value * 0.04)
 const netoSum = computed(() => price.value - fee.value)
 const brutoSum = computed(() => netoSum.value - addonSum.value)
 const percentSum = computed(() => brutoSum.value * percent.value / 100)
-const sum = computed(() => brutoSum.value + addonSum.value - percentSum.value)
+const sum = computed(() => Math.round((brutoSum.value + addonSum.value - percentSum.value) * 100) / 100)
 
 function checkValues () {
   if (price.value === '') price.value = 0
