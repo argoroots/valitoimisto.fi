@@ -1,11 +1,11 @@
 <script setup>
+const route = useRoute()
+
 const formRef = ref()
 const typeOptions = ref([
   { value: 'Kergettevõtja', label: 'Kergettevõtja' },
   { value: 'Töötaja', label: 'Töötaja' }
 ])
-
-const route = useRoute()
 
 const isSubmitted = computed(() => route.query.result === 'ok')
 const isError = computed(() => route.query.result === 'error')
