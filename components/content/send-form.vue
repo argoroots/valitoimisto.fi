@@ -3,8 +3,8 @@ const route = useRoute()
 
 const formRef = ref()
 const typeOptions = ref([
-  { value: 'Kergettevõtja', label: 'Kergettevõtja' },
-  { value: 'Töötaja', label: 'Töötaja' }
+  { value: 'Töötaja', label: 'Töötaja' },
+  { value: 'Kergettevõtja', label: 'Kergettevõtja' }
 ])
 
 const isSubmitted = computed(() => route.query.result === 'ok')

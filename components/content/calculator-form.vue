@@ -1,5 +1,5 @@
 <script setup>
-const type = ref('K')
+const type = ref('T')
 const price = ref(1000)
 const percent = ref(0)
 const fullDay = ref(0)
@@ -8,21 +8,43 @@ const meal = ref(0)
 const km = ref(0)
 
 const typeOptions = ref([
-  { value: 'K', label: 'Kergettevõtja' },
-  { value: 'T', label: 'Töötaja' }
+  { value: 'T', label: 'Töötaja' },
+  { value: 'K', label: 'Kergettevõtja' }
 ])
 
+const fee = computed(() => price.value * 0.04)
 const fullDaySum = computed(() => fullDay.value * 48)
 const partialDaySum = computed(() => partialDay.value * 22)
 const mealSum = computed(() => meal.value * 12)
 const kmSum = computed(() => km.value * 0.53)
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value)
-
-const fee = computed(() => price.value * 0.04)
-const netoSum = computed(() => price.value - fee.value)
-const brutoSum = computed(() => netoSum.value - addonSum.value)
 const percentSum = computed(() => brutoSum.value * percent.value / 100)
-const sum = computed(() => Math.round((brutoSum.value + addonSum.value - percentSum.value) * 100) / 100)
+
+const brutoSum = computed(() => {
+  if (type.value === 'T') {
+    return (price.value - fee.value - addonSum.value) / 1.2652
+  } else {
+    return price.value - fee.value - addonSum.value
+  }
+})
+
+const taxSum = computed(() => {
+  if (type.value === 'T') {
+    return brutoSum.value * 0.015 + brutoSum.value * 0.0715
+  } else {
+    return brutoSum.value * 0.0153 + brutoSum.value * 0.0052
+  }
+})
+
+const netoSum = computed(() => {
+  if (type.value === 'T') {
+    return brutoSum.value - percentSum.value - taxSum.value
+  } else {
+    return brutoSum.value - percentSum.value - taxSum.value
+  }
+})
+
+const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
 function checkValues () {
   if (price.value === '') price.value = 0
@@ -32,18 +54,6 @@ function checkValues () {
   if (meal.value === '') meal.value = 0
   if (km.value === '') km.value = 0
   if (sum.value === '') sum.value = 0
-
-  console.log('fullDaySum', fullDaySum.value)
-  console.log('partialDaySum', partialDaySum.value)
-  console.log('mealSum', mealSum.value)
-  console.log('kmSum', kmSum.value)
-  console.log('addonSum', addonSum.value)
-
-  console.log('fee', fee.value)
-  console.log('netoSum', netoSum.value)
-  console.log('brutoSum', brutoSum.value)
-  console.log('percentSum', percentSum.value)
-  console.log('sum', sum.value)
 }
 </script>
 
