@@ -120,12 +120,20 @@ function checkValues () {
       />
     </div>
     <div class="p-8 border border-slate-200 flex flex-col justify-center items-center">
-      <div class="text-center text-2xl text-purple-500 text-bold uppercase">
-        Tasu kontole
-      </div>
-      <div class="text-center text-[3rem] text-purple-900 font-extrabold">
-        {{ sum.toLocaleString('et', { minimumFractionDigits: 2 }) }}
-        <span class="text-purple-500 font-normal">€</span>
+      <template v-if="brutoSum > 0">
+        <div class="text-center text-2xl text-purple-500 text-bold uppercase">
+          Tasu kontole
+        </div>
+        <div class="text-center text-[3rem] text-purple-900 font-extrabold">
+          {{ sum.toLocaleString('et', { minimumFractionDigits: 2 }) }}
+          <span class="text-purple-500 font-normal">€</span>
+        </div>
+      </template>
+      <div
+        v-else
+        class="text-center text-xl text-red-700 text-bold"
+      >
+        Esitatud andmed on valed!
       </div>
     </div>
   </form>
