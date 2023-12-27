@@ -125,11 +125,13 @@ function submitForm (params) {
       <form-input
         id="phone"
         label="Telefoninumber"
+        required
         type="tel"
       />
       <form-input
         id="address"
         label="Aadress"
+        required
       />
       <form-input
         id="vero-number"
@@ -162,7 +164,6 @@ function submitForm (params) {
       <form-input
         id="file-kuluauanne"
         label="Kuluauanne"
-        required
         type="file"
         info="Laadi alla [näidisfail](/doc/matkalasku-ja-kululomake.xls)"
       />
