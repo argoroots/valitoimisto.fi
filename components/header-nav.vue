@@ -72,3 +72,9 @@ const mobileMenuOpen = ref(false)
     </Dialog>
   </header>
 </template>
+
+<style scoped>
+a {
+  @apply no-underline;
+}
+</style>

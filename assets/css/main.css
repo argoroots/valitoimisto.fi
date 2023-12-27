@@ -32,6 +32,10 @@ p {
   @apply last-of-type:mb-0;
 }
 
+a {
+  @apply underline;
+}
+
 table {
   @apply w-full;
   @apply mt-6;

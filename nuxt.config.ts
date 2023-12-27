@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    documentDriven: true
+    documentDriven: true,
+    markdown: {
+      anchorLinks: false
+    }
   },
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },

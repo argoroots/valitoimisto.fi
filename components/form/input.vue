@@ -1,5 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import { marked } from 'marked'
+import { InformationCircleIcon } from '@heroicons/vue/24/outline'
+
 const props = defineProps({
   modelValue: { type: [String, Number], default: '' },
   id: { type: String, required: true },
@@ -7,7 +10,8 @@ const props = defineProps({
   type: { type: String, default: 'text' },
   autofocus: { type: Boolean, default: false },
   rows: { type: Number, default: 3 },
-  options: { type: Array, default: () => [] }
+  options: { type: Array, default: () => [] },
+  info: { type: String, default: '' }
 })
 
 const emit = defineEmits([
@@ -24,6 +28,8 @@ const text = computed({
     emit('update:modelValue', val)
   }
 })
+
+const infoHtml = computed(() => marked.parse(props.info || ''))
 </script>
 
 <template>
@@ -74,6 +80,13 @@ const text = computed({
       @blur="emit('blur')"
     >
     <label :for="id">{{ label }}</label>
+    <div
+      v-if="info"
+      class="mt-2 text-xs inline-flex text-slate-700"
+    >
+      <InformationCircleIcon class="size-4 mr-1" aria-hidden="true" />
+      <span v-html="infoHtml" />
+    </div>
   </div>
 </template>
 

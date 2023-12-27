@@ -52,6 +52,12 @@ function submitForm (params) {
         id="price"
         label="Töö hind kokku mis summas arve esitada"
         type="number"
+        min="1000"
+      />
+      <form-input
+        id="price"
+        label="Maksetähtaeg päevades"
+        type="number"
       />
       <form-input
         id="full-day-allowance"
@@ -128,9 +134,16 @@ function submitForm (params) {
         label="Panga BIC"
       />
       <form-input
-        id="file"
+        id="file-vero"
         label="Verokaart"
         type="file"
+        info="PDF failina"
+      />
+      <form-input
+        id="file-kuluauanne"
+        label="Kuluauanne"
+        type="file"
+        info="Laadi alla [näidisfail](/doc/matkalasku-ja-kululomake.xls)"
       />
       <form-input
         id="info"
