@@ -55,7 +55,7 @@ function submitForm (params) {
         min="1000"
       />
       <form-input
-        id="price"
+        id="payment-term"
         label="Maksetähtaeg päevades"
         type="number"
       />
