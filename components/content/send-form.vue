@@ -39,6 +39,7 @@ function submitForm (params) {
       <form-input
         id="company-y"
         label="Äriühingu y-tunnus"
+        required
       />
       <form-input
         id="ocject-number"
@@ -47,36 +48,46 @@ function submitForm (params) {
       <form-input
         id="description"
         label="Töö kirjeldus ja selgitus"
+        required
       />
       <form-input
         id="price"
         label="Töö hind kokku mis summas arve esitada"
-        type="number"
         min="1000"
+        required
+        type="number"
+        info="Minimaalselt 1000€"
       />
       <form-input
         id="payment-term"
         label="Maksetähtaeg päevades"
+        min="0"
+        required
         type="number"
       />
       <form-input
         id="full-day-allowance"
         label="Kokopäiväraha (48,00€)"
+        min="0"
         type="number"
+        value="0"
       />
       <form-input
         id="partial-day-allowance"
         label="Osapäiväraha (22,00€)"
+        min="0"
         type="number"
       />
       <form-input
         id="meal-compensation"
         label="Aterikorvaus (12,00€)"
+        min="0"
         type="number"
       />
       <form-input
         id="km"
         label="Kilometrikorvaus (0,53€ / km)"
+        min="0"
         type="number"
       />
     </div>
@@ -98,15 +109,18 @@ function submitForm (params) {
       <form-input
         id="first-name"
         label="Eesnimi"
+        required
       />
       <form-input
         id="last-name"
         label="Perekonnanimi"
+        required
       />
       <form-input
         id="e-mail"
         label="E-mail"
         type="email"
+        required
       />
       <form-input
         id="phone"
@@ -120,28 +134,35 @@ function submitForm (params) {
       <form-input
         id="vero-number"
         label="Veronumber"
+        required
       />
       <form-input
         id="id-number"
         label="Henkilötunnus"
+        required
       />
       <form-input
         id="iban"
         label="Panga kontonumber"
+        required
       />
       <form-input
         id="bic"
         label="Panga BIC"
+        required
       />
       <form-input
         id="file-vero"
+        accept="application/pdf"
         label="Verokaart"
+        required
         type="file"
         info="PDF failina"
       />
       <form-input
         id="file-kuluauanne"
         label="Kuluauanne"
+        required
         type="file"
         info="Laadi alla [näidisfail](/doc/matkalasku-ja-kululomake.xls)"
       />

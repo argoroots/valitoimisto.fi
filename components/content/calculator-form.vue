@@ -47,14 +47,13 @@ const netoSum = computed(() => {
 const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
 function checkValues () {
-  if (price.value === '') price.value = 1000
-  if (price.value < 1000) price.value = 1000
-  if (percent.value === '') percent.value = 0
-  if (fullDay.value === '') fullDay.value = 0
-  if (partialDay.value === '') partialDay.value = 0
-  if (meal.value === '') meal.value = 0
-  if (km.value === '') km.value = 0
-  if (sum.value === '') sum.value = 0
+  if (price.value === '' || price.value < 1000) price.value = 1000
+  if (percent.value === '' || percent.value < 0) percent.value = 0
+  if (fullDay.value === '' || fullDay.value < 0) fullDay.value = 0
+  if (partialDay.value === '' || partialDay.value < 0) partialDay.value = 0
+  if (meal.value === '' || meal.value < 0) meal.value = 0
+  if (km.value === '' || km.value < 0) km.value = 0
+  if (sum.value === '' || sum.value < 0) sum.value = 0
 }
 </script>
 
@@ -79,6 +78,7 @@ function checkValues () {
         id="price"
         v-model="price"
         label="Töö hind kokku mis summas arve esitada"
+        min="1000"
         type="number"
         @blur="checkValues"
       />
@@ -87,6 +87,7 @@ function checkValues () {
         id="percent"
         v-model="percent"
         label="Ennakkovero prosentti"
+        min="0"
         type="number"
         @blur="checkValues"
       />
@@ -95,6 +96,7 @@ function checkValues () {
         id="full-day-allowance"
         v-model="fullDay"
         label="Kokopäiväraha (48,00€)"
+        min="0"
         type="number"
         @blur="checkValues"
       />
@@ -102,6 +104,7 @@ function checkValues () {
         id="partial-day-allowance"
         v-model="partialDay"
         label="Osapäiväraha (22,00€)"
+        min="0"
         type="number"
         @blur="checkValues"
       />
@@ -109,6 +112,7 @@ function checkValues () {
         id="meal-compensation"
         v-model="meal"
         label="Aterikorvaus (12,00€)"
+        min="0"
         type="number"
         @blur="checkValues"
       />
@@ -116,6 +120,7 @@ function checkValues () {
         id="km"
         v-model="km"
         label="Kilometrikorvaus (0,53€ / km)"
+        min="0"
         type="number"
         @blur="checkValues"
       />

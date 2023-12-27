@@ -11,7 +11,11 @@ const props = defineProps({
   autofocus: { type: Boolean, default: false },
   rows: { type: Number, default: 3 },
   options: { type: Array, default: () => [] },
-  info: { type: String, default: '' }
+  info: { type: String, default: '' },
+  min: { type: [String, Number], default: '' },
+  max: { type: [String, Number], default: '' },
+  accept: { type: String, default: '' },
+  required: { type: Boolean, default: false }
 })
 
 const emit = defineEmits([
@@ -42,8 +46,8 @@ const infoHtml = computed(() => marked.parse(props.info || ''))
       :autofocus="autofocus"
       :name="id"
       :placeholder="label"
+      :required="required"
       :rows="rows"
-      :type="type"
       @blur="emit('blur')"
     />
 
@@ -55,6 +59,7 @@ const infoHtml = computed(() => marked.parse(props.info || ''))
       :autofocus="autofocus"
       :name="id"
       :placeholder="label"
+      :required="required"
       :type="type"
       @blur="emit('blur')"
     >
@@ -73,13 +78,17 @@ const infoHtml = computed(() => marked.parse(props.info || ''))
       :id="id"
       v-model="text"
       class="peer"
+      :accept="accept"
       :autofocus="autofocus"
+      :max="max"
+      :min="min"
       :name="id"
       :placeholder="label"
+      :required="required"
       :type="type"
       @blur="emit('blur')"
     >
-    <label :for="id">{{ label }}</label>
+    <label :for="id">{{ required ? `${label} *` : label }}</label>
     <div
       v-if="info"
       class="mt-2 text-xs inline-flex text-slate-700"
