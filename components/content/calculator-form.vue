@@ -47,7 +47,8 @@ const netoSum = computed(() => {
 const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
 function checkValues () {
-  if (price.value === '') price.value = 0
+  if (price.value === '') price.value = 1000
+  if (price.value < 1000) price.value = 1000
   if (percent.value === '') percent.value = 0
   if (fullDay.value === '') fullDay.value = 0
   if (partialDay.value === '') partialDay.value = 0
