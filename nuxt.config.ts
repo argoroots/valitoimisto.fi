@@ -12,18 +12,46 @@ export default defineNuxtConfig({
     documentDriven: true,
     markdown: {
       anchorLinks: false
+    },
+    navigation: {
+      fields: ['paths']
     }
   },
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   i18n: {
-    vueI18n: './i18n.config.ts'
+    defaultLocale: 'et',
+    lazy: true,
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.js'
+      },
+      {
+        code: 'et',
+        name: 'Eesti keel',
+        file: 'et.js'
+      },
+      {
+        code: 'fi',
+        name: 'Suomi',
+        file: 'fi.js'
+      }
+    ]
   },
-  modules: ['@nuxt/content'],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxt/content'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     }
+  },
+  routeRules: {
+    '/': { redirect: '/et' }
   }
 })

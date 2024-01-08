@@ -1,8 +1,13 @@
 <script setup>
+const { locale } = useI18n()
+const { page } = useContent()
 
-onMounted(() => {
-  const { page, toc } = useContent()
-  console.log(page.value)
+locale.value = page.value?._dir || page.value?._path.split('/').at(1) || 'et'
+
+useHead({
+  htmlAttrs: {
+    lang: locale.value
+  }
 })
 </script>
 
