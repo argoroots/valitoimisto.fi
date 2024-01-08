@@ -2,6 +2,8 @@
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
+const { t } = useI18n()
+
 const mobileMenuOpen = ref(false)
 </script>
 
@@ -9,23 +11,24 @@ const mobileMenuOpen = ref(false)
   <header class="bg-white sticky top-0 border-b border-purple-100 z-10">
     <nav class="container mx-auto flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="/" class="text-lg text-purple-900 font-extrabold">
-          Välitoimisto Oy
+        <a :href="t('navHomeUrl')" class="text-lg text-purple-900 font-extrabold">
+          {{ t('navHome') }}
         </a>
       </div>
 
       <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
-        <a href="/calculator" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
-          Kalkulaator
+        <a :href="t('navCalculatorUrl')" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
+          {{ t('navCalculator') }}
         </a>
-        <a href="/accounting" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
-          Raamatupidamisteenus
+        <a :href="t('navBookkeepingUrl')" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
+          {{ t('navBookkeeping') }}
         </a>
-        <a href="/contact" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
-          Kontakt
+        <a :href="t('navContactUrl')" class="text-sm font-semibold text-slate-900 hover:text-purple-900">
+          {{ t('navContact') }}
         </a>
-        <a href="/send" class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900">
-          Saada andmed
+
+        <a :href="t('navSendDataUrl')" class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900">
+          {{ t('navSendData') }}
         </a>
       </div>
 
