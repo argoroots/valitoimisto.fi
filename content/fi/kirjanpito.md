@@ -8,20 +8,20 @@ paths:
   fi: /fi/kirjanpito
 ---
 
-# Raamatupidamisteenus
+# Kirjanpito
 
-Pakume usaldusväärset ja professionaalset raamatupidamisteenust Soomes juba üle 10 aasta
-Paberivaba raamatupidamine on tänapäev. Aastate pikkune bilansivõimeline kogemus tagab teile personaalse lähenemise tulenevalt teie äri eripärast koos konsultatsiooniga. Aastate jooksul oleme kasutanud erinevaid raamatupidamisprogramme ning tänaseks jõudnud Fennoa raamatupidamistarkarani. Mainitud tarkvarad pakuvad võimalust oma raamatupidamine hoida täiesti paberivaba. Samuti same Fennoa vahendusel tagada omavahelise digitaalse andmete vahetuse ja kiire ning operatiivse andmetele ligipääsu igal ajal ja igal pool, kus on kättesaadav internet levi.Maksa ainult selle eest, mida vajad. Tunnitasu alusel müüdavad teenuseid arvestatakse 15 minuti täpsusega ning kõigi konsultatsioonide ja eritööde maht lepitakse eelnevalt kliendiga kokku.
+Olemme tarjonneet luotettavia ja ammattitaitoisia kirjanpitopalveluja Suomessa jo yli 10 vuoden ajan
 
-Meie raamatupidamisteenus on suunatud ettevõtetele, kelle jaoks põhitöökohaga raamatupidaja tööle võtmine ei ole otstarbekas. Koostöö võib kujuneda erialasest nõustamisest kuni tervikliku finantslahenduseni.
+Paperiton kirjanpito on tämän päivän tapa. Vuosien kokemus taseen laatimisesta takaa yksilöllisen lähestymistavan, joka perustuu liiketoimintasi erityispiirteisiin, sekä neuvontapalvelun. Vuosien varrella olemme käyttäneet erilaisia kirjanpito-ohjelmistoja, ja nyt olemme päätyneet Fennoa-kirjanpito-ohjelmaan. Nämä ohjelmistot tarjoavat mahdollisuuden tehdä kirjanpito täysin paperittomana. Fennoan avulla voimme myös varmistaa keskenämme digitaalisen tiedonvaihdon ja nopean ja toimivan pääsyn tietoihin milloin tahansa ja missä tahansa, missä internet-yhteys on käytettävissä. Maksa vain siitä, mitä tarvitset. Tuntiveloituksella myytävät palvelut laskutetaan 15 minuutin tarkkuudella ja kaikkien konsultaatioiden ja erityistöiden laajuudesta sovitaan asiakkaan kanssa etukäteen.
 
-- Raamatupidamistenus
-- Varasema raamatupidamise korrastamine
-- Palgaarvestus
-- Majandusaasta aruannete koostamine
-- Konsultatsioon ja maksualane nõustamine
-- Ettevõtte alustamine
+Kirjanpitopalvelumme on suunnattu yrityksille, joilla ei ole tarkoituksenmukaista palkata kokopäiväistä kirjanpitäjää. Yhteistyö voi muodostua erikoisalan neuvonnasta aina kattavaan rahoitusratkaisuun asti.
+- Kirjanpitopalvelu
+- Aiemman kirjanpidon järjestykseen saattaminen
+- Palkanlaskenta
+- Tilinpäätösten laatiminen
+- Konsultointi ja veroneuvonta
+- Yrityksen käynnistäminen
 
-Teenindame teid soome, eesti ja vene keeles.
+Palvelemme sinua suomeksi, viroksi ja venäjäksi.
 
-Küsi pakkumist ja hinda <kirjanpito@valitoimisto.fi>.
+Pyydä tarjous ja hinta <kirjanpito@valitoimisto.fi>.

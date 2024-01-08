@@ -1,5 +1,5 @@
 ---
-title: Saada andmed
+title: Lähetä tiedot
 description: 'meta description of the page'
 layout: default
 paths:
@@ -8,6 +8,6 @@ paths:
   fi: /fi/laheta-tiedot
 ---
 
-# Saada andmed
+# Lähetä tiedot
 
 ::send-form

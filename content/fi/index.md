@@ -11,36 +11,34 @@ paths:
 ::hero
 # Esita oma töö eest arve - äriühingut omamata
 
-Meie äriühingu vahendusel saad esitada oma tehtud töö eest arve ja seda äriühingut ise omamata. Kui soovid hoida kokku nii aega kui ka raha, mis kulub äriühingu asutamisele, mitmele vajaminevale kindlustustele, igakuisele raamatupidamisteenusele ja lõpuks ka likvideerimisele siis meie teenus on just sulle.
+Voit laskuttaa työsi Suomessa yhtiömme kautta omistamatta yhtiötä. Jos haluat säästää aikaa ja rahaa, joka kuluisi yrityksen perustamiseen, useisiin tarvittaviin vakuutuksiin, kuukausittaiseen kirjanpitopalveluun ja lopulta selvitystilaan, palvelumme on sinua varten.
 
-Kui su töö ei kesta kaua või on hooajaline, kui lihtsalt proovid elu ja tööd Soomes või sootuks teed erinevaid töid ja kaootilisel ajal siis oleme just sinu jaoks.
+Jos työsi ei kestä pitkään ja/tai on kausiluonteista, jos vain kokeilet elämää ja työtä Suomessa tai jos teet erilaisia töitä ja kaoottisena aikana, me olemme sinua varten.
 ::
 
 ::pricing
 ## Teenuse hind
 
-Me pakume „Kevytyrittäjä“ teenust neile, kes vajavad tõesti lühiajalise või väksema töö eest arve esitamist võimalust. Samas saate meie kaudu esitada müügiarve oma töö eest nii, et  ei pea äriühingut omama ning maksame välja teile tasu, kus teie palgalt on tasutud kõik tavalise töölepingu alusel ettenähtud maksud nagu TYEL kindlustus ehk õige palgatöölise pensionikindlustus jne.
+Tarjoamme "Kevytyrittäjä"-palvelua niille, jotka tarvitsevat mahdollisuuden laskuttaa lyhyestä tai pienemmästä työstä ilman, että heidän pitäisi omistaa omaa yritystä, ja maksamme sinulle palkkion, jossa palkastasi on maksettu kaikki normaalin työsopimuksen perusteella edellytetyt verot, kuten TYEL-vakuutus eli oikean palkkatyöntekijän eläkevakuutus jne. Kevytyrittäjänä sinun tulee hoitaa itse suurin osa vakuutusvelvoitteista, joten suosittelemme lukemaan ehtomme ja tutustumaan voimassa oleviin lakeihin muulla tavoin.
 
-Meie teenuse hind on 4% igal teie töö eest esitatud ja laekunud arvelt (käibemaksuta summalt) ja meie teenus sisaldab seda, et teeme teie esitatud andmete alusel ühe müügiarve ja võtame vastu ühe ostuarve (mis on seotud antud töö ja teenusega) ning ühte palgaarvestust ning kõik selleks vajaminevad ülekanded.
+Välityspalvelumme hinta on 4 % jokaisesta työstäsi esitetystä ja maksetusta laskusta (arvonlisäverottomasta summasta) ja palvelumme sisältää yhden myyntilaskun laatimisen ja yhden ostolaskun vastaanottamisen (kyseiseen työhön ja palveluun liittyen) antamiesi tietojen perusteella sekä yhden palkanlaskennan ja kaikki siinä tarvittavat tilisiirrot.
 
-Lisateenusena saame juurde pakkuda rohkem kui ühte palgaarvestust, enam ostuarveid ja nende ülekandeid.
+Lisäpalveluna voimme tarjota useamman kuin yhden palkanlaskennan, useamman kuin yhden ostolaskun ja niiden pankkisiirrot.
 
-| Teenus | Hind |
+| | |
 | --- | --: |
-| Palgaarvestus brutopalk | **40**€ / tk |
-| Palgaarvestus netopalk | **50**€ / tk |
-| Ostuarve lisamine koos panga ülekandega | **50**€ / tk |
+| Palkanlaskennan bruttopalkka pankkisiirtoineen | **40**€ / kpl |
+| Palkkalaskelman nettopalkka, pankkisiirtoineen | **50**€ / kpl |
+| Ostolaskun lisääminen pankkisiirtoineen | **50**€ / kpl |
 ::
 
 ::how
 ## Kuidas see toimib?
 
-Palgaarvestus ja palga väljamakset me ei teosta ennem kui oleme saanud kõik vajaminevad isikuandmed ja kehtiv verokaardi.
+Palkanlaskentaa ja palkanmaksua emme suorita ennen kuin olemme saaneet kaikki tarvittavat henkilötiedot ja voimassa olevan tuloveron ennakonpidätystodistuksen.
 
-Müügiarvet me ei koosta kui meile esitatud ja saadetud selgitused ning andmed on puudulikud ja ebatäpsed, samuti ka kahtluse korral, et antud teenust ja tööd tegelikkuses ei toimunud.
+Emme laadi myyntilaskua, jos meille esitetyt ja lähetetyt selvitykset ja tiedot ovat puutteellisia tai epätarkkoja tai jos on epäilyksiä siitä, että kyseistä palvelua ja työtä ei ole todellisuudessa suoritettu.
 
-Me ei vastuta teie poolt teostatud tööde kvaliteedi üle ja ei korva teie pool tekitatud kahjusid.
-Me ei osale ja ei ole osalised ei suusõnalises ega kirjalikes teile tööd pakkuvate füüsiliste- ja juriidiliste isikute lepingutes osapoolena.
-
-Meie teenusega ei teki meil omavahel püsivat ega mittepüsivat kokkuleppelist töö- ja koostöölepingulist suhet, iga meie kaudu ja meie vahendusel  saadetud arve ning arvestatud palgaarvestus on meie teenuse sisu. Antud teenust pakume ainult teile ja mitte teie tööde tellijale.
+Emme vastaa suorittamasi työn laadusta emmekä korvaa sinun aiheuttamiasi vahinkoja.
+Emme osallistu emmekä ole osapuolena missään suullisessa tai kirjallisessa sopimuksessa minkään luonnollisen tai oikeushenkilön kanssa, joka tarjoaa sinulle työtä.
 ::

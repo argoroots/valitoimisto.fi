@@ -8,8 +8,8 @@ paths:
   fi: /fi/laskin
 ---
 
-# Kalkulaator
+# Laskin
 
-*Kalkulaator on indikatiivne ja annab esialgse vastuse teiepoolt sisestatud andmetega. Täpse arvutuse teeb raamatupidaja ja seda teiepoolt saadetud ja saadud isikuandmete alusel ning olenevalt vanusest ja maksuprotsentidest võib kalkulaatoris saadud summa erineda.*
+*Laskin on suuntaa antava ja antaa alustavan vastauksen syöttämiesi tietojen perusteella. Tarkan laskelman tekee kirjanpitäjä, ja se perustuu lähettämiisi ja saatuihin henkilötietoihin, ja laskurilla saatu summa voi vaihdella iän ja veroprosenttien mukaan.*
 
 :calculator-form
