@@ -9,6 +9,10 @@ useHead({
     lang: locale.value
   }
 })
+
+onMounted(() => {
+  console.log(page.value)
+})
 </script>
 
 <template>

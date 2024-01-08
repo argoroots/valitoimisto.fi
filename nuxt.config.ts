@@ -18,24 +18,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   i18n: {
-    langDir: 'locales',
-    locales: [
-      {
-        code: 'en',
-        name: 'English',
-        file: 'en.js'
-      },
-      {
-        code: 'et',
-        name: 'Eesti keel',
-        file: 'et.js'
-      },
-      {
-        code: 'fi',
-        name: 'Suomi',
-        file: 'fi.js'
-      }
-    ],
     vueI18n: './i18n.config.ts'
   },
   modules: [
@@ -49,5 +31,5 @@ export default defineNuxtConfig({
     }
   },
   spaLoadingTemplate: false,
-  ssr: false
+  ssr: true
 })

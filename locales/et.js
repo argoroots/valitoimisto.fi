@@ -1,14 +1,14 @@
 export default {
   navHome: 'Välitoimisto Oy',
-  navHomeUrl: '/et',
+  navHomeUrl: '/',
   navCalculator: 'Kalkulaator',
-  navCalculatorUrl: '/et/kalkulaator',
+  navCalculatorUrl: '/kalkulaator',
   navBookkeeping: 'Raamatupidamisteenus',
-  navBookkeepingUrl: '/et/raamatupidamine',
+  navBookkeepingUrl: '/raamatupidamine',
   navContact: 'Kontakt',
-  navContactUrl: '/et/kontakt',
+  navContactUrl: '/kontakt',
   navSendData: 'Saada andmed',
-  navSendDataUrl: '/et/saada-andmed',
+  navSendDataUrl: '/saada-andmed',
   navTerms: 'Tingimused',
-  navTermsUrl: '/et/tingimused'
+  navTermsUrl: '/tingimused'
 }
