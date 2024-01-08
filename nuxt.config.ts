@@ -9,19 +9,15 @@ export default defineNuxtConfig({
     }
   },
   content: {
+    defaultLocale: 'et',
     documentDriven: true,
+    locales: ['en', 'et', 'fi'],
     markdown: {
       anchorLinks: false
-    },
-    navigation: {
-      fields: ['paths']
     }
   },
   css: ['~/assets/css/main.css'],
-  devtools: { enabled: true },
   i18n: {
-    defaultLocale: 'et',
-    lazy: true,
     langDir: 'locales',
     locales: [
       {
@@ -39,7 +35,8 @@ export default defineNuxtConfig({
         name: 'Suomi',
         file: 'fi.js'
       }
-    ]
+    ],
+    vueI18n: './i18n.config.ts'
   },
   modules: [
     '@nuxtjs/i18n',
@@ -51,7 +48,6 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  routeRules: {
-    '/': { redirect: '/et' }
-  }
+  spaLoadingTemplate: false,
+  ssr: false
 })
