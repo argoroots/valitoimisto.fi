@@ -1,6 +1,11 @@
 ---
-title: Raamatupidamisteenus
+title: Kirjanpito
 description: 'meta description of the page'
+layout: default
+paths:
+  en: /en/bookkeeping
+  et: /raamatupidamine
+  fi: /fi/kirjanpito
 ---
 
 # Raamatupidamisteenus

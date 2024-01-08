@@ -1,6 +1,11 @@
 ---
-title: Kalkulaator
+title: Laskin
 description: 'meta description of the page'
+layout: default
+paths:
+  en: /en/calculator
+  et: /kalkulaator
+  fi: /fi/laskin
 ---
 
 # Kalkulaator

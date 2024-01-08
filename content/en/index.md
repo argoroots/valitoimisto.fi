@@ -2,6 +2,10 @@
 title:
 description: 'meta description of the page'
 layout: wide
+paths:
+  en: /en
+  et: /
+  fi: /fi
 ---
 
 ::hero

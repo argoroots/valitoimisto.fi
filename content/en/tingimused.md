@@ -1,6 +1,11 @@
 ---
 title: Tingimused
 description: 'meta description of the page'
+layout: default
+paths:
+  en: /en/terms
+  et: /tingimused
+  fi: /fi/sopimusehdot
 ---
 
 # Üldised raamatupidamisteenuse koostöö lepingu tingimused
