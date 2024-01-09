@@ -9,9 +9,9 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    defaultLocale: 'et',
+    // defaultLocale: 'et',
     documentDriven: true,
-    locales: ['en', 'et', 'fi'],
+    // locales: ['en', 'et', 'fi'],
     markdown: {
       anchorLinks: false
     }
