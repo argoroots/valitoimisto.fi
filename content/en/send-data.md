@@ -4,7 +4,7 @@ description: 'meta description of the page'
 layout: default
 paths:
   en: /en/send-data
-  et: /et/saada-andmed
+  et: /saada-andmed
   fi: /fi/laheta-tiedot
 ---
 

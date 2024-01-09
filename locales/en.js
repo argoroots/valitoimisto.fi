@@ -8,7 +8,7 @@ export default {
   navContact: 'Contact',
   navContactUrl: '/en/contact',
   navSendData: 'send',
-  navSendDataUrl: '/en/send',
+  navSendDataUrl: '/en/send-data',
   navTerms: 'Terms of Service',
-  navTermsUrl: '/en/tos'
+  navTermsUrl: '/en/terms'
 }

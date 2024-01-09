@@ -4,7 +4,7 @@ description: 'meta description of the page'
 layout: default
 paths:
   en: /en/contact
-  et: /et/kontakt
+  et: /kontakt
   fi: /fi/yhteystiedot
 ---
 
