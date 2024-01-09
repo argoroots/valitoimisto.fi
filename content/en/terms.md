@@ -4,7 +4,7 @@ description: 'meta description of the page'
 layout: default
 paths:
   en: /en/terms
-  et: /tingimused
+  et: /et/tingimused
   fi: /fi/sopimusehdot
 ---
 

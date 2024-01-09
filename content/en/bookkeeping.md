@@ -4,7 +4,7 @@ description: 'meta description of the page'
 layout: default
 paths:
   en: /en/bookkeeping
-  et: /raamatupidamine
+  et: /et/raamatupidamine
   fi: /fi/kirjanpito
 ---
 

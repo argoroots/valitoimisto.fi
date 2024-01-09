@@ -4,7 +4,7 @@ description: 'meta description of the page'
 layout: default
 paths:
   en: /en/calculator
-  et: /kalkulaator
+  et: /et/kalkulaator
   fi: /fi/laskin
 ---
 
