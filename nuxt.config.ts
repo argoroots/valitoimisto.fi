@@ -22,8 +22,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/content',
-    '@nuxthq/studio'
+    '@nuxt/content'
   ],
   postcss: {
     plugins: {
