@@ -2,16 +2,12 @@
 const { locale } = useI18n()
 const { page } = useContent()
 
-locale.value = page.value?._dir || page.value?._path.split('/').at(-2) || 'et'
+locale.value = page.value?._dir || page.value?._file.split('/').filter(x => x.length === 2).at(0) || 'et'
 
 useHead({
   htmlAttrs: {
     lang: locale.value
   }
-})
-
-onMounted(() => {
-  console.log(page.value)
 })
 </script>
 
