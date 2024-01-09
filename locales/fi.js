@@ -10,5 +10,9 @@ export default {
   navSendData: 'Lähetä tiedot',
   navSendDataUrl: '/fi/laheta-tiedot',
   navTerms: 'Yleiset sopimusehdot',
-  navTermsUrl: '/fi/sopimusehdot'
+  navTermsUrl: '/fi/sopimusehdot',
+
+  localeEN: 'English',
+  localeFI: 'Suomi',
+  localeET: 'Eesti keel'
 }

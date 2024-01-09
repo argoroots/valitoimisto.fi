@@ -10,5 +10,9 @@ export default {
   navSendData: 'Saada andmed',
   navSendDataUrl: '/saada-andmed',
   navTerms: 'Tingimused',
-  navTermsUrl: '/tingimused'
+  navTermsUrl: '/tingimused',
+
+  localeEN: 'English',
+  localeFI: 'Suomi',
+  localeET: 'Eesti keel'
 }

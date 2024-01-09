@@ -2,7 +2,7 @@
 const { locale } = useI18n()
 const { page } = useContent()
 
-locale.value = page.value?._dir || page.value?._path.split('/').at(1) || 'et'
+locale.value = page.value?._dir || page.value?._path.split('/').at(-2) || 'et'
 
 useHead({
   htmlAttrs: {

@@ -7,8 +7,12 @@ export default {
   navBookkeepingUrl: '/en/bookkeeping',
   navContact: 'Contact',
   navContactUrl: '/en/contact',
-  navSendData: 'send',
+  navSendData: 'Send Data',
   navSendDataUrl: '/en/send-data',
   navTerms: 'Terms of Service',
-  navTermsUrl: '/en/terms'
+  navTermsUrl: '/en/terms',
+
+  localeEN: 'English',
+  localeFI: 'Suomi',
+  localeET: 'Eesti keel'
 }
