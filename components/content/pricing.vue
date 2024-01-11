@@ -6,8 +6,6 @@
 
 <style scoped>
 :deep(table) {
-  @apply w-full;
-  @apply mt-6;
   @apply bg-white;
   @apply table-auto;
 }
