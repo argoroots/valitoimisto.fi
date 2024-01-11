@@ -1,5 +1,5 @@
 ---
-title: Tingimused
+title: Üldised lepingutingimused
 description: 'meta description of the page'
 layout: default
 paths:
@@ -28,4 +28,4 @@ paths:
 1. Teenusepakkujal on õigus ühepoolselt keelduda, kui klient esitab tasu arvestamiseks ja ülekandmiseks valeandmeid või puudulikke andmeid, sh kellegi kolmanda isiku pangaandmed.
 1. Teenusepakkuja on kohustatud raha edasi kandma vaid kliendi enda arveldusarvele.
 1. Teenusepakkujal on õigus ühepoolselt keelduda teenuse pakkumisest ka juhtudel, kui klient ei suuda anda selgitusi ja puuduolevat infot mõistliku aja jooksul.
-
+1. Klient teostab töid meie arveteenuse vahendusel ja seda käsunduslepingu alusel.

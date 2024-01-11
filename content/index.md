@@ -11,31 +11,31 @@ paths:
 ::hero
 # Esita oma töö eest arve - äriühingut omamata
 
-Meie äriühingu vahendusel saad esitada oma tehtud töö eest arve ja seda äriühingut ise omamata. Kui soovid hoida kokku nii aega kui ka raha, mis kulub äriühingu asutamisele, mitmele vajaminevale kindlustustele, igakuisele raamatupidamisteenusele ja lõpuks ka likvideerimisele siis meie teenus on just sulle.
+Meie äriühingu vahendusel saate esitada oma Soomes tehtud töö eest arve ja seda äriühingut ise omamata. Kui soovid hoida kokku nii aega kui ka raha, mis kulub äriühingu asutamisele, mitmele vajaminevale kindlustustele, igakuisele raamatupidamisteenusele ja lõpuks ka likvideerimisele siis meie teenus on just sulle.
 
-Kui su töö ei kesta kaua või on hooajaline, kui lihtsalt proovid elu ja tööd Soomes või sootuks teed erinevaid töid ja kaootilisel ajal siis oleme just sinu jaoks.
+Kui su töö ei kesta kaua ja/või on hooajaline, kui lihtsalt proovid elu ja tööd Soomes või sootuks teed erinevaid töid ja kaootilisel ajal siis oleme just sinu jaoks.
 ::
 
 ::pricing
 ## Teenuse hind
 
-Me pakume „Kevytyrittäjä“ teenust neile, kes vajavad tõesti lühiajalise või väksema töö eest arve esitamist võimalust. Samas saate meie kaudu esitada müügiarve oma töö eest nii, et  ei pea äriühingut omama ning maksame välja teile tasu, kus teie palgalt on tasutud kõik tavalise töölepingu alusel ettenähtud maksud nagu TYEL kindlustus ehk õige palgatöölise pensionikindlustus jne.
+Me pakume „Kerge ettevõtja“ teenust neile, kes vajavad lühiajalise või väiksema töö eest arve esitamist võimalust nii, et  ei pea äriühingut omama ning maksame välja teile tasu, kus teie palgalt on tasutud kõik tavalise töölepingu alusel ettenähtud maksud nagu TYEL kindlustus ehk õige palgatöölise pensionikindlustus jms. Kerge ettevõtjana on enamus kindlustuste kohustusi jüts teie enda kanda, seega soovitame lugeda meie tingimusi ja tutvuda muudmoodi kehtivate seadustega.
 
-Meie teenuse hind on 4% igal teie töö eest esitatud ja laekunud arvelt (käibemaksuta summalt) ja meie teenus sisaldab seda, et teeme teie esitatud andmete alusel ühe müügiarve ja võtame vastu ühe ostuarve (mis on seotud antud töö ja teenusega) ning ühte palgaarvestust ning kõik selleks vajaminevad ülekanded.
+Meie vahendusteenuse hind on 4% igalt teie töö eest esitatud ja laekunud arvelt (käibemaksuta summalt) ja meie teenus sisaldab seda, et teeme teie esitatud andmete alusel ühe müügiarve ja võtame vastu ühe ostuarve (mis on seotud antud töö ja teenusega) ning ühte palgaarvestust ning kõik selleks vajaminevad ülekanded.
 
-Lisateenusena saame juurde pakkuda rohkem kui ühte palgaarvestust, enam ostuarveid ja nende ülekandeid.
+Lisateenusena saame juurde pakkuda rohkem kui ühte palgaarvestust, rohkem kui ühte ostuarvet ja nende ülekandeid.
 
-| Teenus | Hind |
+| | |
 | --- | --: |
-| Palgaarvestus brutopalk | **40**€ / tk |
-| Palgaarvestus netopalk | **50**€ / tk |
-| Ostuarve lisamine koos panga ülekandega | **50**€ / tk |
+| Palgaarvestus brutopalk, koos ülekandega | **40**€ / tk |
+| Palgaarvestus netopalk, koos ülekandega | **50**€ / tk |
+| Ostuarve lisamine koos ülekandega | **50**€ / tk |
 ::
 
 ::how
 ## Kuidas see toimib?
 
-Palgaarvestus ja palga väljamakset me ei teosta ennem kui oleme saanud kõik vajaminevad isikuandmed ja kehtiv verokaardi.
+Palgaarvestus ja palga väljamakset me ei teosta ennem kui oleme saanud kõik vajaminevad isikuandmed ja kehtiv tulumaksu kinnipidamise tõend.
 
 Müügiarvet me ei koosta kui meile esitatud ja saadetud selgitused ning andmed on puudulikud ja ebatäpsed, samuti ka kahtluse korral, et antud teenust ja tööd tegelikkuses ei toimunud.
 
