@@ -14,25 +14,40 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
   <header class="bg-white sticky top-0 border-b border-purple-100 z-10">
     <nav class="container mx-auto flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a :href="t('navHomeUrl')" class="text-lg text-purple-900 font-extrabold">
+        <nuxt-link
+          class="text-lg text-purple-900 font-extrabold"
+          :to="t('navHomeUrl')"
+        >
           {{ t('navHome') }}
-        </a>
+        </nuxt-link>
       </div>
 
       <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
-        <a :href="t('navCalculatorUrl')" class="nav">
+        <nuxt-link
+          class="nav"
+          :to="t('navCalculatorUrl')"
+        >
           {{ t('navCalculator') }}
-        </a>
-        <a :href="t('navBookkeepingUrl')" class="nav">
+        </nuxt-link>
+        <nuxt-link
+          class="nav"
+          :to="t('navBookkeepingUrl')"
+        >
           {{ t('navBookkeeping') }}
-        </a>
-        <a :href="t('navContactUrl')" class="nav">
+        </nuxt-link>
+        <nuxt-link
+          class="nav"
+          :to="t('navContactUrl')"
+        >
           {{ t('navContact') }}
-        </a>
+        </nuxt-link>
 
-        <a :href="t('navSendDataUrl')" class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900">
+        <nuxt-link
+          class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900"
+          :to="t('navSendDataUrl')"
+        >
           {{ t('navSendData') }}
-        </a>
+        </nuxt-link>
 
         <Menu as="div" class="relative inline-block text-left">
           <div>
@@ -62,15 +77,15 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
                   :key="path.key"
                   v-slot="{ active }"
                 >
-                  <a
+                  <nuxt-link
                     class="group flex w-full items-center rounded-md px-2 py-2 text-sm whitespace-nowrap"
-                    :href="path.value"
                     :class="[
                       active ? 'bg-violet-500 text-white' : 'text-gray-900'
                     ]"
+                    :to="path.value"
                   >
                     {{ t(`locale${path.key.toUpperCase()}`) }}
-                  </a>
+                  </nuxt-link>
                 </MenuItem>
               </div>
             </menuitems>
@@ -99,46 +114,46 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-slate-500/10">
             <div class="space-y-2 py-6">
-              <a
+              <nuxt-link
                 class="nav-mobile sm:hidden"
-                :href="t('navHomeUrl')"
+                :to="t('navHomeUrl')"
               >
                 {{ t('navHome') }}
-              </a>
-              <a
+              </nuxt-link>
+              <nuxt-link
                 class="nav-mobile"
-                :href="t('navCalculatorUrl')"
+                :to="t('navCalculatorUrl')"
               >
                 {{ t('navCalculator') }}
-              </a>
-              <a
+              </nuxt-link>
+              <nuxt-link
                 class="nav-mobile"
-                :href="t('navBookkeepingUrl')"
+                :to="t('navBookkeepingUrl')"
               >
                 {{ t('navBookkeeping') }}
-              </a>
-              <a
+              </nuxt-link>
+              <nuxt-link
                 class="nav-mobile"
-                :href="t('navContactUrl')"
+                :to="t('navContactUrl')"
               >
                 {{ t('navContact') }}
-              </a>
-              <a
+              </nuxt-link>
+              <nuxt-link
                 class="nav-mobile"
-                :href="t('navSendDataUrl')"
+                :to="t('navSendDataUrl')"
               >
                 {{ t('navSendData') }}
-              </a>
+              </nuxt-link>
             </div>
             <div class="space-y-2 py-6">
-              <a
+              <nuxt-link
                 v-for="path in paths"
                 :key="path.key"
                 class="nav-mobile !font-normal"
-                :href="path.value"
+                :to="path.value"
               >
                 {{ t(`locale${path.key.toUpperCase()}`) }}
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>

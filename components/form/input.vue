@@ -60,7 +60,6 @@ const infoHtml = computed(() => marked.parse(props.info || ''))
       :name="id"
       :placeholder="label"
       :required="required"
-      :type="type"
       @blur="emit('blur')"
     >
       <option
