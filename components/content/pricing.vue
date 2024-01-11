@@ -9,20 +9,6 @@
   @apply w-full;
   @apply mt-6;
   @apply bg-white;
-}
-
-:deep(tr) {
-  @apply border-b;
-  @apply border-slate-200;
-  @apply last-of-type:border-b-0
-}
-
-:deep(th) {
-  @apply hidden;
-}
-
-:deep(td) {
-  @apply py-2;
-  @apply px-4;
+  @apply table-auto;
 }
 </style>
