@@ -30,6 +30,5 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  spaLoadingTemplate: false,
-  ssr: true
+  spaLoadingTemplate: false
 })
