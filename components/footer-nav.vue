@@ -10,8 +10,6 @@ const { t } = useI18n()
       </a>
 
       <a class="hover:underline hover:text-purple-900" :href="t('navTermsUrl')">{{ t('navTerms') }}</a>
-      <a class="hidden" href="/en">EN</a>
-      <a class="hidden" href="/fi">FI</a>
     </div>
   </footer>
 </template>
