@@ -31,5 +31,5 @@ export default defineNuxtConfig({
     }
   },
   spaLoadingTemplate: false,
-  ssr: false
+  ssr: true
 })
