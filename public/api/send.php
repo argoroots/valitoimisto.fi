@@ -44,10 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     // Send email
     if (mail($toEmail, $subject, $body, $headers)) {
-      header("Location: /send?result=ok");
+      header("Location: /saada-andmed?result=ok");
       exit();
     } else {
-      header("Location: /send?result=error");
+      header("Location: /saada-andmed?result=error");
       exit();
     }
 } else {
