@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $subject = "Form submission";
-    $toEmail = "argo@roots.ee";
+    $toEmail = "asiakaspalvelu@valitoimisto.fi";
     $fromEmail = "valitoimisto.fi <web@valitoimisto.fi>";
     $boundary = md5(uniqid(rand(), true));
 
