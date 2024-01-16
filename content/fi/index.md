@@ -9,7 +9,7 @@ paths:
 ---
 
 ::hero
-# Esita oma töö eest arve - äriühingut omamata
+# Lähettää työstä lasku - ilman yritystä
 
 Voit laskuttaa työsi Suomessa yhtiömme kautta omistamatta yhtiötä. Jos haluat säästää aikaa ja rahaa, joka kuluisi yrityksen perustamiseen, useisiin tarvittaviin vakuutuksiin, kuukausittaiseen kirjanpitopalveluun ja lopulta selvitystilaan, palvelumme on sinua varten.
 
@@ -17,7 +17,7 @@ Jos työsi ei kestä pitkään ja/tai on kausiluonteista, jos vain kokeilet elä
 ::
 
 ::pricing
-## Teenuse hind
+## Palvelun hinta
 
 Tarjoamme "Kevytyrittäjä"-palvelua niille, jotka tarvitsevat mahdollisuuden laskuttaa lyhyestä tai pienemmästä työstä ilman, että heidän pitäisi omistaa omaa yritystä, ja maksamme sinulle palkkion, jossa palkastasi on maksettu kaikki normaalin työsopimuksen perusteella edellytetyt verot, kuten TYEL-vakuutus eli oikean palkkatyöntekijän eläkevakuutus jne. Kevytyrittäjänä sinun tulee hoitaa itse suurin osa vakuutusvelvoitteista, joten suosittelemme lukemaan ehtomme ja tutustumaan voimassa oleviin lakeihin muulla tavoin.
 
@@ -33,7 +33,7 @@ Lisäpalveluna voimme tarjota useamman kuin yhden palkanlaskennan, useamman kuin
 ::
 
 ::how
-## Kuidas see toimib?
+## Miten see toimi?
 
 Palkanlaskentaa ja palkanmaksua emme suorita ennen kuin olemme saaneet kaikki tarvittavat henkilötiedot ja voimassa olevan tuloveron ennakonpidätystodistuksen.
 

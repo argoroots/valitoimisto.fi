@@ -1,10 +1,11 @@
 <script setup>
 const route = useRoute()
+const { t } = useI18n()
 
 const formRef = ref()
 const typeOptions = ref([
-  { value: 'Töötaja', label: 'Töötaja' },
-  { value: 'Kergettevõtja', label: 'Kergettevõtja' }
+  { value: t('formTypeEmployee'), label: t('formTypeEmployee') },
+  { value: t('formTypeLightEntrepreneur'), label: t('formTypeLightEntrepreneur') }
 ])
 
 const isSubmitted = computed(() => route.query.result === 'ok')
@@ -27,66 +28,66 @@ function submitForm (params) {
   >
     <div class="flex flex-col gap-6">
       <h3 class="text-xl font-bold text-purple-800">
-        Arve saaja
+        {{ t('formInvoiceRecipient') }}
       </h3>
 
       <form-input
         id="company-name"
         autofocus
-        label="Äriühingu nimi"
+        :label="t('formCompanyName')"
         required
       />
       <form-input
         id="company-y"
-        label="Äriühingu y-tunnus"
+        :label="t('formCompanyY')"
         required
       />
       <form-input
         id="ocject-number"
-        label="Objekti number/aadress"
+        :label="t('formObjectNumberAddress')"
       />
       <form-input
         id="description"
-        label="Töö kirjeldus ja selgitus"
+        :label="t('formJobDescription')"
         required
       />
       <form-input
         id="price"
-        label="Töö hind kokku mis summas arve esitada"
+        :label="t('formPrice')"
         min="1000"
         required
         type="number"
-        info="Minimaalselt 1000€"
+        :info="t('formPriceInfo')"
       />
       <form-input
         id="payment-term"
-        label="Maksetähtaeg päevades"
+        :label="t('formPaymentDeadlineInDays')"
         min="0"
         required
         type="number"
       />
       <form-input
         id="full-day-allowance"
-        label="Kokopäiväraha (48,00€)"
+        :label="t('formAllowanceFullDay')"
         min="0"
         type="number"
         value="0"
       />
       <form-input
         id="partial-day-allowance"
-        label="Osapäiväraha (22,00€)"
+        :label="t('formAllowancePartialDay')"
         min="0"
         type="number"
       />
       <form-input
         id="meal-compensation"
-        label="Aterikorvaus (12,00€)"
+        :label="t('formAllowanceMeal')"
         min="0"
         type="number"
       />
       <form-input
         id="km"
-        label="Kilometrikorvaus (0,53€ / km)"
+        :label="t('formAllowanceKm')"
         min="0"
         type="number"
       />
@@ -94,13 +95,13 @@ function submitForm (params) {
 
     <div class="flex flex-col gap-6">
       <h3 class="text-xl font-bold text-purple-800">
-        Palga saaja
+        {{ t('formSalaryRecipient') }}
       </h3>
 
       <form-input
         id="type"
         autofocus
-        label="Tüüp"
+        :label="t('formType')"
         required
         type="select"
         :options="typeOptions"
@@ -108,68 +109,68 @@ function submitForm (params) {
       />
       <form-input
         id="first-name"
-        label="Eesnimi"
+        :label="t('formFirstName')"
         required
       />
       <form-input
         id="last-name"
-        label="Perekonnanimi"
+        :label="t('formLastName')"
         required
       />
       <form-input
         id="e-mail"
-        label="E-mail"
+        :label="t('formEmail')"
         type="email"
         required
       />
       <form-input
         id="phone"
-        label="Telefoninumber"
+        :label="t('formPhone')"
         required
         type="tel"
       />
       <form-input
         id="address"
-        label="Aadress"
+        :label="t('formAddress')"
         required
       />
       <form-input
         id="vero-number"
-        label="Veronumber"
+        :label="t('formTaxNumber')"
         required
       />
       <form-input
         id="id-number"
-        label="Henkilötunnus"
+        :label="t('formPersonIdc')"
         required
       />
       <form-input
         id="iban"
-        label="Panga kontonumber"
+        :label="t('formBankIBAN')"
         required
       />
       <form-input
         id="bic"
-        label="Panga BIC"
+        :label="t('formBankBIC')"
         required
       />
       <form-input
         id="file-vero"
         accept="application/pdf"
-        label="Verokaart"
+        :label="t('formTaxCertificate')"
         required
         type="file"
-        info="PDF failina"
+        :info="t('formTaxCertificateInfo')"
       />
       <form-input
         id="file-kuluauanne"
-        label="Kuluauanne"
+        :label="t('formExpenseReport')"
         type="file"
-        info="Laadi alla [näidisfail](/doc/matkalasku-ja-kululomake.xls)"
+        :info="t('formExpenseReportInfo')"
       />
       <form-input
         id="info"
-        label="Muu selgitus"
+        :label="t('formOtherInfo')"
         type="textarea"
         :rows="5"
       />
@@ -177,7 +178,7 @@ function submitForm (params) {
 
     <div class="col-span-full text-center">
       <form-button class="md:max-w-lg" type="submit">
-        Saada
+        {{ t('formSend') }}
       </form-button>
     </div>
   </form>
@@ -187,10 +188,10 @@ function submitForm (params) {
     class="mt-28 flex flex-col items-center justify-center gap-2"
   >
     <h2 class="text-2xl font-bold text-purple-800">
-      Täname!
+      {{ t('formSuccess') }}
     </h2>
     <p class="text-lg text-center">
-      Teie andmed on edastatud ja me võtame teiega ühendust.
+      {{ t('formSuccessMessage') }}
     </p>
   </div>
 
@@ -199,10 +200,10 @@ function submitForm (params) {
     class="mt-28 flex flex-col items-center justify-center gap-2"
   >
     <h2 class="text-2xl font-bold text-red-800">
-      Viga!
+      {{ t('formError') }}
     </h2>
     <p class="text-lg text-center">
-      Teie andmete edastamisel tekkis viga. Palun proovige uuesti.
+      {{ t('formErrorMessage') }}
     </p>
   </div>
 </template>

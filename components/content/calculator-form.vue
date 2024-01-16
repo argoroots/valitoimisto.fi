@@ -1,4 +1,6 @@
 <script setup>
+const { t } = useI18n()
+
 const type = ref('T')
 const price = ref(1000)
 const percent = ref(0)
@@ -8,15 +10,15 @@ const meal = ref(0)
 const km = ref(0)
 
 const typeOptions = ref([
-  { value: 'T', label: 'Töötaja' },
-  { value: 'K', label: 'Kergettevõtja' }
+  { value: 'T', label: t('formTypeEmployee') },
+  { value: 'K', label: t('formTypeLightEntrepreneur') }
 ])
 
 const fee = computed(() => price.value * 0.04)
-const fullDaySum = computed(() => fullDay.value * 48)
-const partialDaySum = computed(() => partialDay.value * 22)
-const mealSum = computed(() => meal.value * 12)
-const kmSum = computed(() => km.value * 0.53)
+const fullDaySum = computed(() => fullDay.value * 51)
+const partialDaySum = computed(() => partialDay.value * 24)
+const mealSum = computed(() => meal.value * 12.75)
+const kmSum = computed(() => km.value * 0.57)
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value)
 const percentSum = computed(() => brutoSum.value * percent.value / 100)
 
@@ -68,7 +70,7 @@ function checkValues () {
         id="type"
         v-model="type"
         autofocus
-        label="Tüüp"
+        :label="t('formType')"
         required
         type="select"
         :options="typeOptions"
@@ -77,7 +79,7 @@ function checkValues () {
       <form-input
         id="price"
         v-model="price"
-        label="Töö hind kokku mis summas arve esitada"
+        :label="t('formPrice')"
         min="1000"
         type="number"
         @blur="checkValues"
@@ -86,7 +88,7 @@ function checkValues () {
       <form-input
         id="percent"
         v-model="percent"
-        label="Ennakkovero prosentti"
+        :label="t('formPercent')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -95,7 +97,7 @@ function checkValues () {
       <form-input
         id="full-day-allowance"
         v-model="fullDay"
-        label="Kokopäiväraha (48,00€)"
+        :label="t('formAllowanceFullDay')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -103,7 +105,7 @@ function checkValues () {
       <form-input
         id="partial-day-allowance"
         v-model="partialDay"
-        label="Osapäiväraha (22,00€)"
+        :label="t('formAllowancePartialDay')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -111,7 +113,7 @@ function checkValues () {
       <form-input
         id="meal-compensation"
         v-model="meal"
-        label="Aterikorvaus (12,00€)"
+        :label="t('formAllowanceMeal')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -119,7 +121,7 @@ function checkValues () {
       <form-input
         id="km"
         v-model="km"
-        label="Kilometrikorvaus (0,53€ / km)"
+        :label="t('formAllowanceKm')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -128,7 +130,7 @@ function checkValues () {
     <div class="p-8 border border-slate-200 flex flex-col justify-center items-center">
       <template v-if="brutoSum > 0">
         <div class="text-center text-2xl text-purple-500 text-bold uppercase">
-          Tasu kontole
+          {{ t('formCalculatorSum') }}
         </div>
         <div class="text-center text-[3rem] text-purple-900 font-extrabold">
           {{ sum.toLocaleString('et', { minimumFractionDigits: 2 }) }}
@@ -139,7 +141,7 @@ function checkValues () {
         v-else
         class="text-center text-xl text-red-700 text-bold"
       >
-        Esitatud andmed on valed!
+        {{ t('formCalculatorError') }}
       </div>
     </div>
   </form>
