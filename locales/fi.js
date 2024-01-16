@@ -44,7 +44,7 @@ export default {
   formServicePrice: 'Palvelun hinta',
   formTaxCertificate: 'Verokaart',
   formTaxCertificateInfo: 'Pdf-tiedostona',
-  formTaxNumber: 'Maksunumber',
+  formTaxNumber: 'Veronumber',
   formType: 'Tyyppi',
   formTypeEmployee: 'Työntekijä',
   formTypeLightEntrepreneur: 'Kevytyrittäjä',

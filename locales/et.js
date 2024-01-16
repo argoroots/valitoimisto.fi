@@ -44,7 +44,7 @@ export default {
   formServicePrice: 'Teenuse hind',
   formTaxCertificate: 'Tulumaksukaart',
   formTaxCertificateInfo: 'PDF failina',
-  formTaxNumber: 'Veronumber',
+  formTaxNumber: 'Maksunumber',
   formType: 'Tüüp',
   formTypeEmployee: 'Töötaja',
   formTypeLightEntrepreneur: 'Kergettevõtja',
