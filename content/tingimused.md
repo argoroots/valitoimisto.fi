@@ -29,3 +29,4 @@ paths:
 1. Teenusepakkuja on kohustatud raha edasi kandma vaid kliendi enda arveldusarvele.
 1. Teenusepakkujal on õigus ühepoolselt keelduda teenuse pakkumisest ka juhtudel, kui klient ei suuda anda selgitusi ja puuduolevat infot mõistliku aja jooksul.
 1. Klient teostab töid meie arveteenuse vahendusel ja seda käsunduslepingu alusel.
+1. Maksauvabad palga lisad arvestatakse ja makstakse välja ainult korrektselt täidetud ja allkirjastatud kuluaruande (alla laetav meie kodulehelt “Saada andmed”) alusel.

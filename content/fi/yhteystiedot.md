@@ -8,7 +8,7 @@ paths:
   fi: /fi/yhteystiedot
 ---
 
-# Kontakt
+# Yhteystiedot
 
 | Välitoimisto Oy | |
 | --: | --- |
