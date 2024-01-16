@@ -39,7 +39,7 @@ export default {
   formPersonIdc: 'Isikukood',
   formPhone: 'Telefoninumber',
   formPrice: 'Töö hind kokku mis summas arve esitada',
-  formPriceInfo: 'Minimaalselt 1000€',
+  formPriceInfo: 'Vähemalt 1000€',
   formSalaryRecipient: 'Palga saaja',
   formServicePrice: 'Teenuse hind',
   formTaxCertificate: 'Tulumaksukaart',
