@@ -3,7 +3,7 @@ title: Üldised lepingutingimused
 description: 'meta description of the page'
 layout: default
 paths:
-  en: /en/terms
+  # en: /en/terms
   et: /tingimused
   fi: /fi/sopimusehdot
 ---

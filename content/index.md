@@ -3,7 +3,7 @@ title:
 description: 'meta description of the page'
 layout: wide
 paths:
-  en: /en
+  # en: /en
   et: /
   fi: /fi
 ---
