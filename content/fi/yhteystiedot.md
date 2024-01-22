@@ -32,7 +32,7 @@ paths:
 ![](/img/elo.png)
 ![](/img/fennoa.png)
 ![](/img/if.png)
-![](/img/vahvimmat.png)
+![](/img/asiakastieto.png)
 ![](/img/vastuu.png)
 ![](/img/vero.png)
 ::
