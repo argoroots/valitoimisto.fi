@@ -32,9 +32,9 @@ const brutoSum = computed(() => {
 
 const taxSum = computed(() => {
   if (type.value === 'T') {
-    return brutoSum.value * 0.015 + brutoSum.value * 0.0715
+    return brutoSum.value * 0.0079 + brutoSum.value * 0.0715
   } else {
-    return brutoSum.value * 0.0153 + brutoSum.value * 0.0052
+    return brutoSum.value * 0.0116 + brutoSum.value * 0.0027
   }
 })
 
