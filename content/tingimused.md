@@ -22,7 +22,7 @@ paths:
 ## Üldised arveteenuse koostöö lepingu tingimused
 
 1. Kõigi teenusepakkuja osutavate teenuste suhtes kohandatakse esiteks Välitoimisto Oy edaspidi teenusepakkuja ja tellija vahelises sätestatud üldisi tingimusi. Lepinguga reguleerimata osas lähtutakse kehtivate õigusaktide sätetest.
-1. Teenusepakkujal on õigus ühepoolselt muut ja korrigeerida meie vahendusel esitatud müügiarvet vastavalt kehtivale seadusele ja töö iseloomule.
+1. Teenusepakkujal on õigus ühepoolselt muuta ja korrigeerida meie vahendusel esitatud müügiarvet vastavalt kehtivale seadusele ja töö iseloomule.
 1. Teenusepakkujal on õigus ühepoolselt keelduda teenuse pakkumisest kui on kahtlust maksukuriteole ja/või alust arvata, et tegelikult pole antud tööd sellisel kujul teostatud.
 1. Teenusepakkujal on õigus ühepoolselt keelduda, kui klient soovib ebareaalseid tähtaegasid.
 1. Teenusepakkujal on õigus ühepoolselt keelduda, kui klient esitab tasu arvestamiseks ja ülekandmiseks valeandmeid või puudulikke andmeid, sh kellegi kolmanda isiku pangaandmed.
