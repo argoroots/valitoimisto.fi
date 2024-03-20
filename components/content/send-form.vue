@@ -91,6 +91,23 @@ function submitForm (params) {
         min="0"
         type="number"
       />
+
+      <h3 class="text-xl font-bold text-purple-800">
+        {{ t('formPayroll') }}
+      </h3>
+
+      <form-input
+        id="payrollStart"
+        :label="t('formPayrollStart')"
+        required
+        type="date"
+      />
+      <form-input
+        id="payrollEnd"
+        :label="t('formPayrollEnd')"
+        required
+        type="date"
+      />
     </div>
 
     <div class="flex flex-col gap-6">
