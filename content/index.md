@@ -6,6 +6,7 @@ paths:
   en: /en
   et: /
   fi: /fi
+  ru: /ru
 ---
 
 ::hero

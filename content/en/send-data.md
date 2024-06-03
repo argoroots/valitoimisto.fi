@@ -6,6 +6,7 @@ paths:
   en: /en/send-data
   et: /saada-andmed
   fi: /fi/laheta-tiedot
+  ru: /ru/otpravit-dannye
 ---
 
 # Send data

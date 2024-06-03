@@ -15,6 +15,7 @@ export default {
   localeEN: 'English',
   localeFI: 'Suomi',
   localeET: 'Eesti keel',
+  localeRU: 'Русский',
 
   formAddress: 'Address',
   formAllowanceFullDay: 'Daily allowance (51€)',

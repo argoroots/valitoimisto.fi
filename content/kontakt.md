@@ -6,6 +6,7 @@ paths:
   en: /en/contact
   et: /kontakt
   fi: /fi/yhteystiedot
+  ru: /ru/kontakty
 ---
 
 # Kontakt

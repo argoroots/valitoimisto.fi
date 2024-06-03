@@ -15,6 +15,7 @@ export default {
   localeEN: 'English',
   localeFI: 'Suomi',
   localeET: 'Eesti keel',
+  localeRU: 'Русский',
 
   formAddress: 'Osoite',
   formAllowanceFullDay: 'Kokopäiväraha (51€)',

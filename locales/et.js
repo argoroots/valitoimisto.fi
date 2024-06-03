@@ -15,6 +15,7 @@ export default {
   localeEN: 'English',
   localeFI: 'Suomi',
   localeET: 'Eesti keel',
+  localeRU: 'Русский',
 
   formAddress: 'Aadress',
   formAllowanceFullDay: 'Lähetusraha - täispäev (51€)',

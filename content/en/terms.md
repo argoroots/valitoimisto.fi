@@ -6,6 +6,7 @@ paths:
   en: /en/terms
   et: /tingimused
   fi: /fi/sopimusehdot
+  ru: /ru/usloviya-ispolzovaniya
 ---
 
 # General terms and conditions of accounting service cooperation agreement

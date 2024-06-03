@@ -6,6 +6,7 @@ paths:
   en: /en/accounting
   et: /raamatupidamine
   fi: /fi/kirjanpito
+  ru: /ru/bukhgalterskiy-uchet
 ---
 
 # Kirjanpito

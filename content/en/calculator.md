@@ -6,6 +6,7 @@ paths:
   en: /en/calculator
   et: /kalkulaator
   fi: /fi/laskin
+  ru: /ru/kalkulyator
 ---
 
 # Calculator

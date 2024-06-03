@@ -1,5 +1,5 @@
 ---
-title: Lähetä tiedot
+title: Отправить данные
 description: 'meta description of the page'
 layout: default
 paths:
@@ -9,6 +9,6 @@ paths:
   ru: /ru/otpravit-dannye
 ---
 
-# Lähetä tiedot
+# Отправить данные
 
 ::send-form

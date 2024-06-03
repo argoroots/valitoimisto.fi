@@ -6,6 +6,7 @@ paths:
   en: /en
   et: /
   fi: /fi
+  ru: /ru
 ---
 
 ::hero
@@ -22,9 +23,8 @@ If your work isn’t time-consuming and/or is seasonal, if you’re just trying 
 We offer the Light Entrepreneur service for those who need to submit invoices for short-term or smaller jobs without having to own a company and we’ll pay you a remuneration, where all the taxes required under an ordinary employment contract, such as TYEL insurance, the right employee pension insurance, etc., have been paid on your salary. As a Light Entrepreneur, the payment for most insurances is your obligation, so we advise you to read our terms and conditions, and make sure you are familiar with effective law.
 
 The price of our intermediation service is 4% of each invoice submitted and received for your work (the amount excluding VAT), and our service includes issuing one sales invoice and receiving one purchase invoice (related to the given work and service) based on the information you provide, as well as one payroll and all the necessary transfers.
-As an supplementary service, we can offer additional payrolls, purchase invoices and their transfers.
 
-As an additional service, we can offer more than one payroll calculation, more purchase invoices and their transfers.
+As an supplementary service, we can offer additional payrolls, purchase invoices and their transfers.
 
 | Service | Price |
 | --- | --: |
