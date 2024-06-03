@@ -3,7 +3,7 @@ title: Kontakt
 description: 'meta description of the page'
 layout: default
 paths:
-  # en: /en/contact
+  en: /en/contact
   et: /kontakt
   fi: /fi/yhteystiedot
 ---

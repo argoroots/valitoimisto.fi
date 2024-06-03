@@ -1,5 +1,5 @@
 ---
-title: Kontakt
+title: Contact details
 description: 'meta description of the page'
 layout: default
 paths:
@@ -8,26 +8,26 @@ paths:
   fi: /fi/yhteystiedot
 ---
 
-# Kontakt
+# Contact details
 
 | Välitoimisto Oy | |
 | --: | --- |
-| **Aadress** | c/o Fin-Est Accounting Oy<br>Vilppulantie 10a lh. 1<br>00700 HELSINKI<br>Ala-Malmi (katutasossa) |
-| **Telefon** | +358 40 731 1994 |
+| **Address** | c/o Fin-Est Accounting Oy<br>Vilppulantie 10a lh. 1<br>00700 HELSINKI<br>Ala-Malmi (ground floor) |
+| **Telephone** | +358 40 731 1994 |
 | **E-mail** | asiakaspalvelu@valitoimisto.fi |
-| **Y-tunnus** | 3227308-9 |
-| **VAT nr** | FI32273089 |
+| **Company Code** | 3227308-9 |
+| **VAT No.** | FI32273089 |
 
 
-| E-arvete vastuvõtmine | |
+| Receipt of e-invoices | |
 | --: | --- |
-| **Verkkolaskuna** | 003732273089 |
-| **Verkkolaskujen välittäjä** | 003708599126 (OpenText) |
-| **Sähköpostitse  (pdf -laskut)** | valitoimisto@app.fennoa.com |
+| **E-invoice** | 003732273089 |
+| **E-invoice intermediary** | 003708599126 (OpenText) |
+| **By email (pdf -invoices)** | valitoimisto@app.fennoa.com |
 
 
 ::logos
-## Koostööpartnerid
+## Partners
 
 ![](/img/elo.png)
 ![](/img/fennoa.png)

@@ -3,7 +3,7 @@ title: Raamatupidamine
 description: 'meta description of the page'
 layout: default
 paths:
-  # en: /en/bookkeeping
+  en: /en/accounting
   et: /raamatupidamine
   fi: /fi/kirjanpito
 ---

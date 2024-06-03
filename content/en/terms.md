@@ -1,5 +1,5 @@
 ---
-title: Tingimused
+title: General terms and conditions of agreement
 description: 'meta description of the page'
 layout: default
 paths:
@@ -8,24 +8,24 @@ paths:
   fi: /fi/sopimusehdot
 ---
 
-# Üldised raamatupidamisteenuse koostöö lepingu tingimused
+# General terms and conditions of accounting service cooperation agreement
 
-1. Kõigi teenusepakkuja osutavate teenuste suhtes kohandatakse esiteks Välitoimisto Oy edaspidi teenusepakkuja ja tellija vahelises sätestatud üldisi tingimusi. Lepinguga reguleerimata osas lähtutakse kehtivate õigusaktide sätetest.
-1. Teenusepakkuja kohustub töötama profesionaalselt ning töö tellija tegevuse eripärast lähtuvalt ja heale raamatupidamistavale vastava hoolsusega. Teenusepakkujal on õigus kasutada tellimuse täitmiseks allhankijaid. Allhankijate kasutamise korral vastutab nende töö eest teenusepakkuja, nii nagu ta oleks töö ise teinud.
-1. Tellija on kohustatud looma teenusepakkujalele tingimused teenuse tõhusaks ja õigeaegseks täitmiseks, sealhulgas teavitama aegsasti kõigist olulistest asjaoludest, esitama kõik teenuse täitmiseks vajalikud dokumendid.
-1. Kumbki lepinguosaline ei tohi avaldada kolmandatele isikutele teavet teise lepinguosalise tegevuse, teenuste ja toodete kohta. See säte ei hõlma aga avalikku teavet, teise lepinuosalise nõusolekul avaldatud teavet ja õigusliku korralduse tagajärjel avaldatud teavet.
-1. Teenusepakkuja kõrvaldab oma vead või puudused tasuta ja mõistliku aja jooksul, tingimusel, et puudused ei tulene tellija või programmide ja portaalide vigadest. Tellija teavitab teenusepakkujat vigadest ja/või puudustest tõendaval viisil viivitamata, ent hiljemalt kaks (2) kuud pärast tellimuse täitmist.
-1. Tellija vastutab kõigi teenuspakkujale esitatud dokumentide ja arvete sisu ning tehingute/kaupade õigsuse ja oma ettevõtlusega seotuse eest. Teenusepakkujal puudub võimalus ja volitus kontollida teenuse tellija tehingute sisu ja toimumist.
-1. Teenusepakkuja hinnakiri, milles on sätestatud põhimäärad, mida kohaldatakse tellija teenuste suhtes, välja arvatud juhul, kui kohaldatakse kokkuleppehinda. Teenusepakkujal on õigus teenuste hinnakirja ühepoolselt muuta.
-1. Teenuse osautaja teenusepakkuja jätab endale õiguse tellijale teenust mitte osautada, kui eelneva arve alusel on tasu saamata ning tellija ei täida üldiseid lepingutingimusi.
+1. All services provided by the service provider are subject to the general terms and conditions stipulated in the agreement between the service provider and the customer. The provision of effective legislation are applied to the part not regulated by the agreement.
+1. The service provider undertakes to work professionally, according to the specificities of the customer’s activities and with the due diligence complying with generally accepted accounting principles. The service provider has the right to use subcontractors to fulfil orders. Where subcontractors are used, the service provider is responsible for their work as though they had carried out the work itself.
+1. The customer is obliged to create the conditions for the effective and timely performance of the service by the service provider, including notify in a timely manner of all important circumstances, submit all documents necessary for the performance of the service.
+1. Neither party may disclose information about the activities, services and products of the other party to third parties. However, this provision does not cover public information, information disclosed with the consent of the other party and information disclosed as a result of a legal order.
+1. The service provider will remedy its errors or defects free of charge and within a reasonable time, provided that the defects are not caused by the customer or the programs and portals. The customer must notify the service provider of any errors and/or defects in a verifiable manner without undue delay, but no later than two (2) months from the execution of the order.
+1. The customer is responsible for the content of all documents and invoices submitted to the service provider and for the accuracy of the transactions/goods and their connection to the customer’s business. The service provider does not have the possibility or authority to check the content and occurrence of the customer’s transactions.
+1. The service provider’s price list that stipulates the basic rates applicable to the customer’s services, except where an agreed price is applied. The service provider has the right to unilaterally change the price list for services.
+1. The service provider reserves the right not to provide the service to the customer if the payment due on the basis of the previous invoice has not been received and the customer does not comply with the general terms and conditions of the agreement.
 
-## Üldised arveteenuse koostöö lepingu tingimused
+## General terms and conditions of invoice service cooperation agreement
 
-1. Kõigi teenusepakkuja osutavate teenuste suhtes kohandatakse esiteks Välitoimisto Oy edaspidi teenusepakkuja ja tellija vahelises sätestatud üldisi tingimusi. Lepinguga reguleerimata osas lähtutakse kehtivate õigusaktide sätetest.
-1. Teenusepakkujal on õigus ühepoolselt muut ja korrigeerida meie vahendusel esitatud müügiarvet vastavalt kehtivale seadusele ja töö iseloomule.
-1. Teenusepakkujal on õigus ühepoolselt keelduda teenuse pakkumisest kui on kahtlust maksukuriteole ja/või alust arvata, et tegelikult pole antud tööd sellisel kujul teostatud.
-1. Teenusepakkujal on õigus ühepoolselt keelduda, kui klient soovib ebareaalseid tähtaegasid.
-1. Teenusepakkujal on õigus ühepoolselt keelduda, kui klient esitab tasu arvestamiseks ja ülekandmiseks valeandmeid või puudulikke andmeid, sh kellegi kolmanda isiku pangaandmed.
-1. Teenusepakkuja on kohustatud raha edasi kandma vaid kliendi enda arveldusarvele.
-1. Teenusepakkujal on õigus ühepoolselt keelduda teenuse pakkumisest ka juhtudel, kui klient ei suuda anda selgitusi ja puuduolevat infot mõistliku aja jooksul.
-
+1. All services provided by the service provider are subject to the general terms and conditions stipulated in the agreement between the service provider and the customer. The provision of effective legislation are applied to the part not regulated by the agreement.
+1. The service provider has the right to unilaterally amend and adjust the sales invoice submitted through us in accordance with applicable law and the nature of the work.
+1. The service provider has the right to unilaterally refuse to provide the service if there is a suspicion of tax fraud and/or there is reason to believe that the work has not in fact been carried out in this way.
+1. The service provider has the right to refuse unilaterally if the client requests unrealistic deadlines.
+1. The service provider has the right to refuse unilaterally if the client provides false or incomplete information for the purpose of calculating and transferring the remuneration, including the bank details of a third party.
+1. The service provider is only obliged to transfer the money to the client’s own bank account.
+1. The service provider also has the right to unilaterally refuse to provide the service in cases where the client is unable to provide explanations and missing information within a reasonable time.
+1. The client carries out the work through our invoicing service and on the basis of an authorisation contract.
