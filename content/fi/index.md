@@ -26,11 +26,11 @@ Välityspalvelumme hinta on 4 % jokaisesta työstäsi esitetystä ja maksetusta 
 
 Lisäpalveluna voimme tarjota useamman kuin yhden palkanlaskennan, useamman kuin yhden ostolaskun ja niiden pankkisiirrot.
 
-| | |
-| --- | --: |
-| Palkanlaskennan bruttopalkka pankkisiirtoineen | **40**€ / kpl |
-| Palkkalaskelman nettopalkka, pankkisiirtoineen | **50**€ / kpl |
-| Ostolaskun lisääminen pankkisiirtoineen | **50**€ / kpl |
+| |
+| --- |
+| Palkanlaskennan bruttopalkka pankkisiirtoineen |
+| Palkkalaskelman nettopalkka, pankkisiirtoineen |
+| Ostolaskun lisääminen pankkisiirtoineen |
 ::
 
 ::how

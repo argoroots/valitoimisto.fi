@@ -26,11 +26,11 @@ Meie vahendusteenuse hind on 4% igalt teie töö eest esitatud ja laekunud arvel
 
 Lisateenusena saame juurde pakkuda rohkem kui ühte palgaarvestust, rohkem kui ühte ostuarvet ja nende ülekandeid.
 
-| | |
-| --- | --: |
-| Palgaarvestus brutopalk, koos ülekandega | **40**€ / tk |
-| Palgaarvestus netopalk, koos ülekandega | **50**€ / tk |
-| Ostuarve lisamine koos ülekandega | **50**€ / tk |
+| |
+| --- |
+| Palgaarvestus brutopalk, koos ülekandega |
+| Palgaarvestus netopalk, koos ülekandega |
+| Ostuarve lisamine koos ülekandega |
 ::
 
 ::how

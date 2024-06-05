@@ -26,11 +26,11 @@ The price of our intermediation service is 4% of each invoice submitted and rece
 
 As an supplementary service, we can offer additional payrolls, purchase invoices and their transfers.
 
-| Service | Price |
-| --- | --: |
-| Payroll gross salary, with transfer | EUR **40** per invoice |
-| Payroll net salary, with transfer | EUR **50** per invoice |
-| Addition of purchase invoice with transfer | EUR **50** per invoice |
+| |
+| --- |
+| Payroll gross salary, with transfer |
+| Payroll net salary, with transfer |
+| Addition of purchase invoice with transfer |
 ::
 
 ::how
