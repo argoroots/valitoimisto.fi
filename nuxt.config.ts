@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+  compatibilityDate: '2024-07-29',
   content: {
     // defaultLocale: 'et',
     documentDriven: true,
