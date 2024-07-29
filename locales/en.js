@@ -43,7 +43,7 @@ export default {
   formPersonIdc: 'Personal identification code',
   formPhone: 'Phone number',
   formPrice: 'Total work cost for which to invoice',
-  formPriceInfo: 'Minimum 1000€',
+  formPriceInfo: 'Minimum 500€',
   formSalaryRecipient: 'Salary recipient',
   formServicePrice: 'Service price',
   formTaxCertificate: 'Income tax certificate',

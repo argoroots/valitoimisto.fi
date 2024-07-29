@@ -43,7 +43,7 @@ export default {
   formPersonIdc: 'Henkilötunnus',
   formPhone: 'Puhelinnumero',
   formPrice: 'Työn kokonaishinta, laskutettava summa',
-  formPriceInfo: 'Vähintään 1000€',
+  formPriceInfo: 'Vähintään 500€',
   formSalaryRecipient: 'Palkan saaja',
   formServicePrice: 'Palvelun hinta',
   formTaxCertificate: 'Verokaart',

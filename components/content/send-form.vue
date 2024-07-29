@@ -54,7 +54,7 @@ function submitForm (params) {
       <form-input
         id="price"
         :label="t('formPrice')"
-        min="1000"
+        min="500"
         required
         type="number"
         :info="t('formPriceInfo')"

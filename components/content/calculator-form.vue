@@ -2,7 +2,7 @@
 const { t } = useI18n()
 
 const type = ref('T')
-const price = ref(1000)
+const price = ref(500)
 const percent = ref(0)
 const fullDay = ref(0)
 const partialDay = ref(0)
@@ -49,7 +49,7 @@ const netoSum = computed(() => {
 const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
 function checkValues () {
-  if (price.value === '' || price.value < 1000) price.value = 1000
+  if (price.value === '' || price.value < 500) price.value = 500
   if (percent.value === '' || percent.value < 0) percent.value = 0
   if (fullDay.value === '' || fullDay.value < 0) fullDay.value = 0
   if (partialDay.value === '' || partialDay.value < 0) partialDay.value = 0
@@ -80,7 +80,7 @@ function checkValues () {
         id="price"
         v-model="price"
         :label="t('formPrice')"
-        min="1000"
+        min="500"
         type="number"
         @blur="checkValues"
       />

@@ -43,7 +43,7 @@ export default {
   formPersonIdc: 'Код личной идентификации',
   formPhone: 'Номер телефона',
   formPrice: 'Стоимость работы',
-  formPriceInfo: 'Минимум 1000€',
+  formPriceInfo: 'Минимум 500€',
   formSalaryRecipient: 'Получатель зарплаты',
   formServicePrice: 'Стоимость услуги',
   formTaxCertificate: 'Сертификат о подоходном налоге',
