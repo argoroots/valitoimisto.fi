@@ -24,7 +24,7 @@ const percentSum = computed(() => brutoSum.value * percent.value / 100)
 
 const brutoSum = computed(() => {
   if (type.value === 'T') {
-    return (price.value - fee.value - addonSum.value) / 1.2652
+    return (price.value - fee.value - addonSum.value) / 1.262
   } else {
     return price.value - fee.value - addonSum.value
   }
