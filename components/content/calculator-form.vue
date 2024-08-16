@@ -22,29 +22,17 @@ const kmSum = computed(() => km.value * 0.57)
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value)
 const percentSum = computed(() => brutoSum.value * percent.value / 100)
 
-const brutoSum = computed(() => {
-  if (type.value === 'T') {
-    return (price.value - fee.value - addonSum.value) / 1.262
-  } else {
-    return price.value - fee.value - addonSum.value
-  }
-})
+const brutoSum = computed(() => price.value - fee.value - addonSum.value)
 
 const taxSum = computed(() => {
   if (type.value === 'T') {
-    return brutoSum.value * 0.0079 + brutoSum.value * 0.0715
+    return brutoSum.value * 0.3274
   } else {
-    return brutoSum.value * 0.0116 + brutoSum.value * 0.0027
+    return brutoSum.value
   }
 })
 
-const netoSum = computed(() => {
-  if (type.value === 'T') {
-    return brutoSum.value - percentSum.value - taxSum.value
-  } else {
-    return brutoSum.value - percentSum.value - taxSum.value
-  }
-})
+const netoSum = computed(() => brutoSum.value - percentSum.value - taxSum.value)
 
 const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
@@ -55,7 +43,6 @@ function checkValues () {
   if (partialDay.value === '' || partialDay.value < 0) partialDay.value = 0
   if (meal.value === '' || meal.value < 0) meal.value = 0
   if (km.value === '' || km.value < 0) km.value = 0
-  if (sum.value === '' || sum.value < 0) sum.value = 0
 }
 </script>
 
