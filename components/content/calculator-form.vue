@@ -20,19 +20,25 @@ const partialDaySum = computed(() => partialDay.value * 24)
 const mealSum = computed(() => meal.value * 12.75)
 const kmSum = computed(() => km.value * 0.57)
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value)
-const percentSum = computed(() => brutoSum.value * percent.value / 100)
-
 const brutoSum = computed(() => price.value - fee.value - addonSum.value)
 
-const taxSum = computed(() => {
-  if (type.value === 'T') {
-    return brutoSum.value * 0.3274
-  } else {
-    return 0
-  }
-})
+const netoSum = computed(() => {
+  const bruto = brutoSum.value * (1 - 0.248)
+  const taxSum = bruto * 0.0794
+  const percentSum = bruto * 0.145
 
-const netoSum = computed(() => brutoSum.value - percentSum.value - taxSum.value)
+  // console.log('fee', fee.value)
+  // console.log('fullDaySum', fullDaySum.value)
+  // console.log('partialDaySum', partialDaySum.value)
+  // console.log('mealSum', mealSum.value)
+  // console.log('kmSum', kmSum.value)
+  // console.log('addonSum', addonSum.value)
+  // console.log('taxSum', taxSum)
+  // console.log('percentSum', percentSum)
+  // console.log('brutoSum', bruto - taxSum - percentSum)
+
+  return bruto - taxSum - percentSum
+})
 
 const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
 
