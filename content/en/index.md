@@ -10,11 +10,14 @@ paths:
 ---
 
 ::hero
-# Invoice for your work - without owning a company
+# Our company offers various services and labor hire
 
-Through our company, you can submit invoices for your work done in Finland without owning a company yourself. If you want to save both time and money on establishing a company, the multiple insurances required, monthly accounting services and liquidation, our service is for you.
+Does not offer the service of a light entrepreneur, but skills and quality.
 
-If your work isn’t time-consuming and/or is seasonal, if you’re just trying out living and working in Finland, or if you’re doing a variety of jobs during a chaotic time, then we’re for you.
+Our team consists of experienced skilled workers, with whose help you will achieve a high-quality result. We can find the specialist you need for every piece and/or hourly job you want.
+Companies that are looking for a long-term or short-term employee, then you have come to the right company's website.
+Workers who have high-quality professional skills and knowledge, then you have come to the right company's website.
+We bring together the need and skills and knowledge.
 ::
 
 ::pricing

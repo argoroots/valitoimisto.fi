@@ -15,24 +15,8 @@ const { t } = useI18n()
       </defs>
     </svg>
 
-    <div class="mx-auto max-w-3xl text-center lg:mx-0 py-12 lg:flex-auto lg:py-32 lg:text-left">
+    <div class="mx-auto max-w-4xl text-center lg:mx-0 py-12 lg:flex-auto lg:py-32 lg:text-left">
       <slot />
-      <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-        <nuxt-link
-          class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white no-underline"
-          :to="t('navSendDataUrl')"
-        >
-          {{ t('navSendData') }}
-        </nuxt-link>
-
-        <nuxt-link
-          class="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white no-underline"
-          :to="t('navCalculatorUrl')"
-        >
-          {{ t('navCalculator') }}
-          <span aria-hidden="true">→</span>
-        </nuxt-link>
-      </div>
     </div>
   </div>
 </template>

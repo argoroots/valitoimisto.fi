@@ -25,12 +25,6 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
       <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
         <nuxt-link
           class="nav"
-          :to="t('navCalculatorUrl')"
-        >
-          {{ t('navCalculator') }}
-        </nuxt-link>
-        <nuxt-link
-          class="nav"
           :to="t('navBookkeepingUrl')"
         >
           {{ t('navBookkeeping') }}
@@ -40,13 +34,6 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
           :to="t('navContactUrl')"
         >
           {{ t('navContact') }}
-        </nuxt-link>
-
-        <nuxt-link
-          class="px-3.5 py-2.5 rounded-md text-sm font-semibold text-white bg-purple-900"
-          :to="t('navSendDataUrl')"
-        >
-          {{ t('navSendData') }}
         </nuxt-link>
 
         <Menu as="div" class="relative inline-block text-left">

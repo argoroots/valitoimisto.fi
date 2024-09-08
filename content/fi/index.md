@@ -10,11 +10,14 @@ paths:
 ---
 
 ::hero
-# Lähettää työstä lasku - ilman yritystä
+# Yrityksemme tarjoaa erilaisia palveluita ja työvoimavuokrausta
 
-Voit laskuttaa työsi Suomessa yhtiömme kautta omistamatta yhtiötä. Jos haluat säästää aikaa ja rahaa, joka kuluisi yrityksen perustamiseen, useisiin tarvittaviin vakuutuksiin, kuukausittaiseen kirjanpitopalveluun ja lopulta selvitystilaan, palvelumme on sinua varten.
+Ei tarjoa kevytyrittäjän palvelua, vaan osaamista ja laatua.
 
-Jos työsi ei kestä pitkään ja/tai on kausiluonteista, jos vain kokeilet elämää ja työtä Suomessa tai jos teet erilaisia töitä ja kaoottisena aikana, me olemme sinua varten.
+Tiimimme koostuu kokeneista ammattitaitoisista työntekijöistä, joiden avulla saavutat laadukkaan lopputuloksen. Meiltä löydät tarvitsemasi asiantuntijan jokaiseen haluamaasi työhön ja/tai tuntityöhön.
+Yritykset, jotka etsivät pitkäaikaista tai lyhytaikaista työntekijää, olette tulleet oikean yrityksen verkkosivuille.
+Työntekijät, joilla on laadukkaat ammatilliset taidot ja tiedot, niin olet tullut oikean yrityksen verkkosivuille.
+Kokoamme yhteen tarpeet ja taidot ja tiedot.
 ::
 
 ::pricing
