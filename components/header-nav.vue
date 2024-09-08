@@ -108,7 +108,7 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
                 {{ t('navHome') }}
               </nuxt-link>
               <nuxt-link
-                class="nav-mobile"
+                class="hidden"
                 :to="t('navCalculatorUrl')"
               >
                 {{ t('navCalculator') }}
@@ -126,7 +126,7 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
                 {{ t('navContact') }}
               </nuxt-link>
               <nuxt-link
-                class="nav-mobile"
+                class="hidden"
                 :to="t('navSendDataUrl')"
               >
                 {{ t('navSendData') }}
