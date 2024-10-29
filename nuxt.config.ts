@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'et' },
+      meta: [
+        { name: 'keywords', content: 'raamatupidamine, raamatupidamisteenus, palgaarvestus, soomes, soome, majandusaaasta aruanne, kirjanpito, kirjanpitopalvelu, palkkalaskelma, tasekirja, laskutuspalvelu, arveteenus, tööjõurent, accounting, payroll, accounting service, bookkeeping, työvoimavuokraus, labor hire' }
+      ],
       script: [
         { src: 'https://plausible.io/js/script.js', 'data-domain': 'valitoimisto.fi', defer: true }
       ]
