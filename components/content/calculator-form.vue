@@ -55,7 +55,7 @@ function checkValues () {
 <template>
   <form
     action="/api/send.php"
-    class="my-8 grid grid-cols-1 md:grid-cols-2 gap-8"
+    class="my-8 grid grid-cols-1 gap-8 md:grid-cols-2"
     method="POST"
   >
     <div class="flex flex-col gap-6">
@@ -120,19 +120,19 @@ function checkValues () {
         @blur="checkValues"
       />
     </div>
-    <div class="p-8 border border-slate-200 flex flex-col justify-center items-center">
+    <div class="flex flex-col items-center justify-center border border-slate-200 p-8">
       <template v-if="brutoSum > 0">
-        <div class="text-center text-2xl text-purple-500 text-bold uppercase">
+        <div class="text-center text-2xl font-bold uppercase text-purple-500">
           {{ t('formCalculatorSum') }}
         </div>
-        <div class="text-center text-[3rem] text-purple-900 font-extrabold">
+        <div class="text-center text-[3rem] font-extrabold text-purple-900">
           {{ sum.toLocaleString('et', { minimumFractionDigits: 2 }) }}
-          <span class="text-purple-500 font-normal">€</span>
+          <span class="font-normal text-purple-500">€</span>
         </div>
       </template>
       <div
         v-else
-        class="text-center text-xl text-red-700 text-bold"
+        class="text-center text-xl font-bold text-red-700"
       >
         {{ t('formCalculatorError') }}
       </div>

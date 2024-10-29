@@ -3,17 +3,17 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <footer class="text-thin text-sm bg-white border-t border-purple-100">
-    <div class="container mx-auto p-6 lg:px-8 flex justify-between">
+  <footer class="border-t border-purple-100 bg-white text-sm font-thin">
+    <div class="container mx-auto flex justify-between p-6 lg:px-8">
       <nuxt-link
-        class="text-purple-900 font-medium no-underline"
+        class="font-medium text-purple-900 no-underline"
         :to="t('navHomeUrl')"
       >
         {{ t('navHome') }}
       </nuxt-link>
 
       <nuxt-link
-        class="hover:underline hover:text-purple-900"
+        class="hover:text-purple-900 hover:underline"
         :to="t('navTermsUrl')"
       >
         {{ t('navTerms') }}

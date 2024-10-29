@@ -90,9 +90,12 @@ const infoHtml = computed(() => marked.parse(props.info || ''))
     <label :for="id">{{ required ? `${label} *` : label }}</label>
     <div
       v-if="info"
-      class="mt-2 text-xs inline-flex text-slate-700"
+      class="mt-2 inline-flex text-xs text-slate-700"
     >
-      <InformationCircleIcon class="size-4 mr-1" aria-hidden="true" />
+      <InformationCircleIcon
+        class="mr-1 size-4"
+        aria-hidden="true"
+      />
       <span v-html="infoHtml" />
     </div>
   </div>

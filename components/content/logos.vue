@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="mt-28 bg-white border border-slate-200">
+  <div class="mt-28 border border-slate-200 bg-white">
     <slot />
   </div>
 </template>

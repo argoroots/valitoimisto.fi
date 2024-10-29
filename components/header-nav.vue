@@ -7,22 +7,25 @@ const { page } = useContent()
 
 const mobileMenuOpen = ref(false)
 
-const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, value]) => ({ key, value })).filter(x => x.key !== locale.value))
+const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, value]) => ({ key, value })).filter((x) => x.key !== locale.value))
 </script>
 
 <template>
-  <header class="bg-white sticky top-0 border-b border-purple-100 z-10">
-    <nav class="container mx-auto flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
+  <header class="sticky top-0 z-10 border-b border-purple-100 bg-white">
+    <nav
+      class="container mx-auto flex items-center justify-between px-6 py-3 lg:px-8"
+      aria-label="Global"
+    >
       <div class="flex lg:flex-1">
         <nuxt-link
-          class="text-lg text-purple-900 font-extrabold"
+          class="text-lg font-extrabold text-purple-900"
           :to="t('navHomeUrl')"
         >
           {{ t('navHome') }}
         </nuxt-link>
       </div>
 
-      <div class="hidden lg:flex lg:gap-x-12 lg:items-center">
+      <div class="hidden lg:flex lg:items-center lg:gap-x-12">
         <nuxt-link
           class="hidden"
           :to="t('navCalculatorUrl')"
@@ -49,7 +52,10 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
           {{ t('navSendData') }}
         </nuxt-link>
 
-        <Menu as="div" class="relative inline-block text-left">
+        <Menu
+          as="div"
+          class="relative inline-block text-left"
+        >
           <div>
             <MenuButton class="nav inline-flex uppercase">
               <LanguageIcon
@@ -71,16 +77,16 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
               class="absolute right-0 mt-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none"
               :unmount="false"
             >
-              <div class="px-1 py-1">
+              <div class="p-1">
                 <MenuItem
                   v-for="path in paths"
                   :key="path.key"
                   v-slot="{ active }"
                 >
                   <nuxt-link
-                    class="group flex w-full items-center rounded-md px-2 py-2 text-sm whitespace-nowrap"
+                    class="group flex w-full items-center whitespace-nowrap rounded-md p-2 text-sm"
                     :class="[
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                      active ? 'bg-violet-500 text-white' : 'text-gray-900',
                     ]"
                     :to="path.value"
                   >
@@ -94,21 +100,40 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
       </div>
 
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700" @click="mobileMenuOpen = true">
+        <button
+          type="button"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
+          @click="mobileMenuOpen = true"
+        >
           <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+          <Bars3Icon
+            class="size-6"
+            aria-hidden="true"
+          />
         </button>
       </div>
     </nav>
 
-    <Dialog as="div" class="lg:hidden" :open="mobileMenuOpen" @close="mobileMenuOpen = false">
+    <Dialog
+      as="div"
+      class="lg:hidden"
+      :open="mobileMenuOpen"
+      @close="mobileMenuOpen = false"
+    >
       <div class="fixed inset-0 z-10" />
 
-      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
+      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
         <div class="flex items-center justify-end">
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-slate-700" @click="mobileMenuOpen = false">
+          <button
+            type="button"
+            class="-m-2.5 rounded-md p-2.5 text-slate-700"
+            @click="mobileMenuOpen = false"
+          >
             <span class="sr-only">Close menu</span>
-            <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+            <XMarkIcon
+              class="size-6"
+              aria-hidden="true"
+            />
           </button>
         </div>
         <div class="mt-6 flow-root">

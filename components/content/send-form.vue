@@ -21,7 +21,7 @@ function submitForm (params) {
     v-if="!isSubmitted && !isError"
     ref="formRef"
     action="/api/send.php"
-    class="my-8 grid grid-cols-1 md:grid-cols-2 gap-8"
+    class="my-8 grid grid-cols-1 gap-8 md:grid-cols-2"
     enctype="multipart/form-data"
     method="POST"
     @submit.prevent="submitForm"
@@ -194,7 +194,10 @@ function submitForm (params) {
     </div>
 
     <div class="col-span-full text-center">
-      <form-button class="md:max-w-lg" type="submit">
+      <form-button
+        class="md:max-w-lg"
+        type="submit"
+      >
         {{ t('formSend') }}
       </form-button>
     </div>
@@ -207,7 +210,7 @@ function submitForm (params) {
     <h2 class="text-2xl font-bold text-purple-800">
       {{ t('formSuccess') }}
     </h2>
-    <p class="text-lg text-center">
+    <p class="text-center text-lg">
       {{ t('formSuccessMessage') }}
     </p>
   </div>
@@ -219,7 +222,7 @@ function submitForm (params) {
     <h2 class="text-2xl font-bold text-red-800">
       {{ t('formError') }}
     </h2>
-    <p class="text-lg text-center">
+    <p class="text-center text-lg">
       {{ t('formErrorMessage') }}
     </p>
   </div>

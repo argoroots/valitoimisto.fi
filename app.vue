@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  titleTemplate: title => title ? `${title} · Välitoimisto Oy` : 'Välitoimisto Oy'
+  titleTemplate: (title) => title ? `${title} · Välitoimisto Oy` : 'Välitoimisto Oy'
 })
 </script>
 
