@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss'
+  ],
+  ssr: true,
   app: {
     head: {
       htmlAttrs: { lang: 'et' },
@@ -11,7 +18,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  compatibilityDate: '2024-07-29',
   content: {
     // defaultLocale: 'et',
     documentDriven: true,
@@ -20,20 +26,28 @@ export default defineNuxtConfig({
       anchorLinks: false
     }
   },
-  css: ['~/assets/css/main.css'],
-  i18n: {
-    vueI18n: './i18n.config.ts'
+  spaLoadingTemplate: false,
+  future: {
+    compatibilityVersion: 4
   },
-  modules: [
-    '@nuxtjs/i18n',
-    '@nuxt/content'
-  ],
+  compatibilityDate: '2024-10-29',
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     }
   },
-  spaLoadingTemplate: false,
-  ssr: true
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
+  i18n: {
+    vueI18n: '~/.config/i18n.config.ts'
+  },
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css',
+    configPath: '~/.config/tailwind.config.ts'
+  }
 })

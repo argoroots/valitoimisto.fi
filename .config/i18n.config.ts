@@ -1,7 +1,7 @@
-import en from './locales/en.js'
-import et from './locales/et.js'
-import fi from './locales/fi.js'
-import ru from './locales/ru.js'
+import en from '../locales/en.js'
+import et from '../locales/et.js'
+import fi from '../locales/fi.js'
+import ru from '../locales/ru.js'
 
 export default defineI18nConfig(() => ({
   defaultLocale: 'et',
