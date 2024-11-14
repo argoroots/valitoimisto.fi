@@ -12,8 +12,6 @@ paths:
 ::hero
 # Our company offers various services and labor hire
 
-Does not offer the service of a light entrepreneur, but skills and quality.
-
 Our team consists of experienced skilled workers, with whose help you will achieve a high-quality result. We can find the specialist you need for every piece and/or hourly job you want.
 Companies that are looking for a long-term or short-term employee, then you have come to the right company's website.
 Workers who have high-quality professional skills and knowledge, then you have come to the right company's website.
