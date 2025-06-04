@@ -30,10 +30,10 @@ paths:
 ::logos
 ## Partners
 
-![](/img/elo.png)
-![](/img/fennoa.png)
-![](/img/if.png)
-![](/img/asiakastieto.png)
-![](/img/vastuu.png)
-![](/img/vero.png)
+[![](/img/elo.png)](https://www.elo.fi){target="_blank"}
+[![](/img/fennoa.png)](https://fennoa.com){target="_blank"}
+[![](/img/if.png)](https://www.if.fi/yritysasiakkaat){target="_blank"}
+[![](/img/asiakastieto.png)](https://www.vastuugroup.fi){target="_blank"}
+[![](/img/vastuu.png)](https://www.asiakastieto.fi/web/fi){target="_blank"}
+[![](/img/vero.png)](https://www.vero.fi/yritykset-ja-yhteisot){target="_blank"}
 ::
