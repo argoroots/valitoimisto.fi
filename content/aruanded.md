@@ -11,6 +11,6 @@ paths:
 
 # Meie majandusaasta aruanded
 
-<a href="/doc/reports/31.12.2024.pdf" target="_blank">31.12.2024</a>
+[31.12.2024](/doc/reports/31.12.2024.pdf){target="_blank"}
 
-<a href="/doc/reports/30.04.2025.pdf" target="_blank">30.04.2025</a>
+[30.04.2025](/doc/reports/30.04.2025.pdf){target="_blank"}

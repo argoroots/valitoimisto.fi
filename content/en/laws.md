@@ -11,8 +11,8 @@ paths:
 
 # Necessary laws
 
-<a href="https://finlex.fi/eli?uri=http://data.finlex.fi/eli/sd/2015/1141/ajantasa/2024-12-19/fin" target="_black">Tilintarkastuslaki</a>
+[Tilintarkastuslaki](https://finlex.fi/eli?uri=http://data.finlex.fi/eli/sd/2015/1141/ajantasa/2024-12-19/fin){target="_black"}
 
-<a href="https://finlex.fi/eli?uri=http://data.finlex.fi/eli/sd/1993/1501/ajantasa/2024-12-19/fin" target="_black">Arvonlisäverolaki</a>
+[Arvonlisäverolaki](https://finlex.fi/eli?uri=http://data.finlex.fi/eli/sd/1993/1501/ajantasa/2024-12-19/fin){target="_black"}
 
-<a href="https://tyosuojelu.fi/tyosuhde/palkka" target="_black">Työsuojellu</a>
+[Työsuojellu](https://tyosuojelu.fi/tyosuhde/palkka){target="_black"}
