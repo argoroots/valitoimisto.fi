@@ -15,7 +15,7 @@ paths:
 | --: | --- |
 | **Aadress** | c/o Fin-Est Accounting Oy<br>Vilppulantie 10a lh. 1<br>00700 HELSINKI<br>Ala-Malmi (katutasossa) |
 | **Telefon** | +358 40 731 1994 |
-| **E-mail** | asiakaspalvelu@valitoimisto.fi |
+| **E-mail** | kirjanpito@valitoimisto.fi |
 | **Y-tunnus** | 3227308-9 |
 | **VAT nr** | FI32273089 |
 
