@@ -10,7 +10,7 @@ export default {
   navContact: 'Yhteystiedot',
   navContactUrl: '/fi/yhteystiedot',
   navSendData: 'Lähetä tiedot',
-  navSendDataUrl: '/fi/laheta-tiedot',
+  navSendDataUrl: '/fi/laheta',
   navTerms: 'Yleiset sopimusehdot',
   navTermsUrl: '/fi/sopimusehdot',
 

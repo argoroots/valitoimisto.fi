@@ -1,5 +1,5 @@
 ---
-title: Наши годовые отчеты
+title: Our annual reports
 description: 'meta description of the page'
 layout: default
 paths:
@@ -9,7 +9,7 @@ paths:
   ru: /ru/godovye-otchety
 ---
 
-# Наши годовые отчеты
+# Our annual reports
 
 <a href="/doc/reports/31.12.2024.pdf" target="_blank">31.12.2024</a>
 

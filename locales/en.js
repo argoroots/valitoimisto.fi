@@ -6,11 +6,11 @@ export default {
   navBookkeeping: 'Accounting',
   navBookkeepingUrl: '/en/accounting',
   navAnnualReports: 'Annual Reports',
-  navAnnualReportsUrl: '/en/annual-reports',
+  navAnnualReportsUrl: '/en/reports',
   navContact: 'Contact',
   navContactUrl: '/en/contact',
   navSendData: 'Send Data',
-  navSendDataUrl: '/en/send-data',
+  navSendDataUrl: '/en/send',
   navTerms: 'Terms of Service',
   navTermsUrl: '/en/terms',
 
