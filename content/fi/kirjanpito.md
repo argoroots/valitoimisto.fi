@@ -22,6 +22,8 @@ Kirjanpitopalvelumme on suunnattu yrityksille, joilla ei ole tarkoituksenmukaist
 - Tilinpäätösten laatiminen
 - Konsultointi ja veroneuvonta
 - Yrityksen käynnistäminen
+- Tilintarkastus
+- Myyntilaskujen rahoitus
 
 Palvelemme sinua suomeksi, viroksi ja venäjäksi.
 

@@ -22,6 +22,8 @@ Meie raamatupidamisteenus on suunatud ettevõtetele, kelle jaoks põhitöökohag
 - Majandusaasta aruannete koostamine
 - Konsultatsioon ja maksualane nõustamine
 - Ettevõtte alustamine
+- Auditeerimine
+- Müügiarvete rahastamine
 
 Teenindame teid soome, eesti ja vene keeles.
 

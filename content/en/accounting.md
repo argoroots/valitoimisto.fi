@@ -23,6 +23,8 @@ Our accounting service is aimed at companies for whom employing a full-time acco
 - Preparation of annual reports
 - Consultation and tax consultancy
 - Starting a business
+- Auditing
+- Financing of sales invoices
 
 We serve you in Finnish, Estonian and Russian.
 
