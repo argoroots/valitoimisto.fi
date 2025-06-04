@@ -6,6 +6,8 @@ export default {
   navBookkeeping: 'Бухгалтерский учет',
   navBookkeepingUrl: '/ru/bukhgalterskiy-uchet',
   navContact: 'Контакты',
+  navAnnualReports: 'Годовые отчеты',
+  navAnnualReportsUrl: '/ru/godovye-otchety',
   navContactUrl: '/ru/kontakty',
   navSendData: 'Отправить данные',
   navSendDataUrl: '/ru/otpravit-dannye',

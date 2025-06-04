@@ -32,12 +32,21 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
         >
           {{ t('navCalculator') }}
         </nuxt-link>
+
         <nuxt-link
           class="nav"
           :to="t('navBookkeepingUrl')"
         >
           {{ t('navBookkeeping') }}
         </nuxt-link>
+
+        <nuxt-link
+          class="nav"
+          :to="t('navAnnualReportsUrl')"
+        >
+          {{ t('navAnnualReports') }}
+        </nuxt-link>
+
         <nuxt-link
           class="nav"
           :to="t('navContactUrl')"

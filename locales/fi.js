@@ -5,6 +5,8 @@ export default {
   navCalculatorUrl: '/fi/laskin',
   navBookkeeping: 'Kirjanpito',
   navBookkeepingUrl: '/fi/kirjanpito',
+  navAnnualReports: 'Tilinpäätökset',
+  navAnnualReportsUrl: '/fi/tilinpaatokset',
   navContact: 'Yhteystiedot',
   navContactUrl: '/fi/yhteystiedot',
   navSendData: 'Lähetä tiedot',

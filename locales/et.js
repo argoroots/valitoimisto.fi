@@ -5,6 +5,8 @@ export default {
   navCalculatorUrl: '/kalkulaator',
   navBookkeeping: 'Raamatupidamisteenus',
   navBookkeepingUrl: '/raamatupidamine',
+  navAnnualReports: 'Aastaaruanded',
+  navAnnualReportsUrl: '/aastaaruanded',
   navContact: 'Kontakt',
   navContactUrl: '/kontakt',
   navSendData: 'Saada andmed',

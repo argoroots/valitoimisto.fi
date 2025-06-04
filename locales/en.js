@@ -5,6 +5,8 @@ export default {
   navCalculatorUrl: '/en/calculator',
   navBookkeeping: 'Accounting',
   navBookkeepingUrl: '/en/accounting',
+  navAnnualReports: 'Annual Reports',
+  navAnnualReportsUrl: '/en/annual-reports',
   navContact: 'Contact',
   navContactUrl: '/en/contact',
   navSendData: 'Send Data',
