@@ -49,6 +49,13 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
 
         <nuxt-link
           class="nav"
+          :to="t('navLawsUrl')"
+        >
+          {{ t('navLaws') }}
+        </nuxt-link>
+
+        <nuxt-link
+          class="nav"
           :to="t('navContactUrl')"
         >
           {{ t('navContact') }}

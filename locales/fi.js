@@ -7,6 +7,8 @@ export default {
   navBookkeepingUrl: '/fi/kirjanpito',
   navAnnualReports: 'Tilinpäätökset',
   navAnnualReportsUrl: '/fi/tilinpaatokset',
+  navLaws: 'Lait',
+  navLawsUrl: '/fi/lait',
   navContact: 'Yhteystiedot',
   navContactUrl: '/fi/yhteystiedot',
   navSendData: 'Lähetä tiedot',

@@ -7,6 +7,8 @@ export default {
   navBookkeepingUrl: '/raamatupidamine',
   navAnnualReports: 'Aastaaruanded',
   navAnnualReportsUrl: '/aruanded',
+  navLaws: 'Seadused',
+  navLawsUrl: '/seadused',
   navContact: 'Kontakt',
   navContactUrl: '/kontakt',
   navSendData: 'Saada andmed',

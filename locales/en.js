@@ -7,6 +7,8 @@ export default {
   navBookkeepingUrl: '/en/accounting',
   navAnnualReports: 'Annual Reports',
   navAnnualReportsUrl: '/en/reports',
+  navLaws: 'Laws',
+  navLawsUrl: '/en/laws',
   navContact: 'Contact',
   navContactUrl: '/en/contact',
   navSendData: 'Send Data',
