@@ -11,7 +11,7 @@ const typeOptions = ref([
 const isSubmitted = computed(() => route.query.result === 'ok')
 const isError = computed(() => route.query.result === 'error')
 
-function submitForm (params) {
+function submitForm () {
   formRef.value.submit()
 }
 </script>

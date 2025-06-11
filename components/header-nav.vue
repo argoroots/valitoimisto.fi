@@ -179,6 +179,21 @@ const paths = computed(() => Object.entries(page.value?.paths || {}).map(([key, 
               >
                 {{ t('navContact') }}
               </nuxt-link>
+
+              <nuxt-link
+                class="nav-mobile"
+                :to="t('navAnnualReportsUrl')"
+              >
+                {{ t('navAnnualReports') }}
+              </nuxt-link>
+
+              <nuxt-link
+                class="nav-mobile"
+                :to="t('navLawsUrl')"
+              >
+                {{ t('navLaws') }}
+              </nuxt-link>
+
               <nuxt-link
                 class="hidden"
                 :to="t('navSendDataUrl')"
