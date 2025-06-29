@@ -11,11 +11,11 @@ paths:
 
 # Accounting
 
-We have provided reliable and professional accounting services in Finland for over 10 years.
+We have been providing reliable and professional accounting services in Finland for over 10 years.
 
-Paperless accounting is the way of today. Years of balance sheet experience ensure a personalised approach based on the specificities of your business, together with a consultancy service. We’ve used various accounting software over the years and today, we’re using the Fennoa accounting software. These software tools offer the option of completely paperless accounting. Fennoa also allows us to ensure mutual digital data exchange as well as rapid and operational access to data anytime, anywhere, wherever an Internet connection is available. Only pay for what you need. Services sold on the basis of an hourly fee are calculated to the nearest 15 minutes and the scope of all consultations and special works will be agreed with the client in advance.
+In today's digital age, paperless accounting is the way forward. With years of experience in balance sheets, we offer a personalized approach tailored to the specific needs of your business, along with consultancy services. We have worked with various accounting software in the past, and currently, we use the Fennoa accounting software. This software enables completely paperless accounting and allows for seamless digital data exchange, ensuring quick and easy access to your financial data from anywhere with an internet connection. Our services are flexible, and you only pay for what you need, with hourly fees calculated to the nearest 15 minutes. We always discuss the scope of consultations and special projects with our clients in advance.
 
-Our accounting service is aimed at companies for whom employing a full-time accountant it is not practical. Cooperation can range from professional advice to a comprehensive financial solution.
+Our accounting services are designed for companies that do not require a full-time accountant on staff. Whether you need professional advice or a comprehensive financial solution, we are here to help.
 
 - Accounting service
 - Streamlining previous accounting

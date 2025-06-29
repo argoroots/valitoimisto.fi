@@ -11,11 +11,8 @@ paths:
 
 # Kirjanpito
 
-Olemme tarjonneet luotettavia ja ammattitaitoisia kirjanpitopalveluja Suomessa jo yli 10 vuoden ajan
+Olemme tarjonneet luotettavia ja ammattitaitoisia kirjanpitopalveluja Suomessa jo yli 10 vuoden ajan. Paperiton kirjanpito on tämän päivän tapa. Vuosien kokemus taseen laatimisesta takaa yksilöllisen lähestymistavan, joka perustuu liiketoimintasi erityispiirteisiin, sekä neuvontapalvelun. Olemme käyttäneet erilaisia kirjanpito-ohjelmistoja, ja nyt olemme päätyneet Fennoa-kirjanpito-ohjelmaan. Fennoan avulla voimme varmistaa keskenämme digitaalisen tiedonvaihdon ja nopean ja toimivan pääsyn tietoihin milloin tahansa ja missä tahansa, missä internet-yhteys on käytettävissä. Maksa vain siitä, mitä tarvitset. Tuntiveloituksella myytävät palvelut laskutetaan 15 minuutin tarkkuudella ja kaikkien konsultaatioiden ja erityistöiden laajuudesta sovitaan asiakkaan kanssa etukäteen. Kirjanpitopalvelumme on suunnattu yrityksille, joilla ei ole tarkoituksenmukaista palkata kokopäiväistä kirjanpitäjää. Yhteistyö voi muodostua erikoisalan neuvonnasta aina kattavaan rahoitusratkaisuun asti.
 
-Paperiton kirjanpito on tämän päivän tapa. Vuosien kokemus taseen laatimisesta takaa yksilöllisen lähestymistavan, joka perustuu liiketoimintasi erityispiirteisiin, sekä neuvontapalvelun. Vuosien varrella olemme käyttäneet erilaisia kirjanpito-ohjelmistoja, ja nyt olemme päätyneet Fennoa-kirjanpito-ohjelmaan. Nämä ohjelmistot tarjoavat mahdollisuuden tehdä kirjanpito täysin paperittomana. Fennoan avulla voimme myös varmistaa keskenämme digitaalisen tiedonvaihdon ja nopean ja toimivan pääsyn tietoihin milloin tahansa ja missä tahansa, missä internet-yhteys on käytettävissä. Maksa vain siitä, mitä tarvitset. Tuntiveloituksella myytävät palvelut laskutetaan 15 minuutin tarkkuudella ja kaikkien konsultaatioiden ja erityistöiden laajuudesta sovitaan asiakkaan kanssa etukäteen.
-
-Kirjanpitopalvelumme on suunnattu yrityksille, joilla ei ole tarkoituksenmukaista palkata kokopäiväistä kirjanpitäjää. Yhteistyö voi muodostua erikoisalan neuvonnasta aina kattavaan rahoitusratkaisuun asti.
 - Kirjanpitopalvelu
 - Aiemman kirjanpidon järjestykseen saattaminen
 - Palkanlaskenta

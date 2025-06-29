@@ -11,10 +11,13 @@ paths:
 
 # Raamatupidamine
 
-Pakume usaldusväärset ja professionaalset raamatupidamisteenust Soomes juba üle 10 aasta
-Paberivaba raamatupidamine on tänapäev. Aastate pikkune bilansivõimeline kogemus tagab teile personaalse lähenemise tulenevalt teie äri eripärast koos konsultatsiooniga. Aastate jooksul oleme kasutanud erinevaid raamatupidamisprogramme ning tänaseks jõudnud Fennoa raamatupidamistarkarani. Mainitud tarkvarad pakuvad võimalust oma raamatupidamine hoida täiesti paberivaba. Samuti same Fennoa vahendusel tagada omavahelise digitaalse andmete vahetuse ja kiire ning operatiivse andmetele ligipääsu igal ajal ja igal pool, kus on kättesaadav internet levi.Maksa ainult selle eest, mida vajad. Tunnitasu alusel müüdavad teenuseid arvestatakse 15 minuti täpsusega ning kõigi konsultatsioonide ja eritööde maht lepitakse eelnevalt kliendiga kokku.
+Pakume usaldusväärset ja professionaalset raamatupidamisteenust Soomes juba üle 10 aasta. Oleme spetsialiseerunud paberivabale raamatupidamisele, mis on tänapäevane ja efektiivne lahendus. Meie meeskonnal on aastatepikkune kogemus bilansivõimelises raamatupidamises ning pakume personaalset lähenemist, arvestades teie äri eripärasid.
 
-Meie raamatupidamisteenus on suunatud ettevõtetele, kelle jaoks põhitöökohaga raamatupidaja tööle võtmine ei ole otstarbekas. Koostöö võib kujuneda erialasest nõustamisest kuni tervikliku finantslahenduseni.
+Kasutame Fennoa raamatupidamistarkvara, mis võimaldab meil hoida teie raamatupidamist täiesti paberivabalt. Fennoa võimaldab ka digitaalset andmevahetust ning kiiret ja operatiivset juurdepääsu andmetele igal ajal ja igal pool, kus on internetiühendus.
+
+Meie teenused on paindlikud ja tasustatakse tunnihinna alusel, arvestades 15-minutilist täpsust. Kõik konsultatsioonid ja eritööde maht lepitakse eelnevalt kliendiga kokku, tagades sellega läbipaistvuse ja efektiivsuse.
+
+Meie raamatupidamisteenus on suunatud ettevõtetele, kes ei pea otstarbekaks palkata täiskohaga raamatupidajat. Pakume laia valikut teenuseid alates erialasest nõustamisest kuni tervikliku finantslahenduseni. Oleme teie usaldusväärne partner raamatupidamise valdkonnas.
 
 - Raamatupidamistenus
 - Varasema raamatupidamise korrastamine

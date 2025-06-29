@@ -12,8 +12,7 @@ paths:
 ::hero
 # Yrityksemme tarjoaa erilaisia palveluita ja työvoimavuokrausta
 
-Tiimimme koostuu kokeneista ammattitaitoisista työntekijöistä, joiden avulla saavutat laadukkaan lopputuloksen. Meiltä löydät tarvitsemasi asiantuntijan jokaiseen haluamaasi työhön ja/tai tuntityöhön.
-Yritykset, jotka etsivät pitkäaikaista tai lyhytaikaista työntekijää, olette tulleet oikean yrityksen verkkosivuille.
-Työntekijät, joilla on laadukkaat ammatilliset taidot ja tiedot, niin olet tullut oikean yrityksen verkkosivuille.
-Kokoamme yhteen tarpeet ja taidot ja tiedot.
+Tarjoamme myös erilaisia palveluita, kuten siivous-, remontti- ja rakennuspalveluita. Meidän kauttamme voit löytää ammattitaitoisen työntekijän juuri sinun tarpeisiisi. Ota yhteyttä ja kysy lisää palveluistamme!
+
+Tiimimme koostuu kokeneista ammattilaisista, jotka tarjoavat laadukasta työtä ja palveluita. Etsitpä sitten pitkäaikaista tai lyhytaikaista työntekijää, meiltä löydät tarvitsemasi asiantuntijan jokaiseen projektiin. Yhdistämme tarpeesi ja taitomme, jotta voit saavuttaa haluamasi lopputuloksen. Tervetuloa tutustumaan verkkosivuihimme ja löytämään juuri sinulle sopivan ratkaisun!
 ::

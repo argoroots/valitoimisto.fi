@@ -12,8 +12,7 @@ paths:
 ::hero
 # Our company offers various services and labor hire
 
-Our team consists of experienced skilled workers, with whose help you will achieve a high-quality result. We can find the specialist you need for every piece and/or hourly job you want.
-Companies that are looking for a long-term or short-term employee, then you have come to the right company's website.
-Workers who have high-quality professional skills and knowledge, then you have come to the right company's website.
-We bring together the need and skills and knowledge.
+Our company provides a range of services and labor hire options.
+
+Our team is made up of experienced and skilled workers who can help you achieve high-quality results. Whether you need a specialist for a specific project or hourly work, we can find the right person for the job. If you are a company looking for long-term or short-term employees with top-notch skills and knowledge, you have come to the right place. We match the needs of our clients with the expertise of our workers to ensure successful outcomes.
 ::
