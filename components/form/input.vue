@@ -140,6 +140,9 @@ label {
   @apply tracking-wide;
   @apply transition-all;
   @apply bg-gradient-to-b from-slate-50 to-white;
+  @apply whitespace-nowrap;
+  @apply overflow-hidden;
+  @apply text-ellipsis;
 
   @apply peer-placeholder-shown:top-2;
   @apply peer-placeholder-shown:text-base;
