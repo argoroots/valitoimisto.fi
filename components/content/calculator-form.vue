@@ -127,12 +127,12 @@ function checkValues () {
         @blur="checkValues"
       />
     </div>
-    <div class="flex flex-col items-center justify-center border border-slate-200 p-8">
+    <div class="flex flex-col items-center justify-center border border-slate-200 p-8 md:col-span-3">
       <template v-if="brutoSum > 0">
         <!-- Breakdown fields -->
         <div class="mb-6 w-full space-y-4">
           <!-- Brutopalk -->
-          <div class="flex justify-between pb-2 text-sm">
+          <div class="-mx-2 flex justify-between px-2 py-1 pb-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
             <span class="font-semibold">{{ t('calcGrossSalary') }}:</span>
             <span class="font-medium">{{ (Math.round(brutoSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
           </div>
@@ -142,23 +142,23 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcEmployerTaxes') }}:
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcPensionInsurance', { rate: PENSION_CONTRIBUTION_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(pensionContribution * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcSocialTax', { rate: MUNICIPAL_TAX_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(municipalTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcUnemploymentInsurance', { rate: UNEMPLOYMENT_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(unemploymentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcAccidentInsurance', { rate: ACCIDENT_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(accidentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcGroupLifeInsurance', { rate: GROUP_LIFE_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(groupLifeInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
@@ -169,15 +169,15 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcEmployeeTaxes') }}:
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcIncomeTax', { percent }) }}:</span>
               <span class="font-medium">{{ (Math.round(incomeTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcFundedPension', { rate: PENSION_CONTRIBUTION_PERSONAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(pensionContributionPersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcUnemploymentInsurancePersonal', { rate: UNEMPLOYMENT_INSURANCE_PERSONAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(unemploymentInsurancePersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
@@ -188,19 +188,19 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcTaxFreeAllowances') }}:
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcFullDayAllowances', { count: fullDay, rate: FULL_DAY_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(fullDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcPartialDayAllowances', { count: partialDay, rate: PARTIAL_DAY_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(partialDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcMealAllowance', { count: meal, rate: MEAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(mealSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between pl-2 text-sm">
+            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcKilometerAllowance', { count: km, rate: KM_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(kmSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
