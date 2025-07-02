@@ -1,6 +1,24 @@
 <script setup>
 const { t } = useI18n()
 
+// Rate constants
+const FEE_RATE = 4 // Meie teenustasu
+const FULL_DAY_RATE = 53 // Täispäevaraha
+const PARTIAL_DAY_RATE = 24 // Osapäevaraha
+const MEAL_RATE = 13.25 // Toidukompensatsioon
+const KM_RATE = 0.59 // Kilomeetripõhine kompensatsioon
+
+// Tööandja maksud
+const MUNICIPAL_TAX_RATE = 1.87 // Sotsiaalkindlustus
+const PENSION_CONTRIBUTION_RATE = 18.40 // Pensionikindlustus
+const ACCIDENT_INSURANCE_RATE = 5.00 // Tööõnnetuskindlustus
+const UNEMPLOYMENT_INSURANCE_RATE = 0.20 // Töötuskindlustus
+const GROUP_LIFE_INSURANCE_RATE = 0.07 // Grupielukindlustus
+
+// Töötaja maksud
+const UNEMPLOYMENT_INSURANCE_PERSONAL_RATE = 0.79 // Töötuskindlustus
+const PENSION_CONTRIBUTION_PERSONAL_RATE = 7.15 // Kogumispension
+
 // Sisestatavad väärtused
 const price = ref(1000) // Arve summa ilma käibemaksuta
 const percent = ref(0) // Tulumaksu protsent
@@ -9,30 +27,30 @@ const partialDay = ref(0)
 const meal = ref(0) // Toidukompensatsioon
 const km = ref(0) // Kilomeetripõhine kompensatsioon
 
-const fee = computed(() => price.value * 4 / 100) // Meie teenustasu 4%
+const fee = computed(() => price.value * FEE_RATE / 100) // Meie teenustasu
 const priceWithoutFee = computed(() => price.value - fee.value) // Palgaks teha
 
 // Maksuvabad lisad
-const fullDaySum = computed(() => fullDay.value * 53) // Täispäevaraha
-const partialDaySum = computed(() => partialDay.value * 24) // Osapäevaraha
-const mealSum = computed(() => meal.value * 13.25) // Toidukompensatsioon
-const kmSum = computed(() => km.value * 0.59) // Kilomeetripõhine kompensatsioon
+const fullDaySum = computed(() => fullDay.value * FULL_DAY_RATE) // Täispäevaraha
+const partialDaySum = computed(() => partialDay.value * PARTIAL_DAY_RATE) // Osapäevaraha
+const mealSum = computed(() => meal.value * MEAL_RATE) // Toidukompensatsioon
+const kmSum = computed(() => km.value * KM_RATE) // Kilomeetripõhine kompensatsioon
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value) // Lisatasud kokku
 
 // Tööandja maksud brutopalgast
-const municipalTax = computed(() => priceWithoutFee.value * 1.87 / 100) // Sotsiaalkindlustus
-const pensionContribution = computed(() => priceWithoutFee.value * 18.40 / 100) // Pensionikindlustus
-const accidentInsurance = computed(() => priceWithoutFee.value * 5 / 100) // Tööõnnetuskindlustus
-const unemploymentInsurance = computed(() => priceWithoutFee.value * 0.20 / 100) // Töötuskindlustus
-const groupLifeInsurance = computed(() => priceWithoutFee.value * 0.07 / 100) // Grupielukindlustus
+const municipalTax = computed(() => priceWithoutFee.value * MUNICIPAL_TAX_RATE / 100) // Sotsiaalkindlustus
+const pensionContribution = computed(() => priceWithoutFee.value * PENSION_CONTRIBUTION_RATE / 100) // Pensionikindlustus
+const accidentInsurance = computed(() => priceWithoutFee.value * ACCIDENT_INSURANCE_RATE / 100) // Tööõnnetuskindlustus
+const unemploymentInsurance = computed(() => priceWithoutFee.value * UNEMPLOYMENT_INSURANCE_RATE / 100) // Töötuskindlustus
+const groupLifeInsurance = computed(() => priceWithoutFee.value * GROUP_LIFE_INSURANCE_RATE / 100) // Grupielukindlustus
 const taxesSum = computed(() => municipalTax.value + pensionContribution.value + accidentInsurance.value + unemploymentInsurance.value + groupLifeInsurance.value)
 
 // Bruto summa
 const brutoSum = computed(() => priceWithoutFee.value - taxesSum.value)
 
 // Töölise maksud brutopalgast
-const unemploymentInsurancePersonal = computed(() => brutoSum.value * 0.79 / 100) // Töötuskindlustus
-const pensionContributionPersonal = computed(() => brutoSum.value * 7.15 / 100) // Kogumispension
+const unemploymentInsurancePersonal = computed(() => brutoSum.value * UNEMPLOYMENT_INSURANCE_PERSONAL_RATE / 100) // Töötuskindlustus
+const pensionContributionPersonal = computed(() => brutoSum.value * PENSION_CONTRIBUTION_PERSONAL_RATE / 100) // Kogumispension
 const incomeTax = computed(() => brutoSum.value * percent.value / 100) // Tulumaks
 const personalTaxesSum = computed(() => unemploymentInsurancePersonal.value + pensionContributionPersonal.value + incomeTax.value)
 
@@ -79,7 +97,7 @@ function checkValues () {
       <form-input
         id="full-day-allowance"
         v-model="fullDay"
-        :label="t('formAllowanceFullDay')"
+        :label="t('formAllowanceFullDay', { rate: FULL_DAY_RATE })"
         min="0"
         type="number"
         @blur="checkValues"
@@ -87,7 +105,7 @@ function checkValues () {
       <form-input
         id="partial-day-allowance"
         v-model="partialDay"
-        :label="t('formAllowancePartialDay')"
+        :label="t('formAllowancePartialDay', { rate: PARTIAL_DAY_RATE })"
         min="0"
         type="number"
         @blur="checkValues"
@@ -95,7 +113,7 @@ function checkValues () {
       <form-input
         id="meal-compensation"
         v-model="meal"
-        :label="t('formAllowanceMeal')"
+        :label="t('formAllowanceMeal', { rate: MEAL_RATE })"
         min="0"
         type="number"
         @blur="checkValues"
@@ -103,7 +121,7 @@ function checkValues () {
       <form-input
         id="km"
         v-model="km"
-        :label="t('formAllowanceKm')"
+        :label="t('formAllowanceKm', { rate: KM_RATE })"
         min="0"
         type="number"
         @blur="checkValues"
@@ -111,11 +129,91 @@ function checkValues () {
     </div>
     <div class="flex flex-col items-center justify-center border border-slate-200 p-8">
       <template v-if="brutoSum > 0">
-        <div class="text-center text-2xl font-bold uppercase text-purple-500">
+        <!-- Breakdown fields -->
+        <div class="mb-6 w-full space-y-4">
+          <!-- Brutopalk -->
+          <div class="flex justify-between pb-2 text-sm">
+            <span class="font-semibold">{{ t('calcGrossSalary') }}:</span>
+            <span class="font-medium">{{ (Math.round(brutoSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+          </div>
+
+          <!-- Tööandja maksud -->
+          <div class="space-y-1">
+            <div class="text-xs font-semibold uppercase text-gray-600">
+              {{ t('calcEmployerTaxes') }}:
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcPensionInsurance', { rate: PENSION_CONTRIBUTION_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(pensionContribution * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcSocialTax', { rate: MUNICIPAL_TAX_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(municipalTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcUnemploymentInsurance', { rate: UNEMPLOYMENT_INSURANCE_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(unemploymentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcAccidentInsurance', { rate: ACCIDENT_INSURANCE_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(accidentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcGroupLifeInsurance', { rate: GROUP_LIFE_INSURANCE_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(groupLifeInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+          </div>
+
+          <!-- Töötaja maksud -->
+          <div class="space-y-1">
+            <div class="text-xs font-semibold uppercase text-gray-600">
+              {{ t('calcEmployeeTaxes') }}:
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcIncomeTax', { percent }) }}:</span>
+              <span class="font-medium">{{ (Math.round(incomeTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcFundedPension', { rate: PENSION_CONTRIBUTION_PERSONAL_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(pensionContributionPersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcUnemploymentInsurancePersonal', { rate: UNEMPLOYMENT_INSURANCE_PERSONAL_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(unemploymentInsurancePersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+          </div>
+
+          <!-- Maksuvabad lisad -->
+          <div class="space-y-1">
+            <div class="text-xs font-semibold uppercase text-gray-600">
+              {{ t('calcTaxFreeAllowances') }}:
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcFullDayAllowances', { count: fullDay, rate: FULL_DAY_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(fullDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcPartialDayAllowances', { count: partialDay, rate: PARTIAL_DAY_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(partialDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcMealAllowance', { count: meal, rate: MEAL_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(mealSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+            <div class="flex justify-between pl-2 text-sm">
+              <span>{{ t('calcKilometerAllowance', { count: km, rate: KM_RATE }) }}:</span>
+              <span class="font-medium">{{ (Math.round(kmSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 w-full border-t border-gray-300" />
+
+        <div class="text-center text-lg font-bold uppercase text-purple-500">
           {{ t('formCalculatorSum') }}
         </div>
-        <div class="text-center text-[3rem] font-extrabold text-purple-900">
-          {{ sum.toLocaleString('et', { minimumFractionDigits: 2 }) }}
+        <div class="text-center text-4xl font-extrabold text-purple-900">
+          {{ sum.toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}
           <span class="font-normal text-purple-500">€</span>
         </div>
       </template>
