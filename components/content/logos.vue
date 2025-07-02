@@ -13,7 +13,7 @@
 
 :deep(p) {
   @apply block;
-  @apply px-4;
+  @apply px-8;
   @apply py-4 sm:py-8;
   @apply grid;
   @apply grid-cols-2 sm:grid-cols-3;

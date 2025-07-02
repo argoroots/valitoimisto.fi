@@ -36,4 +36,5 @@ paths:
 [![](/img/asiakastieto.png)](https://www.vastuugroup.fi){target="_blank"}
 [![](/img/vastuu.png)](https://www.asiakastieto.fi/web/fi){target="_blank"}
 [![](/img/vero.png)](https://www.vero.fi/yritykset-ja-yhteisot){target="_blank"}
+[![](/img/lahitapiola.png)](https://www.lahitapiola.fi/henkilo/){target="_blank"}
 ::
