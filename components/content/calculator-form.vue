@@ -11,7 +11,7 @@ const KM_RATE = 0.59 // Kilomeetripõhine kompensatsioon
 // Tööandja maksud
 const MUNICIPAL_TAX_RATE = 1.87 // Sotsiaalkindlustus
 const PENSION_CONTRIBUTION_RATE = 18.40 // Pensionikindlustus
-const ACCIDENT_INSURANCE_RATE = 5.00 // Tööõnnetuskindlustus
+const ACCIDENT_INSURANCE_RATE = 5.00 // Õnnetusjuhtumi- ja vastutuskindlustus
 const UNEMPLOYMENT_INSURANCE_RATE = 0.20 // Töötuskindlustus
 const GROUP_LIFE_INSURANCE_RATE = 0.07 // Grupielukindlustus
 
@@ -40,7 +40,7 @@ const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum
 // Tööandja maksud brutopalgast
 const municipalTax = computed(() => priceWithoutFee.value * MUNICIPAL_TAX_RATE / 100) // Sotsiaalkindlustus
 const pensionContribution = computed(() => priceWithoutFee.value * PENSION_CONTRIBUTION_RATE / 100) // Pensionikindlustus
-const accidentInsurance = computed(() => priceWithoutFee.value * ACCIDENT_INSURANCE_RATE / 100) // Tööõnnetuskindlustus
+const accidentInsurance = computed(() => priceWithoutFee.value * ACCIDENT_INSURANCE_RATE / 100) // Õnnetusjuhtumi- ja vastutuskindlustus
 const unemploymentInsurance = computed(() => priceWithoutFee.value * UNEMPLOYMENT_INSURANCE_RATE / 100) // Töötuskindlustus
 const groupLifeInsurance = computed(() => priceWithoutFee.value * GROUP_LIFE_INSURANCE_RATE / 100) // Grupielukindlustus
 const taxesSum = computed(() => municipalTax.value + pensionContribution.value + accidentInsurance.value + unemploymentInsurance.value + groupLifeInsurance.value)

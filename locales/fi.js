@@ -71,7 +71,7 @@ export default {
   calcPensionInsurance: 'Eläkevakuutus ({rate}%)',
   calcSocialTax: 'Sosiaalivero ({rate}%)',
   calcUnemploymentInsurance: 'Työttömyysvakuutus ({rate}%)',
-  calcAccidentInsurance: 'Tapaturmavakuutus ({rate}%)',
+  calcAccidentInsurance: 'Tapaturma- ja vastuuvakuutus ({rate}%)',
   calcGroupLifeInsurance: 'Ryhmähenkivakuutus ({rate}%)',
   calcEmployeeTaxes: 'Työntekijän verot',
   calcIncomeTax: 'Tulovero ({percent}%)',

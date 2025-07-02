@@ -71,7 +71,7 @@ export default {
   calcPensionInsurance: 'Пенсионное страхование ({rate}%)',
   calcSocialTax: 'Социальный налог ({rate}%)',
   calcUnemploymentInsurance: 'Страхование от безработицы ({rate}%)',
-  calcAccidentInsurance: 'Страхование от несчастных случаев ({rate}%)',
+  calcAccidentInsurance: 'Страхование от несчастных случаев и ответственности ({rate}%)',
   calcGroupLifeInsurance: 'Групповое страхование жизни ({rate}%)',
   calcEmployeeTaxes: 'Налоги работника',
   calcIncomeTax: 'Подоходный налог ({percent}%)',
