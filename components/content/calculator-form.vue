@@ -72,10 +72,10 @@ function checkValues () {
 <template>
   <form
     action="/api/send.php"
-    class="my-8 grid grid-cols-1 gap-8 md:grid-cols-2"
+    class="my-8 grid grid-cols-1 gap-8 md:grid-cols-5"
     method="POST"
   >
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-6 md:col-span-2">
       <form-input
         id="price"
         v-model="price"
