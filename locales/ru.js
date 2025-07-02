@@ -21,6 +21,12 @@ export default {
   localeET: 'Eesti keel',
   localeRU: 'Русский',
 
+  // Base field texts
+  fieldFullDayAllowance: 'Суточные',
+  fieldPartialDayAllowance: 'Частичные суточные',
+  fieldMealAllowance: 'Пособие на питание',
+  fieldKilometerAllowance: 'Компенсация за километраж',
+
   formAddress: 'Адрес',
   formAllowanceFullDay: 'Суточные ({rate}€)',
   formAllowanceKm: 'Компенсация за километраж ({rate}€/км)',
@@ -72,9 +78,9 @@ export default {
   calcFundedPension: 'Накопительная пенсия ({rate}%)',
   calcUnemploymentInsurancePersonal: 'Страхование от безработицы ({rate}%)',
   calcTaxFreeAllowances: 'Необлагаемые надбавки',
-  calcFullDayAllowances: 'Суточные за полный день ({count} × {rate}€)',
-  calcPartialDayAllowances: 'Суточные за неполный день ({count} × {rate}€)',
-  calcMealAllowance: 'Компенсация за питание ({count} × {rate}€)',
+  calcFullDayAllowances: 'Суточные ({count} × {rate}€)',
+  calcPartialDayAllowances: 'Частичные суточные ({count} × {rate}€)',
+  calcMealAllowance: 'Пособие на питание ({count} × {rate}€)',
   calcKilometerAllowance: 'Компенсация за километраж ({count} × {rate}€)',
 
   formSend: 'Отправить',

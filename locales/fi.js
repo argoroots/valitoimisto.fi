@@ -21,6 +21,12 @@ export default {
   localeET: 'Eesti keel',
   localeRU: 'Русский',
 
+  // Base field texts
+  fieldFullDayAllowance: 'Kokopäiväraha',
+  fieldPartialDayAllowance: 'Osapäiväraha',
+  fieldMealAllowance: 'Aterikorvaus',
+  fieldKilometerAllowance: 'Kilometrikorvaus',
+
   formAddress: 'Osoite',
   formAllowanceFullDay: 'Kokopäiväraha ({rate}€)',
   formAllowanceKm: 'Kilometrikorvaus ({rate}€/km)',

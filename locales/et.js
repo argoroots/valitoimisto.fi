@@ -21,6 +21,12 @@ export default {
   localeET: 'Eesti keel',
   localeRU: 'Русский',
 
+  // Base field texts
+  fieldFullDayAllowance: 'Lähetusraha - täispäev',
+  fieldPartialDayAllowance: 'Lähetusraha - osapäev',
+  fieldMealAllowance: 'Söögiraha',
+  fieldKilometerAllowance: 'Sõiduauto kasutamise hüvitis',
+
   formAddress: 'Aadress',
   formAllowanceFullDay: 'Lähetusraha - täispäev ({rate}€)',
   formAllowanceKm: 'Sõiduauto kasutamise hüvitis ({rate}€/km)',
@@ -72,10 +78,10 @@ export default {
   calcFundedPension: 'Kogumispension ({rate}%)',
   calcUnemploymentInsurancePersonal: 'Töötuskindlustus ({rate}%)',
   calcTaxFreeAllowances: 'Maksuvabad lisad',
-  calcFullDayAllowances: 'Täispäevarahad ({count} × {rate}€)',
-  calcPartialDayAllowances: 'Osapäevarahad ({count} × {rate}€)',
-  calcMealAllowance: 'Toiduraha ({count} × {rate}€)',
-  calcKilometerAllowance: 'Kilomeetripõhine ({count} × {rate}€)',
+  calcFullDayAllowances: 'Lähetusraha - täispäev ({count} × {rate}€)',
+  calcPartialDayAllowances: 'Lähetusraha - osapäev ({count} × {rate}€)',
+  calcMealAllowance: 'Söögiraha ({count} × {rate}€)',
+  calcKilometerAllowance: 'Sõiduauto kasutamise hüvitis ({count} × {rate}€)',
 
   formSend: 'Saada',
   formSuccess: 'Täname!',

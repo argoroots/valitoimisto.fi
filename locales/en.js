@@ -21,6 +21,12 @@ export default {
   localeET: 'Eesti keel',
   localeRU: 'Русский',
 
+  // Base field texts
+  fieldFullDayAllowance: 'Daily allowance',
+  fieldPartialDayAllowance: 'Partial day allowance',
+  fieldMealAllowance: 'Meal allowance',
+  fieldKilometerAllowance: 'Mileage reimbursement',
+
   formAddress: 'Address',
   formAllowanceFullDay: 'Daily allowance ({rate}€)',
   formAllowanceKm: 'Mileage reimbursement ({rate}€/km)',
@@ -72,10 +78,10 @@ export default {
   calcFundedPension: 'Funded pension ({rate}%)',
   calcUnemploymentInsurancePersonal: 'Unemployment insurance ({rate}%)',
   calcTaxFreeAllowances: 'Tax-free allowances',
-  calcFullDayAllowances: 'Full day allowances ({count} × {rate}€)',
-  calcPartialDayAllowances: 'Partial day allowances ({count} × {rate}€)',
+  calcFullDayAllowances: 'Daily allowance ({count} × {rate}€)',
+  calcPartialDayAllowances: 'Partial day allowance ({count} × {rate}€)',
   calcMealAllowance: 'Meal allowance ({count} × {rate}€)',
-  calcKilometerAllowance: 'Kilometer allowance ({count} × {rate}€)',
+  calcKilometerAllowance: 'Mileage reimbursement ({count} × {rate}€)',
 
   formSend: 'Send',
   formSuccess: 'Thank you!',
