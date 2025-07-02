@@ -97,7 +97,7 @@ function checkValues () {
       <form-input
         id="full-day-allowance"
         v-model="fullDay"
-        :label="t('formAllowanceFullDay', { rate: FULL_DAY_RATE })"
+        :label="t('formAllowanceFullDay')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -105,7 +105,7 @@ function checkValues () {
       <form-input
         id="partial-day-allowance"
         v-model="partialDay"
-        :label="t('formAllowancePartialDay', { rate: PARTIAL_DAY_RATE })"
+        :label="t('formAllowancePartialDay')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -113,7 +113,7 @@ function checkValues () {
       <form-input
         id="meal-compensation"
         v-model="meal"
-        :label="t('formAllowanceMeal', { rate: MEAL_RATE })"
+        :label="t('formAllowanceMeal')"
         min="0"
         type="number"
         @blur="checkValues"
@@ -121,7 +121,7 @@ function checkValues () {
       <form-input
         id="km"
         v-model="km"
-        :label="t('formAllowanceKm', { rate: KM_RATE })"
+        :label="t('formAllowanceKm')"
         min="0"
         type="number"
         @blur="checkValues"
