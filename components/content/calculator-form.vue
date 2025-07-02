@@ -1,46 +1,45 @@
 <script setup>
 const { t } = useI18n()
 
-const type = ref('T')
-const price = ref(500)
-const percent = ref(0)
-const fullDay = ref(0)
+// Sisestatavad väärtused
+const price = ref(1000) // Arve summa ilma käibemaksuta
+const percent = ref(0) // Tulumaksu protsent
+const fullDay = ref(0) // Täispäevaraha
 const partialDay = ref(0)
-const meal = ref(0)
-const km = ref(0)
+const meal = ref(0) // Toidukompensatsioon
+const km = ref(0) // Kilomeetripõhine kompensatsioon
 
-const typeOptions = ref([
-  { value: 'T', label: t('formTypeEmployee') },
-  { value: 'K', label: t('formTypeLightEntrepreneur') }
-])
+const fee = computed(() => price.value * 4 / 100) // Meie teenustasu 4%
+const priceWithoutFee = computed(() => price.value - fee.value) // Palgaks teha
 
-const fee = computed(() => price.value * 0.04)
-const fullDaySum = computed(() => fullDay.value * 51)
-const partialDaySum = computed(() => partialDay.value * 24)
-const mealSum = computed(() => meal.value * 12.75)
-const kmSum = computed(() => km.value * 0.57)
-const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value)
-const brutoSum = computed(() => price.value - fee.value - addonSum.value)
+// Maksuvabad lisad
+const fullDaySum = computed(() => fullDay.value * 53) // Täispäevaraha
+const partialDaySum = computed(() => partialDay.value * 24) // Osapäevaraha
+const mealSum = computed(() => meal.value * 13.25) // Toidukompensatsioon
+const kmSum = computed(() => km.value * 0.59) // Kilomeetripõhine kompensatsioon
+const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value) // Lisatasud kokku
 
-const netoSum = computed(() => {
-  const bruto = brutoSum.value * (1 - 0.248)
-  const taxSum = bruto * 0.0794
-  const percentSum = bruto * 0.145
+// Tööandja maksud brutopalgast
+const municipalTax = computed(() => priceWithoutFee.value * 1.87 / 100) // Sotsiaalkindlustus
+const pensionContribution = computed(() => priceWithoutFee.value * 18.40 / 100) // Pensionikindlustus
+const accidentInsurance = computed(() => priceWithoutFee.value * 5 / 100) // Tööõnnetuskindlustus
+const unemploymentInsurance = computed(() => priceWithoutFee.value * 0.20 / 100) // Töötuskindlustus
+const groupLifeInsurance = computed(() => priceWithoutFee.value * 0.07 / 100) // Grupielukindlustus
+const taxesSum = computed(() => municipalTax.value + pensionContribution.value + accidentInsurance.value + unemploymentInsurance.value + groupLifeInsurance.value)
 
-  // console.log('fee', fee.value)
-  // console.log('fullDaySum', fullDaySum.value)
-  // console.log('partialDaySum', partialDaySum.value)
-  // console.log('mealSum', mealSum.value)
-  // console.log('kmSum', kmSum.value)
-  // console.log('addonSum', addonSum.value)
-  // console.log('taxSum', taxSum)
-  // console.log('percentSum', percentSum)
-  // console.log('brutoSum', bruto - taxSum - percentSum)
+// Bruto summa
+const brutoSum = computed(() => priceWithoutFee.value - taxesSum.value)
 
-  return bruto - taxSum - percentSum
-})
+// Töölise maksud brutopalgast
+const unemploymentInsurancePersonal = computed(() => brutoSum.value * 0.79 / 100) // Töötuskindlustus
+const pensionContributionPersonal = computed(() => brutoSum.value * 7.15 / 100) // Kogumispension
+const incomeTax = computed(() => brutoSum.value * percent.value / 100) // Tulumaks
+const personalTaxesSum = computed(() => unemploymentInsurancePersonal.value + pensionContributionPersonal.value + incomeTax.value)
 
-const sum = computed(() => Math.round((netoSum.value + addonSum.value) * 100) / 100)
+// Brutopalk - töölise maksud
+const netoSum = computed(() => brutoSum.value - personalTaxesSum.value - taxesSum.value + addonSum.value)
+
+const sum = computed(() => Math.round(netoSum.value * 100) / 100)
 
 function checkValues () {
   if (price.value === '' || price.value < 500) price.value = 500
@@ -59,16 +58,6 @@ function checkValues () {
     method="POST"
   >
     <div class="flex flex-col gap-6">
-      <form-input
-        id="type"
-        v-model="type"
-        autofocus
-        :label="t('formType')"
-        required
-        type="select"
-        :options="typeOptions"
-      />
-
       <form-input
         id="price"
         v-model="price"

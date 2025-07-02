@@ -22,9 +22,9 @@ export default {
   localeRU: 'Русский',
 
   formAddress: 'Адрес',
-  formAllowanceFullDay: 'Суточные (51€)',
-  formAllowanceKm: 'Компенсация за километраж (0.57€ / км)',
-  formAllowanceMeal: 'Пособие на питание (12.75€)',
+  formAllowanceFullDay: 'Суточные (53€)',
+  formAllowanceKm: 'Компенсация за километраж (0,59€ / км)',
+  formAllowanceMeal: 'Пособие на питание (13,25€)',
   formAllowancePartialDay: 'Частичные суточные (24€)',
   formBankBIC: 'БИК банка',
   formBankIBAN: 'Номер банковского счета',

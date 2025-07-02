@@ -22,9 +22,9 @@ export default {
   localeRU: 'Русский',
 
   formAddress: 'Aadress',
-  formAllowanceFullDay: 'Lähetusraha - täispäev (51€)',
-  formAllowanceKm: ' Sõiduauto kasutamise hüvitis (0,57€ / km)',
-  formAllowanceMeal: 'Söögiraha (12,75€)',
+  formAllowanceFullDay: 'Lähetusraha - täispäev (53€)',
+  formAllowanceKm: ' Sõiduauto kasutamise hüvitis (0,59€ / km)',
+  formAllowanceMeal: 'Söögiraha (13,25€)',
   formAllowancePartialDay: 'Lähetusraha - osapäev (24€)',
   formBankBIC: 'Panga BIC',
   formBankIBAN: 'Panga kontonumber',

@@ -22,9 +22,9 @@ export default {
   localeRU: 'Русский',
 
   formAddress: 'Osoite',
-  formAllowanceFullDay: 'Kokopäiväraha (51€)',
-  formAllowanceKm: 'Kilometrikorvaus (0,57€ / km)',
-  formAllowanceMeal: 'Aterikorvaus (12,75€)',
+  formAllowanceFullDay: 'Kokopäiväraha (53€)',
+  formAllowanceKm: 'Kilometrikorvaus (0,59€ / km)',
+  formAllowanceMeal: 'Aterikorvaus (13,25€)',
   formAllowancePartialDay: 'Osapäiväraha (24€)',
   formBankBIC: 'Pankkitilin BIC',
   formBankIBAN: 'Pankkitili',

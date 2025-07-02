@@ -22,9 +22,9 @@ export default {
   localeRU: 'Русский',
 
   formAddress: 'Address',
-  formAllowanceFullDay: 'Daily allowance (51€)',
-  formAllowanceKm: 'Mileage reimbursement (0.57€ / km)',
-  formAllowanceMeal: 'Meal allowance (12.75€)',
+  formAllowanceFullDay: 'Daily allowance (53€)',
+  formAllowanceKm: 'Mileage reimbursement (0.59€ / km)',
+  formAllowanceMeal: 'Meal allowance (13.25€)',
   formAllowancePartialDay: 'Partial day allowance (24€)',
   formBankBIC: 'Bank BIC',
   formBankIBAN: 'Bank account number',
