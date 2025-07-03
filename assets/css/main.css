@@ -61,7 +61,7 @@ td {
 
 ol {
   @apply list-decimal;
-  @apply list-outside;
+  @apply list-inside;
   @apply mb-4;
 }
 
@@ -72,6 +72,8 @@ ul {
 }
 
 li {
-  @apply mb-4;
+  @apply mb-1;
   @apply last-of-type:mb-0;
+  @apply pl-5;
+  @apply -indent-5;
 }
