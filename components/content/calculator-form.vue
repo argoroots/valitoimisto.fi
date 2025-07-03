@@ -16,7 +16,7 @@ const UNEMPLOYMENT_INSURANCE_RATE = 0.20 // Töötuskindlustus
 const GROUP_LIFE_INSURANCE_RATE = 0.07 // Grupielukindlustus
 
 // Töötaja maksud
-const UNEMPLOYMENT_INSURANCE_PERSONAL_RATE = 0.79 // Töötuskindlustus
+const UNEMPLOYMENT_INSURANCE_PERSONAL_RATE = 0.59 // Töötuskindlustus
 const PENSION_CONTRIBUTION_PERSONAL_RATE = 7.15 // Kogumispension
 
 // Sisestatavad väärtused
