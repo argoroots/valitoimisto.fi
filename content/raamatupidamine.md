@@ -9,7 +9,7 @@ paths:
   ru: /ru/bukhgalterskiy-uchet
 ---
 
-# Raamatupidamine
+# Raamatupidamisteenus
 
 Pakume usaldusväärset ja professionaalset raamatupidamisteenust Soomes juba üle 10 aasta. Oleme spetsialiseerunud paberivabale raamatupidamisele, mis on tänapäevane ja efektiivne lahendus. Meie meeskonnal on aastatepikkune kogemus bilansivõimelises raamatupidamises ning pakume personaalset lähenemist, arvestades teie äri eripärasid.
 

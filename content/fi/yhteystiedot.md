@@ -13,7 +13,7 @@ paths:
 
 | Välitoimisto Oy | |
 | --: | --- |
-| **Osoite** | c/o Fin-Est Accounting Oy<br>Vilppulantie 10a lh. 1<br>00700 HELSINKI<br>Ala-Malmi (katutasossa) |
+| **Osoite** | Vilppulantie 10a lh. 1<br>00700 HELSINKI<br>Ala-Malmi (katutasossa) |
 | **Puhelin** | +358 40 731 1994 |
 | **Sähköpostiosoite** | kirjanpito@valitoimisto.fi |
 | **Y-tunnus** | 3227308-9 |
