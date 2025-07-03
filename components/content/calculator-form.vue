@@ -37,21 +37,23 @@ const mealSum = computed(() => meal.value * MEAL_RATE) // Toidukompensatsioon
 const kmSum = computed(() => km.value * KM_RATE) // Kilomeetripõhine kompensatsioon
 const addonSum = computed(() => fullDaySum.value + partialDaySum.value + mealSum.value + kmSum.value) // Lisatasud kokku
 
+// Bruto summa
+const brutoSum = computed(() => priceWithoutFee.value - addonSum.value)
+
 // Tööandja maksud brutopalgast
-const municipalTax = computed(() => priceWithoutFee.value * MUNICIPAL_TAX_RATE / 100) // Sotsiaalkindlustus
-const pensionContribution = computed(() => priceWithoutFee.value * PENSION_CONTRIBUTION_RATE / 100) // Pensionikindlustus
-const accidentInsurance = computed(() => priceWithoutFee.value * ACCIDENT_INSURANCE_RATE / 100) // Õnnetusjuhtumi- ja vastutuskindlustus
-const unemploymentInsurance = computed(() => priceWithoutFee.value * UNEMPLOYMENT_INSURANCE_RATE / 100) // Töötuskindlustus
-const groupLifeInsurance = computed(() => priceWithoutFee.value * GROUP_LIFE_INSURANCE_RATE / 100) // Grupielukindlustus
+const municipalTax = computed(() => brutoSum.value * MUNICIPAL_TAX_RATE / 100) // Sotsiaalkindlustus
+const pensionContribution = computed(() => brutoSum.value * PENSION_CONTRIBUTION_RATE / 100) // Pensionikindlustus
+const accidentInsurance = computed(() => brutoSum.value * ACCIDENT_INSURANCE_RATE / 100) // Õnnetusjuhtumi- ja vastutuskindlustus
+const unemploymentInsurance = computed(() => brutoSum.value * UNEMPLOYMENT_INSURANCE_RATE / 100) // Töötuskindlustus
+const groupLifeInsurance = computed(() => brutoSum.value * GROUP_LIFE_INSURANCE_RATE / 100) // Grupielukindlustus
 const taxesSum = computed(() => municipalTax.value + pensionContribution.value + accidentInsurance.value + unemploymentInsurance.value + groupLifeInsurance.value)
 
-// Bruto summa
-const brutoSum = computed(() => priceWithoutFee.value - taxesSum.value)
+const brutoWithoutTaxes = computed(() => brutoSum.value - taxesSum.value) // Brutopalk ilma tööandja maksudeta
 
 // Töölise maksud brutopalgast
-const unemploymentInsurancePersonal = computed(() => brutoSum.value * UNEMPLOYMENT_INSURANCE_PERSONAL_RATE / 100) // Töötuskindlustus
-const pensionContributionPersonal = computed(() => brutoSum.value * PENSION_CONTRIBUTION_PERSONAL_RATE / 100) // Kogumispension
-const incomeTax = computed(() => brutoSum.value * percent.value / 100) // Tulumaks
+const unemploymentInsurancePersonal = computed(() => brutoWithoutTaxes.value * UNEMPLOYMENT_INSURANCE_PERSONAL_RATE / 100) // Töötuskindlustus
+const pensionContributionPersonal = computed(() => brutoWithoutTaxes.value * PENSION_CONTRIBUTION_PERSONAL_RATE / 100) // Kogumispension
+const incomeTax = computed(() => brutoWithoutTaxes.value * percent.value / 100) // Tulumaks
 const personalTaxesSum = computed(() => unemploymentInsurancePersonal.value + pensionContributionPersonal.value + incomeTax.value)
 
 // Brutopalk - töölise maksud
@@ -132,9 +134,9 @@ function checkValues () {
         <!-- Breakdown fields -->
         <div class="mb-6 w-full space-y-4">
           <!-- Brutopalk -->
-          <div class="-mx-2 flex justify-between px-2 py-1 pb-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
-            <span class="font-semibold">{{ t('calcGrossSalary') }}:</span>
-            <span class="font-medium">{{ (Math.round(brutoSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
+          <div class="flex justify-between pr-2 text-sm">
+            <span class="text-xs font-semibold uppercase text-gray-600">{{ t('calcGrossSalary') }}:</span>
+            <span>{{ (Math.round(brutoSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
           </div>
 
           <!-- Tööandja maksud -->
@@ -142,23 +144,23 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcEmployerTaxes') }}:
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcPensionInsurance', { rate: PENSION_CONTRIBUTION_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(pensionContribution * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcSocialTax', { rate: MUNICIPAL_TAX_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(municipalTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcUnemploymentInsurance', { rate: UNEMPLOYMENT_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(unemploymentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcAccidentInsurance', { rate: ACCIDENT_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(accidentInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcGroupLifeInsurance', { rate: GROUP_LIFE_INSURANCE_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(groupLifeInsurance * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
@@ -169,15 +171,15 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcEmployeeTaxes') }}:
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcIncomeTax', { percent }) }}:</span>
               <span class="font-medium">{{ (Math.round(incomeTax * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcFundedPension', { rate: PENSION_CONTRIBUTION_PERSONAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(pensionContributionPersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcUnemploymentInsurancePersonal', { rate: UNEMPLOYMENT_INSURANCE_PERSONAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(unemploymentInsurancePersonal * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
@@ -188,19 +190,19 @@ function checkValues () {
             <div class="text-xs font-semibold uppercase text-gray-600">
               {{ t('calcTaxFreeAllowances') }}:
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcFullDayAllowances', { count: fullDay, rate: FULL_DAY_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(fullDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcPartialDayAllowances', { count: partialDay, rate: PARTIAL_DAY_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(partialDaySum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcMealAllowance', { count: meal, rate: MEAL_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(mealSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
-            <div class="flex justify-between px-2 py-1 text-sm transition-colors hover:rounded hover:bg-blue-50">
+            <div class="flex justify-between py-1 pl-4 pr-2 text-sm transition-colors hover:rounded hover:bg-blue-50">
               <span>{{ t('calcKilometerAllowance', { count: km, rate: KM_RATE }) }}:</span>
               <span class="font-medium">{{ (Math.round(kmSum * 100) / 100).toLocaleString('et', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }}€</span>
             </div>
