@@ -15,6 +15,7 @@ export default {
   navSendDataUrl: '/ru/otpravit-dannye',
   navTerms: 'Условия использования',
   navTermsUrl: '/ru/usloviya-ispolzovaniya',
+  navInfo: 'Välitoimisto Oy является членом [Союза налогоплательщиков Финляндии](https://www.veronmaksajat.fi) с 20 октября 2025 года',
 
   localeEN: 'English',
   localeFI: 'Suomi',

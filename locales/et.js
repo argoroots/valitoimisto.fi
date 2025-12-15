@@ -15,6 +15,7 @@ export default {
   navSendDataUrl: '/saada',
   navTerms: 'Tingimused',
   navTermsUrl: '/tingimused',
+  navInfo: 'Välitoimisto Oy on [Soome Maksumaksjate Liidu](https://www.veronmaksajat.fi) liige alates 20. oktoobrist 2025',
 
   localeEN: 'English',
   localeFI: 'Suomi',

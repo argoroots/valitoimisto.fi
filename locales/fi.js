@@ -15,6 +15,7 @@ export default {
   navSendDataUrl: '/fi/laheta',
   navTerms: 'Yleiset sopimusehdot',
   navTermsUrl: '/fi/sopimusehdot',
+  navInfo: 'Välitoimisto Oy on [Veronmaksajain Keskusliiton](https://www.veronmaksajat.fi) jäsen 20. lokakuuta 2025 alkaen',
 
   localeEN: 'English',
   localeFI: 'Suomi',

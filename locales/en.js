@@ -15,6 +15,7 @@ export default {
   navSendDataUrl: '/en/send',
   navTerms: 'Terms of Service',
   navTermsUrl: '/en/terms',
+  navInfo: 'Välitoimisto Oy is a member of the [Finnish Taxpayers\' Association](https://www.veronmaksajat.fi) since October 20, 2025',
 
   localeEN: 'English',
   localeFI: 'Suomi',
