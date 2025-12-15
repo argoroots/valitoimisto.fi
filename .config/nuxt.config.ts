@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { name: 'keywords', content: 'raamatupidamine, raamatupidamisteenus, palgaarvestus, soomes, soome, majandusaaasta aruanne, kirjanpito, kirjanpitopalvelu, palkkalaskelma, tasekirja, laskutuspalvelu, arveteenus, tööjõurent, accounting, payroll, accounting service, bookkeeping, työvoimavuokraus, labor hire' }
       ],
       script: [
-        { src: 'https://plausible.io/js/script.js', 'data-domain': 'valitoimisto.fi', defer: true }
+        { src: 'https://analytics.entu.dev/ea.min.js', 'data-site': 'valitoimisto.fi', crossorigin: 'anonymous', defer: true }
       ]
     }
   },
